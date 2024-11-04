@@ -53,13 +53,6 @@ export default async function Recommendation() {
                 <CardTitle className="mt-4">{game.title}</CardTitle>
                 <CardDescription>{game.description}</CardDescription>
               </CardHeader>
-              <CardFooter className="flex items-center gap-2">
-                <Avatar>
-                  <AvatarImage src={game.author.avatar} alt={game.author.name} />
-                  <AvatarFallback>{game.author.name[0]}</AvatarFallback>
-                </Avatar>
-                <span className="text-sm text-muted-foreground">{game.author.name}</span>
-              </CardFooter>
             </Card>
           </Link>
         ))}

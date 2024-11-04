@@ -12,49 +12,14 @@
     "termsOfServices":"Terms of Services",
     "text":"Content"
   },
-  "Home": {
-    "title": "",
-    "description": "",
-    "playNow": "",
-    "learnMore": "",
-    "iframeTitle": "",
-    "fullscreenButton": "",
-    "shareButton": "",
-    "urlCopied": ""
+  "HomeIframe":{},
+  "HomeIntroduction": {},
+  "HomeFeatures": {},
+  "HomeFAQs": {
+    "title": ""
   },
-  "desc": {
-    "gameTitle": "",
-    "whatIsTitle": "",
-    "whatIsDescription": "",
-    "howToPlayTitle": "",
-    "howToPlayStep1": "",
-    "howToPlayStep2": "",
-    "howToPlayStep3": "",
-    "keyFeaturesTitle": "",
-    "feature1Title": "",
-    "feature1Description": "",
-    "feature2Title": "",
-    "feature2Description": "",
-    "feature3Title": "",
-    "feature3Description": "",
-    "feature4Title": "",
-    "feature4Description": "",
-    "controlsTitle": "",
-    "movementControlsTitle": "",
-    "movementControl1": "",
-    "movementControl2": "",
-    "interactionControlsTitle": "",
-    "interactionControl1": "",
-    "interactionControl2": "",
-    "interactionControl3": "",
-    "combatControlsTitle": "",
-    "combatControl1": "",
-    "combatControl2": "",
-    "combatControl3": "",
-    "combatControl4": "",
-    "miscControlsTitle": "",
-    "miscControl1": "",
-    "miscControl2": "",
-    "miscControl3": ""
+  "HomeRelatedVideo": {
+    "title": ""
   }
+
 }

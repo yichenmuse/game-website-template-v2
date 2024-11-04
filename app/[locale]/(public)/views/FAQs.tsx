@@ -1,4 +1,3 @@
-'use client'
 
 import {
   Accordion,
@@ -13,24 +12,10 @@ interface FAQItem {
   answer: string
 }
 
-export default function FAQs() {
-  const t = useTranslations('FAQs')
 
-  const faqItems: FAQItem[] = [
-    {
-      question: t('question1'),
-      answer: t('answer1'),
-    },
-    {
-      question: t('question2'),
-      answer: t('answer2'),
-    },
-    {
-      question: t('question3'),
-      answer: t('answer3'),
-    },
-    // 可以添加更多问答
-  ]
+export default async function FAQs({}) {
+  const faqItems = []
+
 
   return (
     <section className="w-full max-w-4xl mx-auto py-12 px-4">

@@ -46,7 +46,6 @@ export default async function Page({ params }: Props) {
       <SectionWrapper>
         <Introduction />
         <Features />
-        <Guide />
         <FAQs />
         <RelatedVideo />
         <Comments />
