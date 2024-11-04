@@ -1,9 +1,9 @@
-import type { UploadedFile } from "@repo/shared-types"
+import type { UploadedFile } from "@/lib/types"
 import { useState } from "react"
 
 export function useUploadFile<T>(key: string, options?: T) {
 	const [isUploading, setIsUploading] = useState(false)
-	const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([])
+	const [uploadedFiles, setUploadedFiles] = useState<UploadedFile<T>[]>([])
 
 	const uploadFiles = async (image: File[]) => {
 		setIsUploading(true)
@@ -50,7 +50,7 @@ export function useUploadFile<T>(key: string, options?: T) {
 						customId: null,
 						key: fileName,
 						serverData: null,
-					},
+					} as UploadedFile<T>,
 				])
 
 				return {
