@@ -1,0 +1,56 @@
+'use client'
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/lib/ui/components/accordion'
+import { useTranslations } from 'next-intl'
+
+interface FAQItem {
+  question: string
+  answer: string
+}
+
+export default function FAQs() {
+  const t = useTranslations('FAQs')
+
+  const faqItems: FAQItem[] = [
+    {
+      question: t('question1'),
+      answer: t('answer1'),
+    },
+    {
+      question: t('question2'),
+      answer: t('answer2'),
+    },
+    {
+      question: t('question3'),
+      answer: t('answer3'),
+    },
+    // 可以添加更多问答
+  ]
+
+  return (
+    <section className="w-full max-w-4xl mx-auto py-12 px-4">
+      <h2 className="text-3xl font-bold text-center mb-8">{t('title')}</h2>
+      <Accordion type="single" collapsible className="space-y-4">
+        {faqItems.map((item, index) => (
+          <AccordionItem
+            key={index}
+            value={`item-${index}`}
+            className="border rounded-lg px-4"
+          >
+            <AccordionTrigger className="py-4 font-medium">
+              {item.question}
+            </AccordionTrigger>
+            <AccordionContent className="pb-4">
+              <p className="text-gray-600">{item.answer}</p>
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </section>
+  )
+}

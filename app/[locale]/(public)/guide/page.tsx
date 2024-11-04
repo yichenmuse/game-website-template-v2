@@ -1,36 +1,56 @@
-import {notFound} from 'next/navigation';
-import MdxArticle from '@/lib/components/mdx-article';
-import matter from 'gray-matter'
-import { locales } from '@/lib/i18n/locales';
-const components: any = {
-  img: ({src, alt}: { src: string, alt: string }) => {
-      return <img src={src} alt={alt} className="object-cover"/>
+import { siteConfig } from '@/lib/config/site';
+import { alternatesLanguage } from '@/lib/i18n/locales';
+import fs from 'fs/promises';
+import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import { notFound } from 'next/navigation';
+import path from 'path';
+
+type Props = {
+  params: Promise<{
+    locale: string;
+  }>;
+};
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('GuidePage');
+  return {
+    title: `${t('title')} | ${siteConfig.name}`,
+    description: t('description'),
+    alternates: {
+      languages: alternatesLanguage('guide'),
+    },
+  };
+}
+
+async function getMDXContent(locale: string) {
+  try {
+    const filePath = path.join(process.cwd(), 'app', '[locale]', '(public)', 'guide', `${locale}.mdx`);
+    const source = await fs.readFile(filePath, 'utf-8');
+    return source;
+  } catch (error) {
+    // 如果找不到对应语言的文件，返回英文版本
+    if (locale !== 'en') {
+      return getMDXContent('en');
+    }
+    return null;
   }
 }
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
-
-export default async function Page({params}: {params: Promise<{locale: string}>}) {
-  try {
-    const {locale} = await params;
-    // 直接导入 MDX 文件的原始内容
-    let Content;
-    try {
-      Content = (await import(`!!raw-loader!./${locale}.mdx`)).default;
-    } catch (error) {
-      Content = (await import(`!!raw-loader!./en.mdx`)).default;
-    }
-    const {content } = matter(Content);
-    
-    return <>
-        <article
-          className="prose prose-sm md:prose-base lg:prose-lg  rounded-2xl max-w-6xl mx-auto py-10 px-4">
-          <MdxArticle components={components} source={content} className="max-w-full"/>
-        </article>
-    </>
-  } catch (error) {
+export default async function GuidePage({ params }: Props) {
+  const {locale} = await params;
+  const content = await getMDXContent(locale);
+  
+  if (!content) {
     notFound();
   }
-}
+
+  return (
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <article className="prose prose-lg dark:prose-invert max-w-none">
+        <MDXRemote source={content} />
+      </article>
+    </div>
+  );
+} 

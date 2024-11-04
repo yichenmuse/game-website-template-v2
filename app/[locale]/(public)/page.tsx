@@ -2,8 +2,15 @@ import { siteConfig } from '@/lib/config/site';
 import { alternatesLanguage, defaultLocale, locales } from '@/lib/i18n/locales';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import Desc from './desc';
-import Home from './home';
+import Comments from './views/Comments';
+import FAQs from './views/FAQs';
+import Features from './views/Features';
+import Guide from './views/Guide';
+import IframeSection from './views/IframeSection';
+import Introduction from './views/Introduction';
+import Recommendation from './views/Recommendation';
+import RelatedVideo from './views/RelatedVideo';
+import SectionWrapper from './views/SectionWrapper';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -35,8 +42,16 @@ export default async function Page({ params }: Props) {
   setRequestLocale(locale);
   return (
     <div className="bg-black pt-5 pb-5 ">
-      <Home params={{ locale }} />
-      <Desc params={{ locale }} />
+      <IframeSection />
+      <SectionWrapper>
+        <Introduction />
+        <Features />
+        <Guide />
+        <FAQs />
+        <RelatedVideo />
+        <Comments />
+        <Recommendation />
+      </SectionWrapper>
     </div>
   );
 }

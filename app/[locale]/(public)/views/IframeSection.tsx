@@ -1,18 +1,13 @@
-import IframeButton from '@/lib/components/iframe_button';
-import { defaultLocale } from '@/lib/i18n/locales';
 import { getPathnameWithLocale } from '@/lib/i18n/navigation';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
+import IframeActions from './IframeActions';
 
-type Props = {
-  params: { locale: string };
-};
-
-export default async function Home({ params: { locale = defaultLocale } }: Props) {
-  setRequestLocale(locale);
-  const t = await getTranslations('Home');
+export default async function IframeSection() {
+  const locale = await getLocale();
+  const t = await getTranslations('IframeSection');
   const iframeUrl = getPathnameWithLocale('/playground', locale);
   return (
-    <div className="bg-black text-white flex flex-col items-center justify-center p-4 pt-0">
+    <section className="bg-black text-white flex flex-col items-center justify-center p-4 pt-0">
       <div className=" text-gray-100 p-6 pt-2 max-w-6xl mx-auto rounded-lg shadow-lg w-full">
         <div className="flex flex-col">
           <h1 className="text-2xl md:text-5xl font-bold text-center mb-4 text-yellow-300 font-leckerli">
@@ -33,7 +28,7 @@ export default async function Home({ params: { locale = defaultLocale } }: Props
           allowFullScreen
         />
       </div>
-      <IframeButton />
-    </div>
+      <IframeActions />
+    </section>
   );
 }
