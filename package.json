@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-messages": "node scripts/generate-messages.js"
+    "generate-messages": "node scripts/generate-messages.js",
+    "clean-locales": "node scripts/clear-messages.js",
+    "translate": "node scripts/translate-locale.js"
   },
   "dependencies": {
     "@ai-sdk/openai": "^0.0.71",
@@ -104,8 +106,7 @@
     "prettier": "^3.3.3",
     "raw-loader": "^4.0.2",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5",
-    "vitest": "^2.1.4"
+    "typescript": "^5"
   },
   "packageManager": "yarn@1.22.22",
   "engines": {

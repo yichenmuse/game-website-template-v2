@@ -16,8 +16,8 @@ yarn dev
 ```
 import {Link} from "@/lib/i18n/navigation"
 ```
-- 当前模板代码默认只有en语言有内容，如果需要翻译成其他语言，先去火山引擎注册账号，获得豆包模型的调用key和模型名称，然后替换/.env当中的DOUBAO_API_KEY、DOUBAO_MODEL_NAME两个变量
-- 然后运行 `bun run  translate` 命令即可自动翻译en.json文件到其他语言
+- 当前模板代码默认只有en语言有内容，如果需要翻译成其他语言，先去火山引擎注册账号，获得豆包模型的调用key和模型名称，然后替换scripts/openai-chat.js当中的DOUBAO_API_KEY、DOUBAO_MODEL_NAME两个变量
+- 然后运行 `yarn run  translate` 命令即可自动翻译en.json文件到其他语言
 
 # 新游戏开发需要替换的内容
 - 替换/public下的game_screenshot.webp图片
@@ -34,15 +34,12 @@ import {Link} from "@/lib/i18n/navigation"
  - gaId 为Google分析ID
  - 使用下面提供的提示词（更换项目文案提示词）对en.json文件重新生成内容。需要先去网上收集尽可能多的游戏相关知识和文案，包括如何操作的文案。
  -en.json文件完成后，
-  - 运行bun run clean-locales 命令清理messages目录下其他语言文件(第一次需要运行，后续无需操作)
-  - 运行bun run translate 命令翻译其他语言内容
+  - 运行yarn run clean-locales 命令清理messages目录下其他语言文件(第一次需要运行，后续无需操作)
+  - 运行yarn run translate 命令翻译其他语言内容
 
 
 ## 部署事项
 - 代码提交到github私有仓库，然后去vercel.com 关联github仓库，并部署
-- 第一次导入的时候需要修改 
- - Frameworks 为 Next.js 否则会报错
- - Root Directory 为 ./
 ![alt text](image.png)
 - 绑定域名时，选择将wwww重定向到@
 - 在cloudflare配置cname和A记录，A记录指向vercel.app的ip地址
@@ -50,15 +47,11 @@ import {Link} from "@/lib/i18n/navigation"
 | 记录类型 | 名称 | 值 |
 |---------|------|-----|
 | CNAME   | www  | cname.vercel-dns.com |
-| A       | spacewavesgame.online | 76.76.21.21 |
+| A       | 你的域名 | 76.76.21.21 |
 
 - cloudflare绑定域名，设置自定义ssl 选择 完全（严格） 否则会出现 重定向次数过多问题
 - 如果iframe不让嵌入，就去另外找一个可以嵌入的
 - vercel部署完成后，去search.google.com\bing.com 提交收录
-## Docker私有部署
-
-- 构建命令需要增加--network=host,否则会提示prisma文件下载失败
-
 
 ## 更换项目文案提示词
 ```
