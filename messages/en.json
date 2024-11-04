@@ -5,6 +5,9 @@
   "Loading": {
     "title": ""
   },
+  "Common":{
+    "createAt":"Create At"
+  },
   "Home": {
     "title": "",
     "description": "",

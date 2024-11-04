@@ -1,9 +1,9 @@
 {
-  "title": "",
-  "slogan": "",
-  "description": "",
   "Loading": {
     "title": ""
+  },
+  "Common": {
+    "createAt": "Create At"
   },
   "Home": {
     "title": "",
@@ -49,5 +49,8 @@
     "miscControl1": "",
     "miscControl2": "",
     "miscControl3": ""
-  }
+  },
+  "title": "",
+  "slogan": "",
+  "description": ""
 }

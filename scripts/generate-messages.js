@@ -36,10 +36,49 @@ async function processLanguage(file) {
     const enFilePath = path.join(directoryPath, 'en.json');
     const targetFilePath = path.join(directoryPath, file);
 
-    // 检查目标语言文件是否存在
     try {
         await fs.access(targetFilePath);
-        console.log(`${language} 的翻译文件已存在，跳过处理`);
+        console.log(`${language} 的翻译文件已存在，开始同步键值...`);
+        
+        const enData = JSON.parse(await fs.readFile(enFilePath, 'utf8'));
+        const targetData = JSON.parse(await fs.readFile(targetFilePath, 'utf8'));
+        let hasChanges = false;
+
+        // 遍历英文文件的键，检查目标文件是否缺失
+        for (const key in enData) {
+            if (!targetData.hasOwnProperty(key)) {
+                // 如果key不存在，无论是对象还是普通值，都直接复制
+                targetData[key] = enData[key];
+                hasChanges = true;
+                console.log(`添加缺失的键: ${key}`);
+            } else if (typeof enData[key] === 'object' && enData[key] !== null) {
+                // 如果是对象类型，检查第二层
+                for (const subKey in enData[key]) {
+                    if (!targetData[key][subKey]) {
+                        targetData[key][subKey] = enData[key][subKey];
+                        hasChanges = true;
+                        console.log(`添加缺失的键: ${key}.${subKey}`);
+                    }
+                }
+            }
+            // 如果是一层键且已存在，保持原值不变
+        }
+
+        // 删除多余的一级键
+        for (const key in targetData) {
+            if (!enData.hasOwnProperty(key)) {
+                delete targetData[key];
+                hasChanges = true;
+                console.log(`删除多余的键: ${key}`);
+            }
+        }
+
+        if (hasChanges) {
+            await fs.writeFile(targetFilePath, JSON.stringify(targetData, null, 2), 'utf8');
+            console.log(`${language} 文件已更新同步`);
+        } else {
+            console.log(`${language} 文件无需更新`);
+        }
     } catch (error) {
         // 如果文件不存在，复制 en.json 的内容创建新文件
         console.log(`${language} 的翻译文件不存在，将从 en.json 创建新文件`);

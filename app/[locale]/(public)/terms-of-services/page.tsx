@@ -8,6 +8,7 @@ const components: any = {
   }
 }
 
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
