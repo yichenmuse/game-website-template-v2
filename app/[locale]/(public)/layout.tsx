@@ -7,6 +7,7 @@ import type { ReactNode } from 'react';
 
 import { Footer, Navbar } from '@/lib/components';
 import { siteConfig } from '@/lib/config/site';
+import { NavbarItem } from '@/lib/types';
 import { Toaster } from '@/lib/ui/components/toaster';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
@@ -19,21 +20,20 @@ export default async function LocaleLayout({ children, params }: Props) {
   const { locale = defaultLocale } = await params;
   const isDev = process.env.NODE_ENV === 'development';
   const messages = await getMessages();
+
+  const navbars = (await import(`@/resources/navbar/${locale}.json`)).default as NavbarItem[];
+
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
       <NextUIProvider>
         <Toaster />
-        <Navbar />
+        <Navbar items={navbars} />
         {children}
-        <Footer />
+        <Footer items={navbars} />
         {!isDev && (
           <>
-            {siteConfig.gaId && ( 
-              <GoogleAnalytics gaId={siteConfig.gaId as string} />
-            )}
-            {siteConfig.plausible && (
-              <script defer data-domain={siteConfig.domain} src={siteConfig.plausible}></script>
-            )}
+            {siteConfig.gaId && <GoogleAnalytics gaId={siteConfig.gaId as string} />}
+            {siteConfig.plausible && <script defer data-domain={siteConfig.domain} src={siteConfig.plausible}></script>}
           </>
         )}
       </NextUIProvider>

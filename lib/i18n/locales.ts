@@ -59,10 +59,9 @@ export const localeNames = {
   [IT]: 'Italiano', // 意大利语
   [UK]: 'Українська', // 乌克兰语
   [ZH_TW]: '繁体中文', // 繁体中文
-  
 } as Record<string, string>;
 
-export const defaultLocale = 'en' as const;
+export const defaultLocale = EN;
 
 // 所有语言列表的标识代码，不含具体语言名称
 export const locales: readonly string[] = Object.keys(localeNames);

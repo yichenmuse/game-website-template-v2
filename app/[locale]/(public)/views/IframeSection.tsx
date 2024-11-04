@@ -4,7 +4,7 @@ import IframeActions from './IframeActions';
 
 export default async function IframeSection() {
   const locale = await getLocale();
-  const t = await getTranslations('IframeSection');
+  const t = await getTranslations('HomeIframe');
   const iframeUrl = getPathnameWithLocale('/playground', locale);
   return (
     <section className="bg-black text-white flex flex-col items-center justify-center p-4 pt-0">

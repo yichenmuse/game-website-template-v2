@@ -5,9 +5,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Comments from './views/Comments';
 import FAQs from './views/FAQs';
 import Features from './views/Features';
-import Guide from './views/Guide';
 import IframeSection from './views/IframeSection';
-import Introduction from './views/Introduction';
 import Recommendation from './views/Recommendation';
 import RelatedVideo from './views/RelatedVideo';
 import SectionWrapper from './views/SectionWrapper';
@@ -44,12 +42,11 @@ export default async function Page({ params }: Props) {
     <div className="bg-black pt-5 pb-5 ">
       <IframeSection />
       <SectionWrapper>
-        <Introduction />
         <Features />
-        <FAQs />
+        <FAQs locale={locale} />
         <RelatedVideo />
         <Comments />
-        <Recommendation />
+        <Recommendation locale={locale} />
       </SectionWrapper>
     </div>
   );

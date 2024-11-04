@@ -1,5 +1,34 @@
 [
   {
-
+    "question": "What is Linkway?",
+    "answer": "Linkway is a modern link management platform that helps you create, share, and track short links. It provides analytics, custom domains, and team collaboration features to optimize your link sharing experience."
+  },
+  {
+    "question": "How do I create a short link?",
+    "answer": "Creating a short link is simple: 1) Log in to your account, 2) Click the 'Create Link' button, 3) Paste your long URL, 4) Customize your short link if desired, 5) Click 'Save' to generate your short link."
+  },
+  {
+    "question": "Are the links permanent?",
+    "answer": "Yes, your short links are permanent and will remain active as long as your account is active. However, you can always edit or delete your links through your dashboard if needed."
+  },
+  {
+    "question": "Is there a limit to how many links I can create?",
+    "answer": "Free accounts can create up to 50 links per month. Premium users enjoy unlimited link creation along with additional features like custom domains and advanced analytics."
+  },
+  {
+    "question": "Can I customize my short links?",
+    "answer": "Yes, you can customize your short links with your own keywords or phrases, making them more memorable and brand-friendly. Premium users can also use custom domains for their links."
+  },
+  {
+    "question": "Do you provide analytics for the links?",
+    "answer": "Yes, we provide detailed analytics for all your links, including click counts, geographic location of visitors, referral sources, and device types. Premium users get access to advanced analytics features."
+  },
+  {
+    "question": "Is it possible to edit a link after creation?",
+    "answer": "Yes, you can edit your links at any time. You can modify the destination URL, customize the short link, or update link settings through your dashboard."
+  },
+  {
+    "question": "How secure are the links?",
+    "answer": "We take security seriously. All links are monitored for malicious content, and we use HTTPS encryption for all connections. Premium users can also add password protection to their links."
   }
 ]

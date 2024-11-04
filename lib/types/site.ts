@@ -11,8 +11,8 @@ export interface VideoItem {
 
 // 评论
 export interface CommentItem {
-  name: string;
-  title: string;
+  author: string;
+  role: string;
   avatar: string;
   content: string;
 }
@@ -46,6 +46,7 @@ export interface SiteConfig {
   name: string;
   // 网站标语
   slogan: string;
+  domain: string
   // 网站图标
   icon: string;
   // 苹果图标

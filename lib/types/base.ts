@@ -17,3 +17,10 @@ export interface FAQItem {
 
 
 export interface UploadedFile<T = unknown> extends ClientUploadedFileData<T> {}
+
+
+
+export type PropsWithLocale<T = object> =  T & {locale: string}
+export type LocaleParams<T = object> = Promise<T & {locale: string}>
+
+export type PropsWithLocaleIf<T= object> = PropsWithLocale<T & {visible?: boolean}>

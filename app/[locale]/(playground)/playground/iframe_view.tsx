@@ -38,8 +38,8 @@ export default function IframeView({ params: { locale } }: Props) {
       )}
       <div className="flex-grow">
         <iframe
-          title={t('Home.iframeTitle')}
-          src={siteConfig.gameIframe}
+          title={t('HomeIframe.iframeTitle')}
+          src={siteConfig.gameIframeUrl}
           allow="accelerometer; gyroscope; autoplay; payment; fullscreen; microphone; clipboard-read; clipboard-write"
           sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-presentation allow-scripts allow-same-origin allow-downloads allow-popups-to-escape-sandbox"
           className="w-full h-full"

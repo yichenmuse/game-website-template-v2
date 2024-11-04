@@ -20,6 +20,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import React from 'react';
+import { NavbarItem } from '../types';
 
 interface NavItem {
   title: string;
@@ -28,7 +29,8 @@ interface NavItem {
   children?: NavItem[];
 }
 
-export default function AppNavbar() {
+export default function AppNavbar({items}: {items: NavbarItem[]}) {
+  const nt = useTranslations("Navbar");
   const t = useTranslations();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const pathname = usePathname();
@@ -47,10 +49,10 @@ export default function AppNavbar() {
           </SheetTrigger>
           <SheetContent side="left" className="w-[300px] sm:w-[400px]">
             <SheetHeader>
-              <SheetTitle>{t('title')}</SheetTitle>
+              <SheetTitle>{nt('title')}</SheetTitle>
             </SheetHeader>
             <div className="flex flex-col gap-4 py-4">
-              {siteConfig.navbarItems
+              {items
                 .flatMap((item: NavItem) => (item.children ? item.children : [item]))
                 .map((item, index) => (
                   <Link
@@ -62,7 +64,7 @@ export default function AppNavbar() {
                     )}
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {t(item.title)}
+                    {item.title}
                   </Link>
                 ))}
               <div className="px-4 py-2">
@@ -85,7 +87,7 @@ export default function AppNavbar() {
                 console.error('Image load failed:', e);
               }}
             />
-            <span className="inline-flex items-end text-lg text-white font-leckerli">Ï
+            <span className="inline-flex items-end text-lg text-white font-leckerli">
               {t(siteConfig.slogan as any)}
             </span>
           </Link>
@@ -94,25 +96,25 @@ export default function AppNavbar() {
         <div className="hidden md:flex flex-1 justify-center">
           <NavigationMenu>
             <NavigationMenuList>
-              {siteConfig.navbarItems.map((item: NavItem) => (
+              {items.map((item: NavItem) => (
                 <NavigationMenuItem key={item.title}>
                   {item.children ? (
                     <>
-                      <NavigationMenuTrigger className="text-white">{t(item.title)}</NavigationMenuTrigger>
-                      <NavigationMenuContent>
-                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                      <NavigationMenuTrigger className="text-white bg-transparent">{item.title}</NavigationMenuTrigger>
+                      <NavigationMenuContent className="bg-gray-800">
+                        <ul className="grid w-[200px] p-2 md:w-[400px]">
                           {item.children.map((child) => (
                             <li key={child.title}>
                               <NavigationMenuLink asChild>
                                 <Link
                                   href={child.href}
                                   className={cn(
-                                    'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+                                    'flex h-full w-full select-none text-white flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md',
                                     isActive(child.href) && 'bg-accent text-accent-foreground',
                                   )}
                                 >
                                   <div className="flex items-center gap-2">
-                                    <div className="text-sm font-medium leading-none">{t(child.title)}</div>
+                                    <div className="text-sm font-medium leading-none">{child.title}</div>
                                   </div>
                                 </Link>
                               </NavigationMenuLink>
@@ -123,7 +125,7 @@ export default function AppNavbar() {
                     </>
                   ) : (
                     <Link href={item.href} className={cn(navigationMenuTriggerStyle(), "bg-transparent")}>
-                      <div className="flex items-center gap-2 text-white">{t(item.title)}</div>
+                      <div className="flex items-center gap-2 text-white">{item.title}</div>
                     </Link>
                   )}
                 </NavigationMenuItem>

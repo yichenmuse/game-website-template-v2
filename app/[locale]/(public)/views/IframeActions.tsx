@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
 export default function IframeButton() {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('HomeIframe');
   const [iframeElement, setIframeElement] = useState<HTMLIFrameElement | null>(null);
 
   useEffect(() => {
@@ -51,18 +51,18 @@ export default function IframeButton() {
         onClick={handleFullscreen}
         className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:shadow-lg"
       >
-        {t('Playground.fullscreenButton')}
+        {t('fullscreenButton')}
       </Button>
       <Button
         onClick={() => {
           const url = window.location.href;
           navigator.clipboard.writeText(url).then(() => {
-            alert(t('Playground.urlCopied'));
+            alert(t('urlCopied'));
           });
         }}
         className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:shadow-lg"
       >
-        {t('Playground.shareButton')}
+        {t('shareButton')}
       </Button>
     </div>
   );

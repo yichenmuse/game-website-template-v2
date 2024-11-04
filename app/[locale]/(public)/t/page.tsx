@@ -1,10 +1,10 @@
-import { notFound } from 'next/navigation';
-import matter from 'gray-matter';
-import fs from 'fs';
-import path from 'path';
-import {Link} from '@/lib/i18n/navigation'
 import { locales } from '@/lib/i18n/locales';
+import { Link } from '@/lib/i18n/navigation';
+import fs from 'fs';
+import matter from 'gray-matter';
 import { getTranslations } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import path from 'path';
 
 // 定义文章元数据接口
 interface ArticleMetadata {
@@ -63,7 +63,7 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
     const articles = await getArticlesData(locale);
     const t = await getTranslations({ locale });
     return (
-      <div className="max-w-6xl mx-auto py-10 px-4">
+      <div className="max-w-6xl mx-auto py-10 px-4 min-h-[65vh]">
         <h1 className="text-2xl font-bold mb-6">文章列表</h1>
         <div className="grid gap-6">
           {articles.map((article) => (
