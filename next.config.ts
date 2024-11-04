@@ -1,7 +1,48 @@
-import type { NextConfig } from "next";
+import BundleAnalyzer from '@next/bundle-analyzer';
+import createMDX from '@next/mdx';
+import { NextConfig } from 'next';
+import createNextIntlPlugin from "next-intl/plugin";
+import remarkFrontmatter from 'remark-frontmatter';
+import remarkGfm from "remark-gfm";
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
+
+
+const withBundleAnalyzer = BundleAnalyzer({
+    // enabled: process.env.ANALYZE === 'true',
+    enabled: false,
+})
+
+const withNextIntl = createNextIntlPlugin("./i18n.ts")
+// 添加支持直接使用本地.mdx文件组件
+const withMDX = createMDX({
+    options: {
+        jsx: true,
+        remarkPlugins: [remarkGfm, remarkFrontmatter, remarkMdxFrontmatter],
+        rehypePlugins: [],
+    },
+})
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+    staticPageGenerationTimeout: 1000,
+    onDemandEntries: {
+        // 在开发模式下保持页面在内存中的时间更长
+        maxInactiveAge: 25 * 1000,
+        // 同时保持在内存中的页面数
+        pagesBufferLength: 5,
+    },
+    experimental: {
+        cssChunking: "strict"
+    },
+    // output: 'standalone',
+    productionBrowserSourceMaps: true,
+    pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+    transpilePackages: ["next-mdx-remote"],
+    trailingSlash: false,
+    env: {
+        UE_WEB_URL: process.env.UE_WEB_URL,
+        DOUBAO_API_KEY:process.env.DOUBAO_API_KEY,
+        DOUBAO_MODEL_NAME:process.env.DOUBAO_MODEL_NAME
+    }
+}
 
-export default nextConfig;
+export default withBundleAnalyzer(withMDX(withNextIntl(nextConfig)))
