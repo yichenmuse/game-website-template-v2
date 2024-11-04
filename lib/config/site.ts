@@ -13,5 +13,14 @@ export const siteConfig = {
       title: 'title',
       href: '/',
     },
+    {
+      title: "Guide",
+      href: "/guide"
+    },
+    {
+      title: 'Information',
+      href: '',
+    },
+
   ],
 };
