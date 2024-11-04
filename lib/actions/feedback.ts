@@ -1,5 +1,5 @@
 // import prisma from "@repo/web/l@repo/db";
-import { redirectWithValidate } from "@repo/web/lib/utils/actions"
+import { redirectWithValidate } from "@/lib/utils/actions"
 
 export async function handleSubmit(state: unknown, data: any) {
 	if (!data || !data?.email?.length) {
