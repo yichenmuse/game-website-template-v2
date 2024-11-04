@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-messages": "node scripts/generate-messages.js"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^0.0.71",
     "@aws-sdk/client-s3": "^3.577.0",
     "@aws-sdk/s3-request-presigner": "^3.577.0",
     "@hookform/resolvers": "^3.4.2",
@@ -49,6 +51,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.2.1",
     "@tailwindcss/typography": "^0.5.15",
+    "ai": "^3.4.32",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.0",
     "crypto-js": "^4.2.0",
@@ -97,6 +100,7 @@
     "eslint-config-next": "15.0.2",
     "postcss": "^8",
     "prettier": "^3.3.3",
+    "raw-loader": "^4.0.2",
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
     "vitest": "^2.1.4"

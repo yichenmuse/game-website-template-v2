@@ -44,8 +44,6 @@ export const localeNames = {
   [EN]: 'English', // 英语
   [ZH_CN]: '简体中文',
   [ES]: 'Español', // 西班牙语
-  [HI]: 'हिन्दी (Hindi)', // 印地语
-  [AR]: 'العربية (Arabic)', // 阿拉伯语
   [FR]: 'Français', // 法语
   [BN]: 'বাংলা (Bangla)', // 孟加拉语
   [RU]: 'Русский', // 俄语
@@ -59,28 +57,9 @@ export const localeNames = {
   [TH]: 'ไทย (Thai)', // 泰语
   [KO]: '한국어', // 韩语
   [IT]: 'Italiano', // 意大利语
-  [PL]: 'Polski', // 波兰语
   [UK]: 'Українська', // 乌克兰语
-  [NL]: 'Nederlands', // 荷兰语
-  [MS]: 'Bahasa Melayu', // 马来语
   [ZH_TW]: '繁体中文', // 繁体中文
-  [RO]: 'Română', // 罗马尼亚语
-  [EL]: 'Ελληνικά (Elliniká)', // 希腊语
-  [CS]: 'Čeština', // 捷克语
-  [SV]: 'Svenska', // 瑞典语
-  [HU]: 'Magyar', // 匈牙利语
-  [BG]: 'Български', // 保加利亚语
-  [HE]: 'עברית (Hebrew)', // 希伯来语
-  [DA]: 'Dansk', // 丹麦语
-  [FI]: 'Suomi', // 芬兰语
-  [SK]: 'Slovenčina', // 斯洛伐克语
-  [NO]: 'Norsk', // 挪威语,
-  [HR]: 'Hrvatski', // 克罗地亚语
-  [LT]: 'Lietuvių', // 立陶宛语
-  [SL]: 'Slovenščina', // 斯洛文尼亚语
-  [LV]: 'Latviešu', // 拉脱维亚语
-  [ET]: 'Eesti', // 爱沙尼亚语
-  // "fa": 'فارسی (Farsi)', // 波斯语 （从右往左）
+  
 } as Record<string, string>;
 
 export const defaultLocale = 'en' as const;
