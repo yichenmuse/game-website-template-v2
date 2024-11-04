@@ -7,6 +7,7 @@ export const siteConfig = {
     gameIframe: "",
     domain: "",
     gaId: "",
+    plausible:"",
     navbarItems: [
         {
             title: "title",

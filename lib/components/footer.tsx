@@ -81,18 +81,19 @@ export default function Footer() {
                     </div>
                     <div className="mt-2 py-10 border-t flex-row-reverse items-center justify-between sm:flex">
                         <ul className="flex flex-wrap items-center gap-4 sm:text-sm">
-                            {/* <li>
-                                <a href="https://tap4.ai/"
-                                    className="font-medium text-gray-500 hover:text-primary-200 duration-150"
-                                    title="Tap4 AI Tools Directory">Tap4 AI Tools Diresctory</a>
+                            <li>
+                                <Link href="/guide">{t('Common.guide')}</Link>
                             </li>
                             <li>
-                                <a href="https://woy.ai/" title="Woy AI Tools Directory">Woy AI Tools</a>
+                                <Link href="/t">{t('Common.text')}</Link>
                             </li>
                             <li>
-                                <a href="https://dokeyai.com/" title="Dokey AI Tools Directory">DokeyAI</a>
-                            </li> */}
-
+                                <Link href="/private-policy">{t('Common.privacyPolicy')}</Link>
+                            </li>
+                            <li>
+                                <Link href="/terms-of-services">{t('Common.termsOfServices')}</Link>
+                            </li>
+                          
                         </ul>
                         <p className="mt-6 sm:mt-0">© 2024 {t('title')} All rights reserved.</p>
                     </div>

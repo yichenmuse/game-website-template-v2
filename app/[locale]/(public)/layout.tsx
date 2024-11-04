@@ -28,8 +28,12 @@ export default async function LocaleLayout({ children, params }: Props) {
         <Footer />
         {!isDev && (
           <>
-            <GoogleAnalytics gaId={siteConfig.gaId as string} />
-            <script defer data-domain={siteConfig.domain} src="https://app.pageview.app/js/script.js"></script>
+            {siteConfig.gaId && ( 
+              <GoogleAnalytics gaId={siteConfig.gaId as string} />
+            )}
+            {siteConfig.plausible && (
+              <script defer data-domain={siteConfig.domain} src={siteConfig.plausible}></script>
+            )}
           </>
         )}
       </NextUIProvider>

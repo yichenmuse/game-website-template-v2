@@ -3,7 +3,11 @@
     "title": ""
   },
   "Common": {
-    "createAt": "Create At"
+    "createAt": "Create At",
+    "guide": "Guide",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfServices": "Terms of Services",
+    "text": "Content"
   },
   "Home": {
     "title": "",

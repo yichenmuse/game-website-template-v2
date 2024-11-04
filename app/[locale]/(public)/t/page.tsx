@@ -63,7 +63,7 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
     const articles = await getArticlesData(locale);
     const t = await getTranslations({ locale });
     return (
-      <div className="max-w-3xl mx-auto py-10 px-4">
+      <div className="max-w-6xl mx-auto py-10 px-4">
         <h1 className="text-2xl font-bold mb-6">文章列表</h1>
         <div className="grid gap-6">
           {articles.map((article) => (
