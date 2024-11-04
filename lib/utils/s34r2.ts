@@ -25,7 +25,7 @@ export function getS3Client() {
 }
 
 export function getBucket(custom?: string) {
-	return "fafafa" ?? custom
+	return custom ?? "fafafa"
 }
 
 export async function putObject(key: string, body: any, customBucket?: string) {

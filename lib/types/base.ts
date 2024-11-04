@@ -16,6 +16,4 @@ export interface FAQItem {
 }
 
 
-export interface UploadedFile<T = unknown> extends ClientUploadedFileData<T> {
-    [key: string]: any;
-}
+export interface UploadedFile<T = unknown> extends ClientUploadedFileData<T> {}
