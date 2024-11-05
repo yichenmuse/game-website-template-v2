@@ -14,12 +14,12 @@ export default async function Comments() {
     comments = siteConfig.tweets.map((it) => <Tweet id={it} key={it} />);
   } else {
     comments = siteConfig.comments.map((it, index) => (
-      <Card key={index} className="h-full">
+      <Card key={index} className="h-full bg-gray-800 border-none">
         <CardHeader>
           <div className="flex items-center gap-4">
             <Avatar>
               <AvatarImage src={it.avatar} alt={it.author} />
-              <AvatarFallback>{it.author}</AvatarFallback>
+              <AvatarFallback className="bg-primary font-bold">{it.author[0]}</AvatarFallback>
             </Avatar>
             <div>
               <CardTitle className="text-lg">{it.author}</CardTitle>

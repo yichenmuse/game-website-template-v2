@@ -3,7 +3,7 @@ import { SiteConfig } from '../types';
 export const siteConfig: SiteConfig = {
   name: 'Game Portal Demo',
   slogan: 'slogan',
-  domain: "",
+  domain: '',
   icon: '/favicon.ico',
   appleIcon: '/apple-touch-icon.png',
   theme: {
@@ -29,7 +29,8 @@ export const siteConfig: SiteConfig = {
     },
   ],
   gameType: 'iframe',
-  gameIframeUrl: 'https://example.com/game-iframe',
+  gameIframeUrl: '',
+  gameDownloadBg: '',
   gameDownloadUrl: 'https://example.com/download',
   isShowFAQs: true,
   isShowVideo: true,
@@ -37,15 +38,32 @@ export const siteConfig: SiteConfig = {
   videos: [
     {
       title: 'Game Tutorial',
-      url: 'https://youtube.com/watch?v=xxxxx',
+      url: 'https://www.youtube.com/watch?v=T4DFKOlrXCQ',
     },
     {
       title: 'Gameplay Preview',
-      url: 'https://youtube.com/watch?v=yyyyy',
+      url: 'https://www.youtube.com/watch?v=NcHyE_N1QDI',
+    },
+    {
+      title: 'Game Tutorial',
+      url: 'https://www.youtube.com/watch?v=T4DFKOlrXCQ',
+    },
+    {
+      title: 'Gameplay Preview',
+      url: 'https://www.youtube.com/watch?v=NcHyE_N1QDI',
+    },
+    {
+      title: 'Game Tutorial',
+      url: 'https://www.youtube.com/watch?v=T4DFKOlrXCQ',
+    },
+    {
+      title: 'Gameplay Preview',
+      url: 'https://www.youtube.com/watch?v=NcHyE_N1QDI',
     },
   ],
   isShowComments: true,
   isShowTweets: false,
+  useRealTweets: true,
   tweets: [''],
   comments: [
     {
@@ -53,6 +71,30 @@ export const siteConfig: SiteConfig = {
       role: '',
       content: 'Great game! Love the graphics and gameplay.',
       avatar: '/images/avatars/player1.jpg',
+    },
+    {
+      author: 'GamerGirl',
+      role: '',
+      content: 'The tutorial was very helpful. Thanks!',
+      avatar: '/images/avatars/player2.jpg',
+    },
+    {
+      author: 'GamerGirl',
+      role: '',
+      content: 'The tutorial was very helpful. Thanks!',
+      avatar: '/images/avatars/player2.jpg',
+    },
+    {
+      author: 'Player123',
+      role: '',
+      content: 'Great game! Love the graphics and gameplay.',
+      avatar: '/images/avatars/player1.jpg',
+    },
+    {
+      author: 'GamerGirl',
+      role: '',
+      content: 'The tutorial was very helpful. Thanks!',
+      avatar: '/images/avatars/player2.jpg',
     },
     {
       author: 'GamerGirl',

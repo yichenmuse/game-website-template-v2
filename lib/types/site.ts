@@ -62,8 +62,10 @@ export interface SiteConfig {
   navbarItems: NavbarItem[];
   // 游戏 iframe url
   gameIframeUrl: string;
-  //
-  gameDownloadUrl: string;
+  // 游戏下载背景图片
+  gameDownloadBg?: string;
+  // 游戏下载地址
+  gameDownloadUrl?: string;
   // 指南
   isShowGuide: boolean;
   // 常见问题

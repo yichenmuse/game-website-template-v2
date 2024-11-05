@@ -23,7 +23,8 @@
     "iframeTitle": "Game Preview",
     "fullscreenButton": "Fullscreen",
     "shareButton": "Share",
-    "urlCopied": "URL copied to clipboard!"
+    "urlCopied": "URL copied to clipboard!",
+    "downloadGame": "Download Game"
   },
   "HomeFeatures": {
     "gameTitle": "Experience the Ultimate Gaming Adventure",

@@ -46,7 +46,7 @@ export default function IframeButton() {
   };
 
   return (
-    <div className="mt-4 flex space-x-4">
+    <div className="mt-4 flex justify-center space-x-4">
       <Button
         onClick={handleFullscreen}
         className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:shadow-lg"

@@ -42,7 +42,7 @@ export default function Footer({ items }: { items: NavbarItem[] }) {
                 className="gap-8"
                 twitter={{
                   share: {
-                    url: window.location.href,
+                    url: siteConfig.domain,
                     text: `${t('title')} - ${t(siteConfig.slogan as any)}`,
                   },
                 }}
@@ -53,17 +53,17 @@ export default function Footer({ items }: { items: NavbarItem[] }) {
                 }}
                 facebook={{
                   share: {
-                    url: window.location.href,
+                    url: siteConfig.domain,
                   },
                 }}
                 instagram={{
                   share: {
-                    url: window.location.href,
+                    url: siteConfig.domain,
                   },
                 }}
                 discord={{
                   share: {
-                    url: window.location.href,
+                    url: siteConfig.domain,
                   },
                 }}
               />
