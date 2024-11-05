@@ -28,8 +28,8 @@ export default async function FallbackView({ downloadUrl }: FallbackViewProps) {
       <div className="relative z-10 text-center">
         {downloadUrl && (
           <a href={downloadUrl} target="_blank" rel="noopener noreferrer">
-            <Button color="warning" size="lg">
-              <DownloadCloud className="w-5 h-5 ml-2" />
+            <Button color="warning" size="lg" className="gap-4">
+              <DownloadCloud className="w-5 h-5" />
               {t('downloadGame')}
             </Button>
           </a>

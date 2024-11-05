@@ -11,7 +11,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
+  navigationMenuTriggerStyle
 } from '@/lib/ui/components/navigation-menu';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/lib/ui/components/sheet';
 import { cn } from '@/lib/utils/commons';
@@ -29,8 +29,8 @@ interface NavItem {
   children?: NavItem[];
 }
 
-export default function AppNavbar({items}: {items: NavbarItem[]}) {
-  const nt = useTranslations("Navbar");
+export default function AppNavbar({ items }: { items: NavbarItem[] }) {
+  const nt = useTranslations('Navbar');
   const t = useTranslations();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const pathname = usePathname();
@@ -39,7 +39,7 @@ export default function AppNavbar({items}: {items: NavbarItem[]}) {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-[rgb(27,44,65)] shadow-md">
+    <header className="sticky top-0 z-50 w-full border-b border-gray-700 bg-[rgb(27,44,65)] shadow-lg shadow-black/20 transition-all duration-300 ease-in-out">
       <div className="container flex h-16 items-center px-4">
         <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
           <SheetTrigger asChild className="md:hidden">
@@ -75,10 +75,13 @@ export default function AppNavbar({items}: {items: NavbarItem[]}) {
         </Sheet>
 
         <div className="flex items-center gap-6">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link
+            href="/"
+            className="flex items-center space-x-2 group transition-transform duration-300 hover:scale-105"
+          >
             <Image
               src="/logo.svg"
-              className="h-14 w-auto rounded-xl"
+              className="h-14 w-auto rounded-xl transform transition-all duration-300 group-hover:rotate-6"
               alt={`${t('title')} logo`}
               width={20}
               height={20}
@@ -87,7 +90,7 @@ export default function AppNavbar({items}: {items: NavbarItem[]}) {
                 console.error('Image load failed:', e);
               }}
             />
-            <span className="inline-flex items-end text-lg text-white font-leckerli">
+            <span className="inline-flex items-end text-lg font-leckerli bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent transition-all duration-300">
               {t(siteConfig.slogan as any)}
             </span>
           </Link>
@@ -95,22 +98,25 @@ export default function AppNavbar({items}: {items: NavbarItem[]}) {
 
         <div className="hidden md:flex flex-1 justify-center">
           <NavigationMenu>
-            <NavigationMenuList>
+            <NavigationMenuList className="gap-2">
               {items.map((item: NavItem) => (
-                <NavigationMenuItem key={item.title}>
+                <NavigationMenuItem key={item.title} className="group border-none">
                   {item.children ? (
                     <>
-                      <NavigationMenuTrigger className="text-white bg-transparent">{item.title}</NavigationMenuTrigger>
-                      <NavigationMenuContent className="bg-gray-800">
-                        <ul className="grid w-[200px] p-2 md:w-[400px]">
+                      <NavigationMenuTrigger className="text-white bg-transparent hover:bg-[rgb(37,54,75)] data-[state=open]:bg-[rgb(37,54,75)] transition-all duration-200">
+                        {item.title}
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent className="bg-[rgb(27,44,65)]">
+                        <ul className="grid w-[200px] p-2 md:w-[400px] gap-2">
                           {item.children.map((child) => (
                             <li key={child.title}>
                               <NavigationMenuLink asChild>
                                 <Link
                                   href={child.href}
                                   className={cn(
-                                    'flex h-full w-full select-none text-white flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md',
-                                    isActive(child.href) && 'bg-accent text-accent-foreground',
+                                    'flex h-full w-full select-none text-white flex-col justify-end rounded-md p-4 no-underline outline-none transition-all duration-200',
+                                    'hover:bg-[rgb(37,54,75)] hover:translate-x-1',
+                                    isActive(child.href) ? 'bg-[rgb(37,54,75)]' : 'bg-transparent',
                                   )}
                                 >
                                   <div className="flex items-center gap-2">
@@ -124,18 +130,29 @@ export default function AppNavbar({items}: {items: NavbarItem[]}) {
                       </NavigationMenuContent>
                     </>
                   ) : (
-                    <Link href={item.href} className={cn(navigationMenuTriggerStyle(), "bg-transparent")}>
+                    <Link
+                      href={item.href}
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        'bg-transparent hover:bg-[rgb(37,54,75)] transition-all duration-200',
+                        'relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary-400 after:transition-all after:duration-300 hover:after:w-full',
+                        isActive(item.href) && 'after:w-full',
+                      )}
+                    >
                       <div className="flex items-center gap-2 text-white">{item.title}</div>
                     </Link>
                   )}
                 </NavigationMenuItem>
               ))}
             </NavigationMenuList>
+           
           </NavigationMenu>
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-          <LocaleDropdown />
+          <div className="transform hover:scale-105 transition-transform duration-200">
+            <LocaleDropdown />
+          </div>
         </div>
       </div>
     </header>
