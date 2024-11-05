@@ -49,6 +49,7 @@ export interface SiteConfig {
   domain: string
   // 网站图标
   icon: string;
+  gameType: string;
   // 苹果图标
   appleIcon: string;
   // 主题
