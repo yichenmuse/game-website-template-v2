@@ -28,6 +28,7 @@ export const siteConfig: SiteConfig = {
       href: '/t',
     },
   ],
+  gameType: 'iframe',
   gameIframeUrl: 'https://example.com/game-iframe',
   gameDownloadUrl: 'https://example.com/download',
   isShowFAQs: true,

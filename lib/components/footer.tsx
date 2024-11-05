@@ -4,12 +4,14 @@ import { localeNames } from '@/lib/i18n/locales';
 import { Link, usePathname } from '@/lib/i18n/navigation';
 import { Link as NextLink } from '@nextui-org/link';
 import { useLocale, useTranslations } from 'next-intl';
+import { NavbarItem } from '../types';
+import SocialIcons from './social-icons';
 
-export default function Footer() {
+export default function Footer({ items }: { items: NavbarItem[] }) {
   const t = useTranslations();
   const pathname = usePathname();
   const locale = useLocale();
-  
+
   const buildLocaleLinks = (href: string, name: string) => {
     if (href === 'en') {
       return (
@@ -36,7 +38,35 @@ export default function Footer() {
             <p className="text-gray-400">{t(siteConfig.slogan as any)}</p>
             {/* 社交媒体图标 */}
             <div className="flex gap-4 mt-2">
-              {/* 这里可以添加社交媒体图标 */}
+              <SocialIcons
+                className="gap-8"
+                twitter={{
+                  share: {
+                    url: window.location.href,
+                    text: `${t('title')} - ${t(siteConfig.slogan as any)}`,
+                  },
+                }}
+                youtube={{
+                  share: {
+                    url: t('title'),
+                  },
+                }}
+                facebook={{
+                  share: {
+                    url: window.location.href,
+                  },
+                }}
+                instagram={{
+                  share: {
+                    url: window.location.href,
+                  },
+                }}
+                discord={{
+                  share: {
+                    url: window.location.href,
+                  },
+                }}
+              />
             </div>
           </div>
 
@@ -44,16 +74,16 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <h2 className="text-xl font-semibold mb-2">{t('Common.help')}</h2>
             <div className="flex flex-col gap-2">
-              {siteConfig.navbarItems
+              {items
                 .flatMap((it: any) => it?.children ?? [it])
                 .map((it, index) => (
-                  <Link 
+                  <Link
                     key={`${it.title}-${index}`}
-                    href={it.href} 
+                    href={it.href}
                     locale={locale}
                     className="text-gray-400 hover:text-primary-200"
                   >
-                    {t(it.title)}
+                    {it.title}
                   </Link>
                 ))}
             </div>
@@ -80,12 +110,14 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400">© 2024 {t('title')} All rights reserved.</p>
-            <ul className="flex flex-wrap items-center gap-6">
-              <li>
-                <Link href="/guide" className="text-gray-400 hover:text-primary-200">
-                  {t('Common.guide')}
+            <div className="flex flex-wrap gap-4">
+              {siteConfig.friendLinks.map((link: any) => (
+                <Link key={link.title} href={link.url} className="text-gray-400 hover:text-primary-200">
+                  {link.title}
                 </Link>
-              </li>
+              ))}
+            </div>
+            <ul className="flex flex-wrap items-center gap-6">
               <li>
                 <Link href="/private-policy" className="text-gray-400 hover:text-primary-200">
                   {t('Common.privacyPolicy')}

@@ -1,7 +1,7 @@
 {
-  "title": "11",
-  "slogan": "11",
-  "description": "11",
+  "title": "Game Portal Demo",
+  "slogan": "This is a game portal demo",
+  "description": "This is a game portal demo",
   "Loading": {
     "title": ""
   },
@@ -14,7 +14,8 @@
     "privacyPolicy": "Privacy Policy",
     "termsOfServices": "Terms of Services",
     "text": "Content",
-    "help": "Help"
+    "help": "Help",
+    "friendlyLinks": "Friendly Links"
   },
   "HomeIframe": {
     "title": "Try Our Game Now",
