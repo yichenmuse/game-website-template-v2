@@ -1,0 +1,32 @@
+[
+  {
+    "title": "How to Create Custom Short Links with Linkway",
+    "cover": "/images/tutorials/custom-links.webp",
+    "url": "https://www.youtube.com/watch?v=example1"
+  },
+  {
+    "title": "Advanced Analytics Dashboard Tutorial",
+    "cover": "/images/tutorials/analytics-dashboard.webp",
+    "url": "https://www.youtube.com/watch?v=example2"
+  },
+  {
+    "title": "Team Collaboration Features Overview",
+    "cover": "/images/tutorials/team-collaboration.webp",
+    "url": "https://www.youtube.com/watch?v=example3"
+  },
+  {
+    "title": "Setting Up Custom Domains in Linkway",
+    "cover": "/images/tutorials/custom-domains.webp",
+    "url": "https://www.youtube.com/watch?v=example4"
+  },
+  {
+    "title": "Link Management Best Practices",
+    "cover": "/images/tutorials/best-practices.webp",
+    "url": "https://www.youtube.com/watch?v=example5"
+  },
+  {
+    "title": "Security Features and Password Protection",
+    "cover": "/images/tutorials/security-features.webp",
+    "url": "https://www.youtube.com/watch?v=example6"
+  }
+]
