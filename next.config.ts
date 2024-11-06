@@ -15,9 +15,13 @@ const withBundleAnalyzer = BundleAnalyzer({
 const withNextIntl = createNextIntlPlugin("./i18n.ts")
 // 添加支持直接使用本地.mdx文件组件
 const withMDX = createMDX({
+    extension: /\.(md|mdx)$/,
     options: {
-        jsx: true,
-        remarkPlugins: [remarkGfm, remarkFrontmatter, remarkMdxFrontmatter],
+        remarkPlugins: [
+            remarkGfm,
+            remarkFrontmatter,
+            remarkMdxFrontmatter
+        ],
         rehypePlugins: [],
     },
 })
@@ -35,7 +39,7 @@ const nextConfig: NextConfig = {
     },
     // output: 'standalone',
     productionBrowserSourceMaps: true,
-    pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+    pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
     transpilePackages: ["next-mdx-remote"],
     trailingSlash: false,
     env: {

@@ -20,8 +20,16 @@ export default async function LocaleLayout({ children, params }: Props) {
   const { locale = defaultLocale } = await params;
   const isDev = process.env.NODE_ENV === 'development';
   const messages = await getMessages();
-
-  const navbars = (await import(`@/resources/navbar/${locale}.json`)).default as NavbarItem[];
+  let navbars: NavbarItem[];
+  try {
+    navbars = (await import(`@/resources/navbar/${locale}.json`)).default;
+  } catch {
+    try{
+      navbars = (await import(`@/resources/navbar/${locale.toLowerCase}.json`)).default;
+    } catch {
+      navbars = (await import(`@/resources/navbar/${defaultLocale}.json`)).default;
+    }
+  }
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>

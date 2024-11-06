@@ -12,7 +12,16 @@ export default async function Recommendation({ locale }: PropsWithLocale) {
 
   const t = await getTranslations('HomeRecommendation');
   try {
-    const games = (await import(`@/resources/recommendation/${locale}.json`)).default as RecommendationItem[];
+    let games: RecommendationItem[];
+    try {
+      games = (await import(`@/resources/recommendation/${locale}.json`)).default;
+    } catch {
+      try {
+        games = (await import(`@/resources/recommendation/${locale.toLowerCase}.json`)).default;
+      } catch {
+        games = (await import('@/resources/recommendation/en.json')).default;
+      }
+    }
     return (
       <div className="container mx-auto py-8">
         <h2 className="text-3xl font-bold mb-6">{t('title')}</h2>

@@ -9,7 +9,16 @@ export default async function FAQs({ locale }: PropsWithLocale) {
   }
   const t = await getTranslations('HomeFAQs');
   try {
-    const faqItems = (await import(`@/resources/faqs/${locale}.json`)).default as FAQsItem[];
+    let faqItems: FAQsItem[];
+    try {
+      faqItems = (await import(`@/resources/faqs/${locale}.json`)).default;
+    } catch {
+      try {
+        faqItems = (await import(`@/resources/faqs/${locale.toLowerCase}.json`)).default;
+      } catch {
+        faqItems = (await import('@/resources/faqs/en.json')).default;
+      }
+    }
     return (
       <section className="w-full max-w-4xl mx-auto py-12 px-4">
         <h2 className="text-3xl font-bold text-center mb-8">{t('title')}</h2>
