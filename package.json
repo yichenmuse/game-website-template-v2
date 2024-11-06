@@ -15,7 +15,6 @@
     "@ai-sdk/openai": "^0.0.71",
     "@aws-sdk/client-s3": "^3.577.0",
     "@aws-sdk/s3-request-presigner": "^3.577.0",
-    "@hookform/resolvers": "^3.4.2",
     "@mdx-js/loader": "^3.1.0",
     "@next/mdx": "^14.2.5",
     "@next/third-parties": "^14.2.5",
