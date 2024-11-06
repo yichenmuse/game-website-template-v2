@@ -10,8 +10,7 @@ export default async function IframeSection() {
   const iframeUrl = getPathnameWithLocale('/playground', locale);
 
   // 检查是否有可用的 iframe URL
-  const hasIframeUrl = Boolean(siteConfig.gameIframeUrl);
-
+  const isIframe = siteConfig.gameType === 'iframe';
   return (
     <section className="bg-black text-white flex flex-col items-center justify-center p-4 pt-0">
       <div className="text-gray-100 p-6 pt-2 max-w-6xl mx-auto rounded-lg shadow-lg w-full">
@@ -25,7 +24,7 @@ export default async function IframeSection() {
         </div>
       </div>
       <div className="rounded w-full max-w-6xl">
-        {hasIframeUrl ? (
+        {isIframe ? (
           <>
             <iframe
               title={t('iframeTitle')}
