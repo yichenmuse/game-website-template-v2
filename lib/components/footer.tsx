@@ -119,7 +119,7 @@ export default function Footer({ items }: { items: NavbarItem[] }) {
             </div>
             <ul className="flex flex-wrap items-center gap-6">
               <li>
-                <Link href="/private-policy" className="text-gray-400 hover:text-primary-200">
+                <Link href="/privacy-policy" className="text-gray-400 hover:text-primary-200">
                   {t('Common.privacyPolicy')}
                 </Link>
               </li>
