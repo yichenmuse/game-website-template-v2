@@ -1,7 +1,7 @@
 import { SiteConfig } from '../types';
 
 export const siteConfig: SiteConfig = {
-  name: 'Game Portal Demo',
+  name: '',
   slogan: 'slogan',
   domain: '',
   icon: '/favicon.ico',
@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
     backgroundColor: '#ffffff',
   },
   gaId: 'G-XXXXXXXXXX',
-  plausible: 'game-portal.com',
+  plausible: '',
   navbarItems: [
     {
       title: 'home',
@@ -31,34 +31,14 @@ export const siteConfig: SiteConfig = {
   gameType: 'iframe',
   gameIframeUrl: '',
   gameDownloadBg: '',
-  gameDownloadUrl: 'https://example.com/download',
+  gameDownloadUrl: '',
   isShowFAQs: true,
   isShowVideo: true,
   isShowGuide: true,
   videos: [
     {
-      title: 'Game Tutorial',
-      url: 'https://www.youtube.com/watch?v=T4DFKOlrXCQ',
-    },
-    {
-      title: 'Gameplay Preview',
-      url: 'https://www.youtube.com/watch?v=NcHyE_N1QDI',
-    },
-    {
-      title: 'Game Tutorial',
-      url: 'https://www.youtube.com/watch?v=T4DFKOlrXCQ',
-    },
-    {
-      title: 'Gameplay Preview',
-      url: 'https://www.youtube.com/watch?v=NcHyE_N1QDI',
-    },
-    {
-      title: 'Game Tutorial',
-      url: 'https://www.youtube.com/watch?v=T4DFKOlrXCQ',
-    },
-    {
-      title: 'Gameplay Preview',
-      url: 'https://www.youtube.com/watch?v=NcHyE_N1QDI',
+      title: '',
+      url: '',
     },
   ],
   isShowComments: true,
@@ -67,51 +47,18 @@ export const siteConfig: SiteConfig = {
   tweets: [''],
   comments: [
     {
-      author: 'Player123',
+      author: '',
       role: '',
-      content: 'Great game! Love the graphics and gameplay.',
-      avatar: '/images/avatars/player1.jpg',
+      content: '',
+      avatar: '',
     },
-    {
-      author: 'GamerGirl',
-      role: '',
-      content: 'The tutorial was very helpful. Thanks!',
-      avatar: '/images/avatars/player2.jpg',
-    },
-    {
-      author: 'GamerGirl',
-      role: '',
-      content: 'The tutorial was very helpful. Thanks!',
-      avatar: '/images/avatars/player2.jpg',
-    },
-    {
-      author: 'Player123',
-      role: '',
-      content: 'Great game! Love the graphics and gameplay.',
-      avatar: '/images/avatars/player1.jpg',
-    },
-    {
-      author: 'GamerGirl',
-      role: '',
-      content: 'The tutorial was very helpful. Thanks!',
-      avatar: '/images/avatars/player2.jpg',
-    },
-    {
-      author: 'GamerGirl',
-      role: '',
-      content: 'The tutorial was very helpful. Thanks!',
-      avatar: '/images/avatars/player2.jpg',
-    },
+    
   ],
   isShowRecommendation: true,
   friendLinks: [
     {
-      title: 'Gaming Community',
-      url: 'https://gaming-community.com',
-    },
-    {
-      title: 'Game News',
-      url: 'https://game-news.com',
-    },
+      title: '',
+      url: '',
+    }
   ],
 };
