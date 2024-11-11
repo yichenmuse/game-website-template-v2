@@ -34,7 +34,7 @@
     "bgImage": "",
     "bgVideo": "",
     "gameDownload":{
-      "showDownloadButton": false,
+      "showDownloadButton": true,
       "downloadUrls": {
         "ios": "",
         "android": "",

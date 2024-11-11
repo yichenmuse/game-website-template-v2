@@ -1,4 +1,15 @@
 {
+    "2024-11-11 20:00":{
+        "version":"1.1.3",
+        "messagesKeyModify":false,
+        "changeLog":[
+            "更新sitemap.xml文件,修复地址不正确的问题"
+        ],
+        "modify":[
+            "app/sitemap.xml",
+            "lib/config/site.json"
+        ]
+    },
     "2024-11-11 19:00":{
         "version":"1.1.2",
         "messagesKeyModify":false,
