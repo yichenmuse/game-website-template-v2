@@ -30,10 +30,11 @@
     "gameType": "iframe",
     "gameIframeUrl": "",
     "gameRedirectUrl": "",
+    "bgType": "iframe",
+    "bgImage": "",
+    "bgVideo": "",
     "gameDownload":{
-      "bgType": "image",
-      "bgImage": "",
-      "bgVideo": "",
+      "showDownloadButton": false,
       "downloadUrls": {
         "ios": "",
         "android": "",

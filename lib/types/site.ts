@@ -35,10 +35,10 @@ export interface FriendLinkItem {
 }
 
 export interface Theme {
-  headFont: string;
-  primaryColor: string;
-  fontColor: string;
-  backgroundColor: string;
+  headFont: string | null;
+  primaryColor: string | null;
+  fontColor: string | null;
+  backgroundColor: string | null;
 }
 
 export interface SiteConfig {
@@ -68,11 +68,12 @@ export interface SiteConfig {
   gameIframeUrl: string;
   // 游戏重定向地址
   gameRedirectUrl?: string;
-  // 游戏下载背景图片
+  bgType: string;
+  bgImage?: string;
+  bgVideo?: string;
+  // 游戏下载配置
   gameDownload?: {
-    bgType: "image" | "video";
-    bgImage?: string;
-    bgVideo?: string;
+    showDownloadButton: boolean;
     downloadUrls: {
       ios: string;
       android: string;

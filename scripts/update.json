@@ -1,20 +1,31 @@
 {
     "2024-11-11":{
-        "version":"1.1.0",
+        "version":"1.1.1",
+        "messagesKeyModify":true,
         "changeLog":[
-            "1.增加直接跳转到其他可在线玩游戏的网站地址，用于某些游戏无法嵌入的情况。",
-            "2.针对下载游戏的网站，增加了多个平台下载按钮，以及可以设置下载背景图片或视频。",
-            "3.更改site.ts结构，增加模板更新机制",
-            "4.解决多语言切换问题，切换到中文后无法切换到英文",
-            "5.优化移动端适配",
-            "6.增加clarity统计"
+            "增加直接跳转到其他可在线玩游戏的网站地址，用于某些游戏无法嵌入的情况。",
+            "针对下载游戏的网站，增加了多个平台下载按钮，以及可以设置下载背景图片或视频。",
+            "更改site.ts结构，增加模板更新机制",
+            "解决多语言切换问题，切换到中文后无法切换到英文",
+            "优化移动端适配",
+            "增加clarity统计"
         ],
-        "delete":[],
-        "add":[],
+        "delete":[
+            "app/[locale]/(public)/views/FallbackView.tsx"
+        ],
+        "add":[
+            "app/[locale]/(public)/views/DownloadGame.tsx",
+            "lib/config/default.json"
+        ],
         "modify":[
             "lib/types/site.ts",
             "next.config.ts",
-            "README.md"
+            "README.md",
+            "lib/components/footer.tsx",
+            "tailwind.config.ts",
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "lib/components/locale-dropdown.tsx",
         ],
         "breakingChange":[
             "lib/config/site.json",
