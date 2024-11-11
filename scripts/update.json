@@ -1,4 +1,14 @@
 {
+    "2024-11-11 19:00":{
+        "version":"1.1.2",
+        "messagesKeyModify":false,
+        "changeLog":[
+            "修改site.ts 默认类型，防止老网站配置不正确导致编译报错"
+        ],
+        "modify":[
+            "lib/types/site.ts"
+        ]
+    },
     "2024-11-11":{
         "version":"1.1.1",
         "messagesKeyModify":true,
