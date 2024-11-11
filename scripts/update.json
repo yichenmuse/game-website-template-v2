@@ -26,6 +26,7 @@
             "app/[locale]/(public)/page.tsx",
             "app/[locale]/(public)/views/IframeSection.tsx",
             "lib/components/locale-dropdown.tsx",
+            "lib/components/navbar.tsx"
         ],
         "breakingChange":[
             "lib/config/site.json",

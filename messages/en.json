@@ -18,8 +18,8 @@
     "friendlyLinks": "Friendly Links"
   },
   "HomeIframe": {
-    "title": "Hello World",
-    "description": "Hello World",
+    "title": "",
+    "description": "",
     "iframeTitle": "Game Preview",
     "fullscreenButton": "Fullscreen",
     "shareButton": "Share",

@@ -18,8 +18,8 @@ export default async function IframeSection() {
   const isIframe = siteConfig.gameType === 'iframe';
   
   return (
-    <section className="bg-black text-white flex flex-col items-center justify-center p-4 pt-0 relative mb-10 min-h-[600px]">
-      {/* 背景处理 */}
+    <section className="bg-black text-white flex flex-col items-center justify-center p-4 pt-0 relative mb-6 min-h-[calc(40vh-6rem)] md:min-h-[600px]">
+      {/* 背景图片处理 */}
       {siteConfig.bgType === 'image' && siteConfig.bgImage && (
         <div 
           className="absolute inset-0 w-full h-full"
@@ -34,6 +34,7 @@ export default async function IframeSection() {
         </div>
       )}
       
+      {/* 视频背景处理 */}
       {siteConfig.bgType === 'video' && siteConfig.bgVideo && (
         <div className="absolute inset-0 w-full h-full">
           {siteConfig.bgVideo.includes('youtube.com') || siteConfig.bgVideo.includes('youtu.be') ? (
@@ -63,8 +64,8 @@ export default async function IframeSection() {
         </div>
       )}
 
-      {/* 内容区域 - 添加相对定位和z-index确保内容在背景之上 */}
-      <div className="relative z-10 text-gray-100 p-6 pt-2 max-w-6xl mx-auto rounded-lg shadow-lg w-full">
+      {/* 内容区域 - 调整内边距 */}
+      <div className="relative z-10 text-gray-100 p-4 md:p-6 pt-2 max-w-6xl mx-auto rounded-lg shadow-lg w-full">
         <div className="flex flex-col">
           <h2 className="text-2xl md:text-5xl font-bold text-center mb-4 text-yellow-300 font-leckerli">
             {t('title')}
@@ -75,6 +76,7 @@ export default async function IframeSection() {
         </div>
       </div>
 
+      {/* iframe 容器 - 调整高度 */}
       <div className="relative z-10 rounded w-full max-w-6xl">
         {isIframe ? (
           <>
@@ -83,7 +85,7 @@ export default async function IframeSection() {
               src={iframeUrl}
               allow="accelerometer; gyroscope; autoplay; payment; fullscreen; microphone; clipboard-read; clipboard-write"
               sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-presentation allow-scripts allow-same-origin allow-downloads allow-popups-to-escape-sandbox"
-              className="w-full min-h-[600px]"
+              className="w-full h-[calc(100vh-20rem)] md:min-h-[600px]"
               allowFullScreen
             />
             <IframeActions />
