@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'development') {
     config = {
         ...siteConfigJSON,
         ...defaultConfigJSON
-    }
+    } 
 }
 
 export const siteConfig: SiteConfig = config;

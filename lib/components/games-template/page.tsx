@@ -1,18 +1,17 @@
-import { siteConfig } from '@/lib/config/site';
 import { alternatesLanguage, defaultLocale, locales } from '@/lib/i18n/locales';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import Comments from './views/Comments';
-import FAQs from './views/FAQs';
-import Features from './views/Features';
-import IframeSection from './views/IframeSection';
-import Recommendation from './views/Recommendation';
-import RelatedVideo from './views/RelatedVideo';
-import SectionWrapper from './views/SectionWrapper';
-import DownloadGame from './views/DownloadGame';
-import GameRecommendationCard from './views/GameRecommendationCard';
-import { SiteConfig } from '@/lib/types';
-
+import Comments from '@/app/[locale]/(public)/views/Comments';
+import FAQs from '@/app/[locale]/(public)/views/FAQs';
+import Features from '@/app/[locale]/(public)/views/Features';
+import IframeSection from '@/app/[locale]/(public)/views/IframeSection';
+import Recommendation from '@/app/[locale]/(public)/views/Recommendation';
+import RelatedVideo from '@/app/[locale]/(public)/views/RelatedVideo';
+import SectionWrapper from '@/app/[locale]/(public)/views/SectionWrapper';
+import DownloadGame from '@/app/[locale]/(public)/views/DownloadGame';
+import siteConfig from './config/config.json';
+import { SiteConfig} from '@/lib/types';
+import GameRecommendationCard from '@/app/[locale]/(public)/views/GameRecommendationCard';
 type Props = {
   params: Promise<{ locale: string }>;
 };
@@ -25,28 +24,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale = defaultLocale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale });
+  const pageName = siteConfig.pageName;
+  const pagePath = siteConfig.pagePath;
   return {
-    title: `${t('title')} | ${t('slogan')}`,
-    description: t('description'),
+    title: `${t(`${pageName}.title`)} | ${t(`${pageName}.slogan`)}`,
+    description: t(`${pageName}.description`),
     alternates: {
-      languages: alternatesLanguage(''),
-    },
-    icons: {
-      icon: siteConfig.icon,
-      apple: siteConfig.appleIcon,
-    },
+      languages: alternatesLanguage(pagePath),
+    }
   };
 }
 
 export default async function Page({ params }: Props) {
   const { locale = defaultLocale } = await params;
   setRequestLocale(locale);
-  // 默认页面名称为空
-  const pageName = "";
+  const siteConfig2 = siteConfig as unknown as SiteConfig
+  const pageName = siteConfig.pageName;
+  
   return (
-    <div className="bg-black pt-5 pb-5 ">
+    <div className="bg-black pt-5 pb-5">
       <IframeSection pageName={pageName} />
-      {siteConfig.isShowRightGames ? (
+      
+      {siteConfig2.isShowRightGames ? (
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-2">
             {/* 左侧内容 */}
@@ -54,7 +53,7 @@ export default async function Page({ params }: Props) {
               <SectionWrapper className="max-full">
                 <Features pageName={pageName} />
                 <FAQs locale={locale} pageName={pageName} />
-                <RelatedVideo pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
+                <RelatedVideo pageName={pageName} siteConfig={siteConfig2} />
                 <Comments />
                 <Recommendation locale={locale} />
               </SectionWrapper>
@@ -75,11 +74,12 @@ export default async function Page({ params }: Props) {
         <SectionWrapper>
           <Features pageName={pageName} />
           <FAQs locale={locale} pageName={pageName} />
-          <RelatedVideo pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
+          <RelatedVideo pageName={pageName} siteConfig={siteConfig2} />
           <Comments />
           <Recommendation locale={locale} />
         </SectionWrapper>
       )}
+      
       <DownloadGame pageName={pageName} />
     </div>
   );
