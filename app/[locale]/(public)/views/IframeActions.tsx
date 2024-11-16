@@ -4,8 +4,8 @@ import { Button } from '@nextui-org/button';
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
-export default function IframeButton() {
-  const t = useTranslations('HomeIframe');
+export default function IframeButton({pageName}:{pageName:string}) {
+  const t = useTranslations(`${pageName+'.'}HomeIframe`);
   const [iframeElement, setIframeElement] = useState<HTMLIFrameElement | null>(null);
 
   useEffect(() => {

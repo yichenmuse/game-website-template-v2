@@ -1,4 +1,36 @@
 {
+    "2024-11-16": {
+        "version": "1.1.5",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "增加新建子游戏页面模板功能",
+            "增加右侧游戏推荐功能",
+            "优化游戏页面布局"
+        ],
+        "add": [
+            "app/[locale]/(public)/games/",
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx",
+            "lib/components/games-template/",
+            "lib/config/game-page-messages.json",
+            "lib/utils/resource.ts",
+            "messages/en/games/demo.json",
+            "resources/right-games/en.json"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/views/DownloadGame.tsx", 
+            "app/[locale]/(public)/views/FAQs.tsx",
+            "app/[locale]/(public)/views/Features.tsx",
+            "app/[locale]/(public)/views/IframeActions.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/Recommendation.tsx",
+            "app/[locale]/(public)/views/RelatedVideo.tsx",
+            "i18n.ts",
+            "lib/config/site.ts",
+            "lib/types/site.ts",
+            "resources/recommendation/en.json"
+        ]
+    },
     "2024-11-12":{
         "version":"1.1.4",
         "messagesKeyModify":false,

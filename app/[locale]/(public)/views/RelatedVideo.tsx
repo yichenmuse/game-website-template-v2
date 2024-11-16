@@ -1,6 +1,5 @@
 'use client';
-
-import { siteConfig } from '@/lib/config/site';
+import { SiteConfig } from '@/lib/types';
 import { Card, CardContent } from '@/lib/ui/components/card';
 import { useTranslations } from 'next-intl';
 import dynamic from 'next/dynamic';
@@ -10,8 +9,8 @@ const ReactPlayer = dynamic(() => import('react-player'), {
   ssr: false,
 });
 
-export default function RelatedVideo() {
-  const t = useTranslations('HomeRelatedVideo');
+export default  function RelatedVideo({pageName,siteConfig}:{pageName:string,siteConfig:SiteConfig}) {
+  const t =  useTranslations(`${pageName+'.'}HomeRelatedVideo`);
   if (!siteConfig.isShowVideo) {
     return null;
   }
@@ -21,7 +20,7 @@ export default function RelatedVideo() {
       <div className="w-full px-4 py-6">
         <h2 className="text-2xl font-bold mb-4">{t('title')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {videos.map(({ url, title }, index) => (
+          {videos.map(({ url, title }: { url: string, title: string }, index: number) => (
             <Card key={index} className="border-none rounded-lg">
               <CardContent className="p-0">
                 <div className="aspect-video">
