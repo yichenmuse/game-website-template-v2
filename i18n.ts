@@ -68,7 +68,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   } catch (error) {
     console.error(`can not load game messages ${locale}:`, error);
   }
-  // console.log("###messages#####",messages);
+  console.log("###messages#####",messages);
   return {
     onError(error: any) {
       console.error('load internationalization content error:');
