@@ -40,7 +40,6 @@
         ],
         "add": [
             "app/[locale]/(public)/views/GameRecommendationCard.tsx",
-            "lib/components/games-template/",
             "lib/config/game-page-messages.json",
             "lib/utils/resource.ts",
             "messages/en/games/demo.json",
