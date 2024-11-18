@@ -39,7 +39,6 @@
             "优化游戏页面布局"
         ],
         "add": [
-            "app/[locale]/(public)/games/",
             "app/[locale]/(public)/views/GameRecommendationCard.tsx",
             "lib/components/games-template/",
             "lib/config/game-page-messages.json",
