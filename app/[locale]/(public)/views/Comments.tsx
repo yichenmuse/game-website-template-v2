@@ -1,4 +1,4 @@
-import { CommentItem } from '@/lib/types';
+import { CommentItem, SiteConfig } from '@/lib/types';
 import { Avatar, AvatarFallback, AvatarImage } from '@/lib/ui/components/avatar';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/lib/ui/components/card';
 import { getTranslations } from 'next-intl/server';
