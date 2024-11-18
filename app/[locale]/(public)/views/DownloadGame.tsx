@@ -6,7 +6,8 @@ import { FaAndroid, FaApple, FaSteam, FaWindows } from 'react-icons/fa';
 
 
 export default async function DownloadGame({pageName}:{pageName:string}) {
-  const t = await getTranslations(`${pageName+'.'}HomeIframe`);
+  const prefix = pageName ? pageName + '.' : '';
+  const t = await getTranslations(`${prefix}HomeIframe`);
   const siteConfig = await loadSiteConfig(pageName);
   if (siteConfig.gameType !== 'download') {
     return <></>;

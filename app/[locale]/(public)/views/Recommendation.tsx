@@ -9,7 +9,7 @@ export default async function Recommendation({ locale }: PropsWithLocale) {
   if (!siteConfig.isShowRecommendation) {
     return <></>;
   }
-
+  
   const t = await getTranslations('HomeRecommendation');
   try {
     let games: RecommendationItem[];

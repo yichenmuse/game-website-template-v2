@@ -5,7 +5,8 @@ import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
 export default function IframeButton({pageName}:{pageName:string}) {
-  const t = useTranslations(`${pageName+'.'}HomeIframe`);
+  const prefix = pageName ? pageName + '.' : '';
+  const t = useTranslations(`${prefix}HomeIframe`);
   const [iframeElement, setIframeElement] = useState<HTMLIFrameElement | null>(null);
 
   useEffect(() => {

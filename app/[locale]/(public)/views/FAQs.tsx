@@ -45,7 +45,8 @@ export default async function FAQs({ locale,pageName }: PropsWithLocale<{pageNam
   if (!siteConfig.isShowFAQs) {
     return <></>;
   }
-  const t = await getTranslations(`${pageName+'.'}HomeFAQs`);
+  const prefix = pageName ? pageName + '.' : '';
+  const t = await getTranslations(`${prefix}HomeFAQs`);
   const faqItems = await loadFaqs(locale,pageName);
   return (
     <section className="w-full max-w-4xl mx-auto py-12 px-4">
