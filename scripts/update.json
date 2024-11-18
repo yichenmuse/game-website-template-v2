@@ -18,7 +18,6 @@
             "修复多个页面组件的问题国际化不正确的问题"
         ],
         "modify": [
-            "app/[locale]/(public)/games/demo/page.tsx",
             "app/[locale]/(public)/page.tsx",
             "app/[locale]/(public)/views/Comments.tsx",
             "app/[locale]/(public)/views/DownloadGame.tsx",
