@@ -1,4 +1,16 @@
 {
+    "2024-11-18 09": {
+        "version": "1.1.7", 
+        "messagesKeyModify": false,
+        "changeLog": [
+            "解决编译报错"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/views/Comments.tsx",
+            "lib/components/games-template/page.tsx"
+        ]
+    },
     "2024-11-18": {
         "version": "1.1.6", 
         "messagesKeyModify": false,
