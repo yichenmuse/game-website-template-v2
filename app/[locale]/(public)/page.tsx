@@ -76,7 +76,7 @@ export default async function Page({ params }: Props) {
           <Features pageName={pageName} />
           <FAQs locale={locale} pageName={pageName} />
           <RelatedVideo pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
-          <Comments />
+          <Comments pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
           <Recommendation locale={locale} />
         </SectionWrapper>
       )}
