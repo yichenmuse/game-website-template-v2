@@ -11,7 +11,8 @@ function getYoutubeVideoId(url: string): string {
 
 export default async function IframeSection({pageName}:{pageName:string}) {
   const locale = await getLocale();
-  const t = await getTranslations(`${pageName+'.'}HomeIframe`);
+  const prefix = pageName ? pageName + '.' : '';
+  const t = await getTranslations(`${prefix}HomeIframe`);
   const iframeUrl = getPathnameWithLocale('/playground', locale);
   const siteConfig = await loadSiteConfig(pageName);
   // 检查背景类型和iframe配置
