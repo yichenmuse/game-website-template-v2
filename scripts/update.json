@@ -1,4 +1,16 @@
 {
+    "2024-11-18 17": {
+        "version": "1.1.8", 
+        "messagesKeyModify": false,
+        "changeLog": [
+            "添加缺失的模板文件"
+        ],
+        "add": [
+            "lib/components/games-template/config/config.json",
+            "lib/components/games-template/config/faqs/en.json",
+            "messages/game_page_template.json"
+        ]
+    },
     "2024-11-18 09": {
         "version": "1.1.7", 
         "messagesKeyModify": false,
@@ -8,7 +20,9 @@
         "modify": [
             "app/[locale]/(public)/page.tsx",
             "app/[locale]/(public)/views/Comments.tsx",
-            "lib/components/games-template/page.tsx"
+            "lib/components/games-template/page.tsx",
+            "lib/components/games-template/config/config.json",
+            "lib/components/games-template/config/faqs/en.json"
         ]
     },
     "2024-11-18": {
