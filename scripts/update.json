@@ -1,4 +1,14 @@
 {
+    "2024-11-19 17": {
+        "version": "1.1.11",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复子游戏iframe无法加载正确地址的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/IframeSection.tsx"
+        ]
+    },
     "2024-11-19 16": {
         "version": "1.1.10",
         "messagesKeyModify": false,
