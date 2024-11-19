@@ -1,4 +1,14 @@
 {
+    "2024-11-19 20": {
+        "version": "1.1.12",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复多语言下出现路径不正确导致google抓取404的问题"
+        ],
+        "modify": [
+            "lib/components/locale-dropdown.tsx"
+        ]
+    },
     "2024-11-19 17": {
         "version": "1.1.11",
         "messagesKeyModify": false,
