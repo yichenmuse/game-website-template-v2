@@ -1,4 +1,18 @@
 {
+    "2024-11-19 16": {
+        "version": "1.1.10",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复游戏推荐组件不显示的问题",
+            "支持设置游戏推荐位置"
+        ],
+        "modify": [
+            "app/[locale]/(public)/layout.tsx",
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx", 
+            "app/[locale]/(public)/views/Recommendation.tsx",
+            "lib/types/site.ts"
+        ]
+    },
     "2024-11-19": {
         "version": "1.1.9",
         "messagesKeyModify": false,

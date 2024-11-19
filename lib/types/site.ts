@@ -1,6 +1,7 @@
 export interface NavbarItem {
   title: string;
   href: string;
+  visible?: boolean;
   children?: NavbarItem[];
 }
 
@@ -27,7 +28,9 @@ export interface RecommendationItem {
   title: string;
   cover: string;
   url: string;
-  category?: string;
+  category: string;
+  visible?: boolean;
+  position?: string;
 }
 
 export interface FriendLinkItem {
