@@ -27,7 +27,7 @@ export interface RecommendationItem {
   title: string;
   cover: string;
   url: string;
-  category: string;
+  category?: string;
 }
 
 export interface FriendLinkItem {
