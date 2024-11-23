@@ -80,7 +80,7 @@ export default async function Page({ params }: Props) {
         </SectionWrapper>
       )}
       
-      <DownloadGame pageName={pageName} />
+      <DownloadGame pageName={pageName} siteConfig={siteConfig2} />
     </div>
   );
 }
