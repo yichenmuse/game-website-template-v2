@@ -1,4 +1,14 @@
 {
+    "2024-11-23 16": {
+        "version": "1.1.16", 
+        "messagesKeyModify": false,
+        "changeLog": [
+            "自动更新原来已经添加过的游戏页面的模板"
+        ],
+        "modify": [
+            "lib/components/games-template/page.tsx"
+        ]
+    },
     "2024-11-23 11": {
         "version": "1.1.15", 
         "messagesKeyModify": false,
