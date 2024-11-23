@@ -5,7 +5,7 @@
         "changeLog": [
             "自动更新原来已经添加过的游戏页面的模板"
         ],
-        "modify": [
+        "breakingChange": [
             "lib/components/games-template/page.tsx"
         ]
     },
