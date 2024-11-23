@@ -11,8 +11,15 @@ export default async function Comments({pageName,siteConfig}:{pageName:string,si
   const prefix = pageName ? pageName + '.' : '';
   const t = await getTranslations(`${prefix}HomeComments`);
   let comments: any = undefined;
+  console.log(siteConfig);
   if (siteConfig.isShowTweets) {
-    comments = siteConfig.tweets.map((it:string) => <Tweet id={it} key={it} />);
+    comments = siteConfig.tweets.map((it:string) => {
+      let tweetId = it;
+      if(it.includes('x.com') || it.includes('twitter.com')) {
+        tweetId = it.split('/').pop() || '';
+      }
+      return <Tweet id={tweetId} key={tweetId} />;
+    });
   } else {
     comments = siteConfig.comments.map((it:CommentItem, index:number) => (
       <Card key={index} className="h-full bg-gray-800 border-none">
