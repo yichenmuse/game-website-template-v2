@@ -58,6 +58,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             {siteConfig.gaId && <GoogleAnalytics gaId={siteConfig.gaId as string} />}
             {siteConfig.plausible && <script defer data-domain={domain} src={siteConfig.plausible}></script>}
             {siteConfig.clarityId && <MicrosoftClarity clarityId={siteConfig.clarityId} />}
+            {siteConfig.adsenseClientId && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.adsenseClientId}`} crossOrigin="anonymous"></script>}
           </>
         )}
       </NextUIProvider>

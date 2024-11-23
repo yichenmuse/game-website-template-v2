@@ -54,7 +54,7 @@
     ],
     "isShowComments": true,
     "isShowTweets": false,
-    "useRealTweets": true,
+    "useRealTweets": false,
     "tweets": [""],
     "comments": [
       {
@@ -70,5 +70,6 @@
         "title": "",
         "url": ""
       }
-    ]
+    ],
+    "isShowRightGames": true
 }

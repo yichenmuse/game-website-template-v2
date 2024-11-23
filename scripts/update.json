@@ -1,4 +1,20 @@
 {
+    "2024-11-23 11": {
+        "version": "1.1.15", 
+        "messagesKeyModify": false,
+        "changeLog": [
+            "删除guide页面,统一采用自定义页面功能",
+            "修改导航栏在手机下样式不匹配，链接不正确问题",
+            "更新站点配置文件，增加google adsense配置"
+        ],
+        "modify": [
+            "app/[locale]/(public)/layout.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "lib/components/navbar.tsx",
+            "lib/config/site.json",
+            "lib/types/site.ts"
+        ]
+    },
     "2024-11-23 10": {
         "version": "1.1.14",
         "messagesKeyModify": false,

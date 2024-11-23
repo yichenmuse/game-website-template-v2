@@ -104,4 +104,5 @@ export interface SiteConfig {
   // 右侧游戏推荐
   isShowRightGames?: boolean;
   friendLinks: FriendLinkItem[];
+  adsenseClientId?: string;
 }

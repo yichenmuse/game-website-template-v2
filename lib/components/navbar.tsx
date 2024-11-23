@@ -47,26 +47,50 @@ export default function AppNavbar({ items }: { items: NavbarItem[] }) {
               <Menu className="h-6 w-6" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+          <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-[rgb(27,44,65)] border-gray-700">
             <SheetHeader>
-              <SheetTitle>{nt('title')}</SheetTitle>
+              <SheetTitle className="text-white">{nt('title')}</SheetTitle>
             </SheetHeader>
             <div className="flex flex-col gap-4 py-4">
-              {items
-                .flatMap((item: NavItem) => (item.children ? item.children : [item]))
-                .map((item, index) => (
-                  <Link
-                    key={`${item.title}-${index}`}
-                    href={`/${getPathname({ href: item.href, locale })}`}
-                    className={cn(
-                      'flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md hover:bg-accent',
-                      isActive(item.href) && 'bg-accent',
-                    )}
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.title}
-                  </Link>
-                ))}
+              {items.map((item: NavItem) => (
+                <div key={item.title}>
+                  {item.children ? (
+                    <div className="flex flex-col gap-2">
+                      <div className="px-4 py-2 text-sm font-medium text-white">
+                        {item.title}
+                      </div>
+                      <div className="ml-4 flex flex-col gap-2">
+                        {item.children.map((child) => (
+                          <Link
+                            key={child.title}
+                            href={child.href}
+                            className={cn(
+                              'flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md text-white',
+                              'hover:bg-[rgb(37,54,75)] transition-all duration-200',
+                              isActive(child.href) && 'bg-[rgb(37,54,75)]'
+                            )}
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            {child.title}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className={cn(
+                        'flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md text-white',
+                        'hover:bg-[rgb(37,54,75)] transition-all duration-200',
+                        isActive(item.href) && 'bg-[rgb(37,54,75)]'
+                      )}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.title}
+                    </Link>
+                  )}
+                </div>
+              ))}
               <div className="px-4 py-2">
                 <LocaleDropdown type="link" />
               </div>
