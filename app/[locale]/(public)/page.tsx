@@ -80,7 +80,7 @@ export default async function Page({ params }: Props) {
           <Recommendation locale={locale} />
         </SectionWrapper>
       )}
-      <DownloadGame pageName={pageName} />
+      <DownloadGame pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
     </div>
   );
 }
