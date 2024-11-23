@@ -70,7 +70,7 @@ export default async function IframeSection({pageName}:{pageName:string}) {
         <div className="flex flex-col">
           <h1 className="text-2xl md:text-5xl font-bold text-center mb-4 text-yellow-300 font-leckerli">
             {t('title')}
-          </h2>
+          </h1>
           <p className="text-sm md:text-xl mb-4 text-gray-200 w-full max-w-3xl mx-auto text-center">
             {t('description')}
           </p>
