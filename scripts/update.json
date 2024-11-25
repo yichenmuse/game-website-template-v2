@@ -1,4 +1,14 @@
 {
+    "2024-11-25": {
+        "version": "1.1.18", 
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复Google Adsense 配置缺失导致编译报错"
+        ],
+        "modify": [
+            "lib/types/site.ts"
+        ]
+    },
     "2024-11-23 17": {
         "version": "1.1.17", 
         "messagesKeyModify": false,
