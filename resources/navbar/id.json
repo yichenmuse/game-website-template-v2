@@ -4,10 +4,6 @@
     "href": "/"
   },
   {
-    "title": "Panduan",
-    "href": "/guide"
-  },
-  {
     "title": "Informasi",
     "href": "/t",
     "children": [

@@ -44,9 +44,9 @@ export default  function DownloadGame({pageName,siteConfig}:{pageName:string,sit
           animate={{ opacity: 1, y: 0 }}
           className="relative mb-12"
         >
-          <h1 className="text-4xl font-bold text-yellow-300 text-center relative z-10 px-12 py-6">
+          <h2 className="text-4xl font-bold text-yellow-300 text-center relative z-10 px-12 py-6">
             {t('downloadGame')}
-          </h1>
+          </h2>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-emerald-600/20 to-transparent backdrop-blur-sm rounded-lg -skew-y-1" />
           <div className="absolute inset-0 bg-yellow-300/5 rounded-lg skew-y-1" />
         </motion.div>

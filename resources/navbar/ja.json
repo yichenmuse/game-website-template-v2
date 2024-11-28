@@ -4,10 +4,6 @@
     "href": "/"
   },
   {
-    "title": "ガイド",
-    "href": "/guide"
-  },
-  {
     "title": "情報",
     "href": "/t",
     "children": [

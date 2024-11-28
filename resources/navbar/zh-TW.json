@@ -4,10 +4,6 @@
     "href": "/"
   },
   {
-    "title": "指南",
-    "href": "/guide"
-  },
-  {
     "title": "資訊",
     "href": "/t",
     "children": [

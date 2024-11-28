@@ -4,10 +4,6 @@
     "href": "/"
   },
   {
-    "title": "Hướng dẫn",
-    "href": "/guide"
-  },
-  {
     "title": "Thông tin",
     "href": "/t",
     "children": [

@@ -4,10 +4,6 @@
     "href": "/"
   },
   {
-    "title": "Посібник",
-    "href": "/guide"
-  },
-  {
     "title": "Інформація",
     "href": "/t",
     "children": [

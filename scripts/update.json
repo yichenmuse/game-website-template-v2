@@ -1,4 +1,14 @@
 {
+    "2024-11-28": {
+        "version": "1.1.19", 
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复下载站多出h1标签的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/DownloadGame.tsx"
+        ]
+    },
     "2024-11-25": {
         "version": "1.1.18", 
         "messagesKeyModify": false,
