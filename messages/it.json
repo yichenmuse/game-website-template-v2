@@ -5,36 +5,37 @@
   "Loading": {
     "title": ""
   },
-  "Navbar":{
-    "title": "Nav"
+  "Navbar": {
+    "title": "Navigazione"
   },
   "Common": {
-    "createAt": "Create At",
-    "guide": "Guide",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfServices": "Terms of Services",
-    "text": "Content",
-    "help": "Help",
-    "friendlyLinks": "Friendly Links"
+    "createAt": "Creato il",
+    "guide": "Guida",
+    "privacyPolicy": "Politica sulla privacy",
+    "termsOfServices": "Termini di servizio",
+    "text": "Contenuto",
+    "help": "Aiuto",
+    "friendlyLinks": "Link utili"
   },
   "HomeIframe": {
     "title": "",
     "description": "",
-    "iframeTitle": "Game Preview",
-    "fullscreenButton": "Fullscreen",
-    "shareButton": "Share",
-    "urlCopied": "URL copied to clipboard!",
-    "downloadGame": "Download Game"
+    "iframeTitle": "Anteprima del gioco",
+    "fullscreenButton": "Schermo intero",
+    "shareButton": "Condividi",
+    "urlCopied": "URL copiato negli appunti!",
+    "downloadGame": "Scarica il gioco",
+    "playGame": "Gioca"
   },
   "HomeFeatures": {
     "gameTitle": "",
     "whatIsTitle": "",
     "whatIsDescription": "",
-    "howToPlayTitle": "How to Play",
+    "howToPlayTitle": "Come giocare",
     "howToPlayStep1": "",
     "howToPlayStep2": "",
     "howToPlayStep3": "",
-    "keyFeaturesTitle": "Key Features",
+    "keyFeaturesTitle": "Caratteristiche principali",
     "feature1Title": "",
     "feature1Description": "",
     "feature2Title": "",
@@ -45,15 +46,15 @@
     "feature4Description": ""
   },
   "HomeFAQs": {
-    "title": "FAQs"
+    "title": "Domande frequenti"
   },
   "HomeRelatedVideo": {
-    "title": "Game Video"
+    "title": "Video del gioco"
   },
   "HomeRecommendation": {
-    "title": "Recommends"
+    "title": "Raccomandazioni"
   },
   "HomeComments": {
-    "title": "Play Comments"
+    "title": "Commenti sul gioco"
   }
 }

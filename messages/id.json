@@ -5,36 +5,37 @@
   "Loading": {
     "title": ""
   },
-  "Navbar":{
-    "title": "Nav"
+  "Navbar": {
+    "title": "Navigasi"
   },
   "Common": {
-    "createAt": "Create At",
-    "guide": "Guide",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfServices": "Terms of Services",
-    "text": "Content",
-    "help": "Help",
-    "friendlyLinks": "Friendly Links"
+    "createAt": "Dibuat Pada",
+    "guide": "Panduan",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsOfServices": "Syarat Layanan",
+    "text": "Konten",
+    "help": "Bantuan",
+    "friendlyLinks": "Tautan Ramah"
   },
   "HomeIframe": {
     "title": "",
     "description": "",
-    "iframeTitle": "Game Preview",
-    "fullscreenButton": "Fullscreen",
-    "shareButton": "Share",
-    "urlCopied": "URL copied to clipboard!",
-    "downloadGame": "Download Game"
+    "iframeTitle": "Prabaca Permainan",
+    "fullscreenButton": "Layar Penuh",
+    "shareButton": "Bagikan",
+    "urlCopied": "URL telah disalin ke papan klip!",
+    "downloadGame": "Unduh Permainan",
+    "playGame": "Mainkan Permainan"
   },
   "HomeFeatures": {
     "gameTitle": "",
     "whatIsTitle": "",
     "whatIsDescription": "",
-    "howToPlayTitle": "How to Play",
+    "howToPlayTitle": "Cara Bermain",
     "howToPlayStep1": "",
     "howToPlayStep2": "",
     "howToPlayStep3": "",
-    "keyFeaturesTitle": "Key Features",
+    "keyFeaturesTitle": "Fitur Utama",
     "feature1Title": "",
     "feature1Description": "",
     "feature2Title": "",
@@ -45,15 +46,15 @@
     "feature4Description": ""
   },
   "HomeFAQs": {
-    "title": "FAQs"
+    "title": "FAQ"
   },
   "HomeRelatedVideo": {
-    "title": "Game Video"
+    "title": "Video Permainan"
   },
   "HomeRecommendation": {
-    "title": "Recommends"
+    "title": "Rekomendasi"
   },
   "HomeComments": {
-    "title": "Play Comments"
+    "title": "Komentar Permainan"
   }
 }

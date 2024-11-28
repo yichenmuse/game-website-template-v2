@@ -1,4 +1,18 @@
 {
+    "2024-11-28 19": {
+        "version": "1.1.20", 
+        "messagesKeyModify": false,
+        "changeLog": [
+            "增加弹窗方式显示游戏页面，解决无法嵌入iframe的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "messages/game_page_template.json"
+        ],
+        "add": [
+            "app/[locale]/(public)/views/PopupWindows.tsx"
+        ]
+    },
     "2024-11-28": {
         "version": "1.1.19", 
         "messagesKeyModify": false,

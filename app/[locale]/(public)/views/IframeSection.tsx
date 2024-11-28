@@ -2,6 +2,8 @@ import { getPathnameWithLocale } from '@/lib/i18n/navigation';
 import { getLocale, getTranslations } from 'next-intl/server';
 import IframeActions from './IframeActions';
 import { loadSiteConfig } from '@/lib/utils/resource';
+import PopupWindows from './PopupWindows';
+import { SiteConfig } from '@/lib/types';
 
 function getYoutubeVideoId(url: string): string {
   const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
@@ -17,6 +19,7 @@ export default async function IframeSection({pageName}:{pageName:string}) {
   const siteConfig = await loadSiteConfig(pageName);
   // 检查背景类型和iframe配置
   const isIframe = siteConfig.gameType === 'iframe';
+  const isPopup = siteConfig.gameType === 'popup';
   
   return (
     <section className="bg-black text-white flex flex-col items-center justify-center p-4 pt-0 relative mb-6 min-h-[calc(40vh-6rem)] md:min-h-[600px]">
@@ -79,7 +82,7 @@ export default async function IframeSection({pageName}:{pageName:string}) {
 
       {/* iframe 容器 - 调整高度 */}
       <div className="relative z-10 rounded w-full max-w-6xl">
-        {isIframe ? (
+        {isIframe && (
           <>
             <iframe
               title={t('iframeTitle')}
@@ -91,7 +94,8 @@ export default async function IframeSection({pageName}:{pageName:string}) {
             />
             <IframeActions pageName={pageName} />
           </>
-        ) : siteConfig.gameType === 'download' && siteConfig.gameDownload?.showDownloadButton && (
+        ) }
+        { siteConfig.gameType === 'download' && siteConfig.gameDownload?.showDownloadButton && (
           <div className="flex justify-center items-center py-8">
             <a 
               href="#download-game" 
@@ -104,6 +108,13 @@ export default async function IframeSection({pageName}:{pageName:string}) {
             </a>
           </div>
         )}
+        {
+          siteConfig.gameType === 'popup' && (
+            <div className="flex justify-center items-center py-8">
+              <PopupWindows pageName={pageName} siteConfig={{...siteConfig}} />
+            </div>
+          )
+        }
       </div>
     </section>
   );

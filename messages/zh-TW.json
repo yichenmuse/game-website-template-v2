@@ -20,17 +20,18 @@
   "HomeIframe": {
     "title": "",
     "description": "",
-    "iframeTitle": "Game Preview",
-    "fullscreenButton": "Fullscreen",
-    "shareButton": "Share",
-    "urlCopied": "URL copied to clipboard!",
-    "downloadGame": "Download Game"
+    "iframeTitle": "遊戲預覽",
+    "fullscreenButton": "全螢幕",
+    "shareButton": "分享",
+    "urlCopied": "網址已複製到剪貼板!",
+    "downloadGame": "下載遊戲",
+    "playGame": "遊玩遊戲"
   },
   "HomeFeatures": {
     "gameTitle": "",
     "whatIsTitle": "",
     "whatIsDescription": "",
-    "howToPlayTitle": "How to Play",
+    "howToPlayTitle": "如何遊玩",
     "howToPlayStep1": "",
     "howToPlayStep2": "",
     "howToPlayStep3": "",

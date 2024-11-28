@@ -6,35 +6,36 @@
     "title": ""
   },
   "Navbar":{
-    "title": "Nav"
+    "title": "내비게이션"
   },
   "Common": {
-    "createAt": "Create At",
-    "guide": "Guide",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfServices": "Terms of Services",
-    "text": "Content",
-    "help": "Help",
-    "friendlyLinks": "Friendly Links"
+    "createAt": "생성일",
+    "guide": "가이드",
+    "privacyPolicy": "개인정보 처리방침",
+    "termsOfServices": "서비스 약관",
+    "text": "내용",
+    "help": "도움",
+    "friendlyLinks": "친절한 링크"
   },
   "HomeIframe": {
     "title": "",
     "description": "",
-    "iframeTitle": "Game Preview",
-    "fullscreenButton": "Fullscreen",
-    "shareButton": "Share",
-    "urlCopied": "URL copied to clipboard!",
-    "downloadGame": "Download Game"
+    "iframeTitle": "게임 미리보기",
+    "fullscreenButton": "전체 화면",
+    "shareButton": "공유",
+    "urlCopied": "URL이 클립보드에 복사되었습니다!",
+    "downloadGame": "게임 다운로드",
+    "playGame": "게임하기"
   },
   "HomeFeatures": {
     "gameTitle": "",
     "whatIsTitle": "",
     "whatIsDescription": "",
-    "howToPlayTitle": "How to Play",
+    "howToPlayTitle": "게임 방법",
     "howToPlayStep1": "",
     "howToPlayStep2": "",
     "howToPlayStep3": "",
-    "keyFeaturesTitle": "Key Features",
+    "keyFeaturesTitle": "주요 기능",
     "feature1Title": "",
     "feature1Description": "",
     "feature2Title": "",
@@ -45,15 +46,15 @@
     "feature4Description": ""
   },
   "HomeFAQs": {
-    "title": "FAQs"
+    "title": "자주 묻는 질문"
   },
   "HomeRelatedVideo": {
-    "title": "Game Video"
+    "title": "게임 비디오"
   },
   "HomeRecommendation": {
-    "title": "Recommends"
+    "title": "추천"
   },
   "HomeComments": {
-    "title": "Play Comments"
+    "title": "플레이 댓글"
   }
 }
