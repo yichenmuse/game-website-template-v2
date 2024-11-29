@@ -1,4 +1,14 @@
 {
+    "2024-11-29 20": {
+        "version": "1.2.2",
+        "messagesKeyModify": true,
+        "changeLog": [
+            "修复子游戏国际化内容文件路径加载不正确的问题"
+        ],
+        "modify": [
+            "i18n.ts"
+        ]
+    },
     "2024-11-29 18": {
         "version": "1.2.1",
         "messagesKeyModify": true,
