@@ -1,6 +1,6 @@
 {
     "2024-11-29 18": {
-        "version": "1.1.22",
+        "version": "1.2.0",
         "messagesKeyModify": true,
         "changeLog": [
             "修复子游戏国际化内容加载不正确"
