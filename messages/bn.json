@@ -56,5 +56,10 @@
   },
   "HomeComments": {
     "title": "খেলার মন্তব্য"
+  },
+  "GamePage": {
+    "title": "সমস্ত গেম",
+    "description": "সমস্ত গেম",
+    "games": "গেম"
   }
 }

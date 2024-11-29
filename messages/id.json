@@ -56,5 +56,10 @@
   },
   "HomeComments": {
     "title": "Komentar Permainan"
+  },
+  "GamePage": {
+    "title": "Semua Permainan",
+    "description": "Semua Permainan",
+    "games": "Permainan"
   }
 }

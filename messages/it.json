@@ -56,5 +56,10 @@
   },
   "HomeComments": {
     "title": "Commenti sul gioco"
+  },
+  "GamePage": {
+    "title": "Tutti i giochi",
+    "description": "Tutti i giochi",
+    "games": "Giochi"
   }
 }

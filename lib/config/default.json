@@ -27,7 +27,7 @@
       "href": "/t"
     }
   ],
-  "gameType": "download",
+  "gameType": "popup",
   "gameIframeUrl": "https://scratch.mit.edu/projects/1090434936/embed",
   "gameRedirectUrl": "",
   "bgType": "image",

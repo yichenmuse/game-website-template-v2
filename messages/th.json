@@ -5,7 +5,7 @@
   "Loading": {
     "title": ""
   },
-  "Navbar":{
+  "Navbar": {
     "title": "Nav"
   },
   "Common": {
@@ -56,5 +56,10 @@
   },
   "HomeComments": {
     "title": "Play Comments"
+  },
+  "GamePage": {
+    "title": "ทุกเกม",
+    "description": "ทุกเกม",
+    "games": "เกม"
   }
 }
