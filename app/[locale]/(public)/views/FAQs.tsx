@@ -6,7 +6,7 @@ import { getTranslations } from 'next-intl/server';
 export async function loadFaqs(locale:string,pageName:string){
   try {
     let faqItems: FAQsItem[] = [];
-    if (pageName) {
+    if (pageName!=="") {
       try {
         faqItems = (await import(`@/app/[locale]/(public)/games/${pageName}/config/faqs/${locale}.json`)).default;
         return faqItems;

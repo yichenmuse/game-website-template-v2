@@ -11,7 +11,6 @@ export default async function Comments({pageName,siteConfig}:{pageName:string,si
   const prefix = pageName ? pageName + '.' : '';
   const t = await getTranslations(`${prefix}HomeComments`);
   let comments: any = undefined;
-  console.log(siteConfig);
   if (siteConfig.isShowTweets) {
     comments = siteConfig.tweets.map((it:string) => {
       let tweetId = it;

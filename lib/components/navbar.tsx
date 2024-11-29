@@ -64,6 +64,8 @@ export default function AppNavbar({ items }: { items: NavbarItem[] }) {
                           <Link
                             key={child.title}
                             href={child.href}
+                            target={child.href.startsWith('http') ? "_blank" : "_self"}
+                            rel={child.href.startsWith('http') ? "noopener noreferrer" : undefined}
                             className={cn(
                               'flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md text-white',
                               'hover:bg-[rgb(37,54,75)] transition-all duration-200',
@@ -79,6 +81,8 @@ export default function AppNavbar({ items }: { items: NavbarItem[] }) {
                   ) : (
                     <Link
                       href={item.href}
+                      target={item.href.startsWith('http') ? "_blank" : "_self"}
+                      rel={item.href.startsWith('http') ? "noopener noreferrer" : undefined}
                       className={cn(
                         'flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md text-white',
                         'hover:bg-[rgb(37,54,75)] transition-all duration-200',
@@ -137,6 +141,8 @@ export default function AppNavbar({ items }: { items: NavbarItem[] }) {
                               <NavigationMenuLink asChild>
                                 <Link
                                   href={child.href}
+                                  target={child.href.startsWith('http') ? "_blank" : "_self"}
+                                  rel={child.href.startsWith('http') ? "noopener noreferrer" : undefined}
                                   className={cn(
                                     'flex h-full w-full select-none text-white flex-col justify-end rounded-md p-4 no-underline outline-none transition-all duration-200',
                                     'hover:bg-[rgb(37,54,75)] hover:translate-x-1',
@@ -156,6 +162,8 @@ export default function AppNavbar({ items }: { items: NavbarItem[] }) {
                   ) : (
                     <Link
                       href={item.href}
+                      target={item.href.startsWith('http') ? "_blank" : "_self"}
+                      rel={item.href.startsWith('http') ? "noopener noreferrer" : undefined}
                       className={cn(
                         navigationMenuTriggerStyle(),
                         'bg-transparent hover:bg-[rgb(37,54,75)] transition-all duration-200',

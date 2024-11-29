@@ -15,12 +15,10 @@ export default async function IframeSection({pageName}:{pageName:string}) {
   const locale = await getLocale();
   const prefix = pageName ? pageName + '.' : '';
   const t = await getTranslations(`${prefix}HomeIframe`);
-  const iframeUrl = getPathnameWithLocale('/playground', locale);
   const siteConfig = await loadSiteConfig(pageName);
   // 检查背景类型和iframe配置
   const isIframe = siteConfig.gameType === 'iframe';
   const isPopup = siteConfig.gameType === 'popup';
-  
   return (
     <section className="bg-black text-white flex flex-col items-center justify-center p-4 pt-0 relative mb-6 min-h-[calc(40vh-6rem)] md:min-h-[600px]">
       {/* 背景图片处理 */}
