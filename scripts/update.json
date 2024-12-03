@@ -1,4 +1,14 @@
 {
+    "2024-12-03 20": {
+        "version": "1.2.9",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "解决已有的子游戏目录模板未更新导致右侧推荐游戏样式不正确的问题"
+        ],
+        "modify": [
+            "lib/components/games-template/page.tsx"
+        ]
+    },
     "2024-12-03 19": {
         "version": "1.2.8",
         "messagesKeyModify": false,
