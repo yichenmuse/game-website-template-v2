@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: `${frontMatter.title} | ${siteConfig.name}`,
     description: frontMatter.description,
     alternates: {
-      languages: alternatesLanguage('privacy-policy'),
+      languages: alternatesLanguage('/privacy-policy'),
     },
   };
 }

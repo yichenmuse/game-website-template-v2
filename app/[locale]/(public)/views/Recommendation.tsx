@@ -31,25 +31,32 @@ export default async function Recommendation({ locale }: PropsWithLocale) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {games.map((game, index) => (
             <Link 
-              href={game.url} 
-              key={index} 
-              target={game.url.startsWith('http') ? "_blank" : "_self"}
-              rel={game.url.startsWith('http') ? "noopener noreferrer" : undefined}
-              className="group block bg-gray-900 rounded-lg overflow-hidden hover:ring-2 hover:ring-primary transition-all duration-300"
-            >
-              <div className="relative aspect-video">
-                <img 
-                  src={game.cover} 
-                  alt={game.title} 
-                  className="w-full h-full object-cover absolute inset-0"
+            href={game.url} 
+            key={index} 
+            target={game.url.startsWith('http') ? "_blank" : "_self"}
+            rel={game.url.startsWith('http') ? "noopener noreferrer" : undefined}
+            className="group block overflow-hidden rounded-lg bg-gray-900/40
+            hover:ring-2 hover:ring-primary
+             hover:bg-gray-900/60 transition-all duration-300 hover:shadow-lg  hover:scale-102 " 
+          >
+            <div className="aspect-[2/1] relative">
+              <div className="flex-shrink-0 w-fulloverflow-hidden" style={{ maxHeight: '200px' }}>
+                <img
+                  src={game.cover}
+                  alt={game.title}
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-white group-hover:text-primary transition-colors">
-                  {game.title}
-                </h3>
+             
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent pb-2">
+                <div className="px-3 pt-6">
+                  <h4 className="text-sm font-medium text-white group-hover:text-primary transition-colors line-clamp-1">
+                    {game.title}
+                  </h4>
+                </div>
               </div>
-            </Link>
+            </div>
+          </Link>
           ))}
         </div>
       </div>

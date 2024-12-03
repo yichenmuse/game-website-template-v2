@@ -1,4 +1,29 @@
 {
+    "2024-12-03": {
+        "version": "1.2.3",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "优化推荐游戏列表、FAQ样式",
+            "修复导航菜单过多时导致子菜单位置不正确的问题",
+            "修复隐私政策和用户协议菜单页面导致的过多404地址出现的问题",
+            "解决推荐游戏列表为空时右侧会出现空白的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/privacy-policy/page.tsx",
+            "app/[locale]/(public)/terms-of-services/page.tsx",
+            "app/[locale]/(public)/views/FAQs.tsx",
+            "app/[locale]/(public)/views/Features.tsx",
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx",
+            "app/[locale]/(public)/views/Recommendation.tsx",
+            "app/[locale]/(public)/views/RelatedVideo.tsx",
+            "app/[locale]/(public)/views/SectionWrapper.tsx",
+            "app/globals.css",
+            "lib/components/games-template/page.tsx",
+            "lib/components/navbar.tsx"
+        ]
+    },
+
     "2024-11-29 20": {
         "version": "1.2.2",
         "messagesKeyModify": true,

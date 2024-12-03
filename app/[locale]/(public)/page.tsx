@@ -46,40 +46,23 @@ export default async function Page({ params }: Props) {
   return (
     <div className="bg-black pt-5 pb-5 ">
       <IframeSection pageName={pageName} />
-      {siteConfig.isShowRightGames ? (
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-2">
-            {/* 左侧内容 */}
-            <div className="lg:w-5/6">
-              <SectionWrapper className="max-full">
-                <Features pageName={pageName} />
-                <FAQs locale={locale} pageName={pageName} />
-                <RelatedVideo pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
-                <Comments pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
-                <Recommendation locale={locale} />
-              </SectionWrapper>
-            </div>
-            
-            {/* 右侧推荐列表 */}
-            <div className="lg:w-1/6">
-              <div className="bg-gray-900 rounded-lg p-2">
-                <div className="space-y-4">
-                  {/* 这里需要循环渲染推荐游戏列表 */}
-                  <GameRecommendationCard locale={locale} />
-                </div>
-              </div>
-            </div>
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* 左侧主要内容区域 */}
+          <div className="lg:flex-1">
+            <SectionWrapper className="max-full">
+              <Features pageName={pageName} />
+              <FAQs locale={locale} pageName={pageName} />
+              <RelatedVideo pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
+              <Comments pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
+              <Recommendation locale={locale} />
+            </SectionWrapper>
           </div>
+          
+          {/* 右侧推荐列表 */}
+          <GameRecommendationCard locale={locale} />
         </div>
-      ) : (
-        <SectionWrapper>
-          <Features pageName={pageName} />
-          <FAQs locale={locale} pageName={pageName} />
-          <RelatedVideo pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
-          <Comments pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
-          <Recommendation locale={locale} />
-        </SectionWrapper>
-      )}
+      </div>
       <DownloadGame pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
     </div>
   );

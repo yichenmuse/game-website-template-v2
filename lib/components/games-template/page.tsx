@@ -45,11 +45,10 @@ export default async function Page({ params }: Props) {
     <div className="bg-black pt-5 pb-5">
       <IframeSection pageName={pageName} />
       
-      {siteConfig2.isShowRightGames ? (
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-2">
+      <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row gap-8">
             {/* 左侧内容 */}
-            <div className="lg:w-5/6">
+            <div className="lg:flex-1">
               <SectionWrapper className="max-full">
                 <Features pageName={pageName} />
                 <FAQs locale={locale} pageName={pageName} />
@@ -60,25 +59,9 @@ export default async function Page({ params }: Props) {
             </div>
             
             {/* 右侧推荐列表 */}
-            <div className="lg:w-1/6">
-              <div className="bg-gray-900 rounded-lg p-2">
-                <div className="space-y-4">
-                  {/* 这里需要循环渲染推荐游戏列表 */}
-                  <GameRecommendationCard locale={locale} />
-                </div>
-              </div>
-            </div>
+            <GameRecommendationCard locale={locale} />
           </div>
         </div>
-      ) : (
-        <SectionWrapper>
-          <Features pageName={pageName} />
-          <FAQs locale={locale} pageName={pageName} />
-          <RelatedVideo pageName={pageName} siteConfig={siteConfig2} />
-          <Comments pageName={pageName} siteConfig={siteConfig2} />
-          <Recommendation locale={locale} />
-        </SectionWrapper>
-      )}
       
       <DownloadGame pageName={pageName} siteConfig={siteConfig2} />
     </div>
