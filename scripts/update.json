@@ -1,4 +1,15 @@
 {
+    "2024-12-03 17": {
+        "version": "1.2.5",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "优化自定义页面模板，修复404问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/t/how-to-play/page.tsx",
+            "lib/components/t-file-page-template.tsx"
+        ]
+    },
     "2024-12-03 15": {
         "version": "1.2.4",
         "messagesKeyModify": false,
