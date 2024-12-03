@@ -1,4 +1,16 @@
 {
+    "2024-12-03 15": {
+        "version": "1.2.4",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "隐私政策和用户协议菜单页面增加canonical链接"
+        ],
+        "modify": [
+            "app/[locale]/(public)/privacy-policy/page.tsx",
+            "app/[locale]/(public)/terms-of-services/page.tsx",
+            "lib/i18n/locales.ts"
+        ]
+    },
     "2024-12-03": {
         "version": "1.2.3",
         "messagesKeyModify": false,

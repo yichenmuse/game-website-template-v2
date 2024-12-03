@@ -1,5 +1,5 @@
 import MdxArticle from '@/lib/components/mdx-article';
-import { locales } from '@/lib/i18n/locales';
+import { host, locales } from '@/lib/i18n/locales';
 import matter from 'gray-matter';
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: `${frontMatter.title} | ${siteConfig.name}`,
     description: frontMatter.description,
     alternates: {
-      languages: alternatesLanguage('/terms-of-services'),
+      canonical: `${host}/terms-of-services`,
     },
   };
 }
