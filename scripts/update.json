@@ -1,6 +1,6 @@
 {
-    "2024-12-03 17": {
-        "version": "1.2.5",
+    "2024-12-03 19": {
+        "version": "1.2.6",
         "messagesKeyModify": false,
         "changeLog": [
             "优化自定义页面模板，修复404问题"

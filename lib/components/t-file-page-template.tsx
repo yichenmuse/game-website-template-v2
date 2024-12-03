@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const parentDirName = pathSegments[pathSegments.length - 2];
     let slug = frontMatter.slug??parentDirName
     if(!slug.startsWith('/')){
-      slug = `/${slug}`
+      slug = `/t/${slug}`
     }
     const alternates = hasOther ? {
       languages: alternatesLanguage(slug),
