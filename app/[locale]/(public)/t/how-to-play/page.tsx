@@ -4,6 +4,8 @@ import { alternatesLanguage, locales,host } from '@/lib/i18n/locales';
 import matter from 'gray-matter';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import fs from 'fs';
+import path from 'path';
 const components: any = {
   img: ({src, alt}: { src: string, alt: string }) => {
       return <img src={src} alt={alt} className="object-cover"/>
@@ -21,8 +23,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     let hasOther = false;
     try {
       // Check if other locale files exist
-      const fs = require('fs');
-      const path = require('path');
       const currentDir = path.dirname(__filename);
       const mdxFiles = fs.readdirSync(currentDir).filter((file: string) => file.endsWith('.mdx'));
       hasOther = mdxFiles.some((file: string) => file !== 'en.mdx');
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     // 获取当前文件所在的父级目录名称
     const pathSegments = __filename.split('/');
     const parentDirName = pathSegments[pathSegments.length - 2];
-    let slug = frontMatter.slug??parentDirName
+    let slug = parentDirName
     if(!slug.startsWith('/')){
       slug = `/t/${slug}`
     }
@@ -59,9 +59,14 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
     // 直接导入 MDX 文件的原始内容
     let Content;
     try {
+     
       Content = (await import(`!!raw-loader!./${locale}.mdx`)).default;
     } catch (error) {
-      Content = (await import(`!!raw-loader!./en.mdx`)).default;
+      try{
+        Content = (await import(`!!raw-loader!./en.mdx`)).default;
+      }catch (error) {
+        console.log(error);
+      }
     }
     const {content } = matter(Content);
     
