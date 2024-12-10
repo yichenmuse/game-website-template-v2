@@ -1,4 +1,16 @@
 {
+    "2024-12-10": {
+        "version": "1.2.12",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "支持自定义logo图片"
+        ],
+        "modify": [
+            "lib/components/navbar.tsx",
+            "lib/types/site.ts"
+        ]
+    },
+
     "2024-12-09": {
         "version": "1.2.11",
         "messagesKeyModify": false,
