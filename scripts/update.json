@@ -7,7 +7,6 @@
             "去掉自定义页面slug属性，防止错误的路径导致404，改为自动根据文件名生成"
         ],
         "modify": [
-            "app/[locale]/(public)/t/how-to-play/page.tsx",
             "lib/components/t-file-page-template.tsx",
             "lib/components/games-template/config/config.json",
             "lib/i18n/locales.ts"
