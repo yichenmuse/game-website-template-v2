@@ -140,5 +140,14 @@
   },
   "faviconBgColor": "#3e2723",
   "faviconTextColor": "#ffeb3b",
-  "faviconText": "SR"
+  "faviconText": "SR",
+  "enablePromotion": true,
+  "selectedMaterial": {
+    "type": "video",
+    "ratio": "16:9",
+    "size": "1080x608",
+    "materialUrl": "https://youtu.be/4txANWeI4kY",
+    "clickUrl": "https://www.heartvoicegifts.com?utm_campaign=AF-FaFaFa-5196&utm_medium=FaFaFa",
+    "title": "Personalized Bobblehead Video"
+  }
 }

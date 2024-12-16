@@ -23,12 +23,6 @@ export default async (request: NextRequest) => {
   if (path.startsWith('/api')) {
     return NextResponse.next();
   }
-  // 将所有不存在的路由重定向到首页（使用308永久重定向）
-  if (path !== '/' && !SUPPORTED_LOCALES.some(locale => path.startsWith(`/${locale}`))) {
-    return NextResponse.redirect(new URL(`/${defaultLocale}`, request.url), {
-      status: 308 // Permanent Redirect
-    });
-  }
   // 使用国际化中间件处理请求
   return doIntlMiddleware(request);
 };
