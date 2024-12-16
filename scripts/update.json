@@ -1,4 +1,14 @@
 {
+    "2024-12-11 20": {
+        "version": "1.2.14",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复编译报错问题"
+        ],
+        "modify": [
+             "app/[locale]/(public)/views/Ad.tsx"
+        ]
+    },
     "2024-12-11": {
         "version": "1.2.13",
         "messagesKeyModify": false,
