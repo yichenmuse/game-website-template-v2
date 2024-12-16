@@ -1,4 +1,14 @@
 {
+    "2024-12-11 21": {
+        "version": "1.2.15",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复Ad链接无referrer的问题"
+        ],
+        "modify": [
+             "app/[locale]/(public)/views/Ad.tsx"
+        ]
+    },
     "2024-12-11 20": {
         "version": "1.2.14",
         "messagesKeyModify": false,
