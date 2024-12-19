@@ -1,4 +1,17 @@
 {
+    "2024-12-12": {
+        "version": "1.2.16",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "解决游戏列表页面alternates配置错误导致404的问题",
+            "优化广告组件默认显示大小"
+        ],
+        "modify": [
+            "app/[locale]/(public)/games/page.tsx",
+            "app/[locale]/(public)/views/Ad.tsx"
+        ]
+    },
+
     "2024-12-11 21": {
         "version": "1.2.15",
         "messagesKeyModify": false,
