@@ -12,6 +12,8 @@ import DownloadGame from '@/app/[locale]/(public)/views/DownloadGame';
 import {siteConfig} from '@/lib/config/site';
 import { SiteConfig} from '@/lib/types';
 import GameRecommendationCard from '@/app/[locale]/(public)/views/GameRecommendationCard';
+import CustomizeFeatures from './views/CustomizeFeatures';
+import matter from 'gray-matter';
 type Props = {
   params: Promise<{ locale: string }>;
 };
@@ -42,7 +44,14 @@ export default async function Page({ params }: Props) {
   setRequestLocale(locale);
   const siteConfig2 = siteConfig as unknown as SiteConfig
   const pageName = null;
-  
+  let features2ContentResult = null;
+  try {
+    const Content = (await import(`!!raw-loader!./config/features/${locale}.mdx`)).default;
+    const { content } = matter(Content);
+    features2ContentResult = content;
+  } catch (error) {
+    console.log(`features2 section can not find ${locale}.mdx`, error);
+  }
   return (
     <div className="bg-black pt-5 pb-5">
       <div className="container mx-auto">
@@ -53,7 +62,7 @@ export default async function Page({ params }: Props) {
            
             <div className="px-4">
               <SectionWrapper className="max-full">
-                <Features pageName={pageName} />
+                {siteConfig2.customizeFeatures ? <CustomizeFeatures content={features2ContentResult} /> : <Features pageName={pageName} />}
                 <FAQs locale={locale} pageName={pageName} />
                 <RelatedVideo pageName={pageName} siteConfig={siteConfig2} />
                 <Comments pageName={pageName} siteConfig={siteConfig2} />
