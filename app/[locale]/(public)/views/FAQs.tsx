@@ -3,10 +3,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { loadSiteConfig } from '@/lib/utils/resource';
 import { getTranslations } from 'next-intl/server';
 
-export async function loadFaqs(locale:string,pageName:string){
+export async function loadFaqs(locale:string,pageName:string|null){
   try {
     let faqItems: FAQsItem[] = [];
-    if (pageName!=="") {
+    if (pageName && pageName!=="") {
       try {
         faqItems = (await import(`@/app/[locale]/(public)/games/${pageName}/config/faqs/${locale}.json`)).default;
         return faqItems;
@@ -39,7 +39,7 @@ export async function loadFaqs(locale:string,pageName:string){
 
 }
 
-export default async function FAQs({ locale,pageName }: PropsWithLocale<{pageName:string}>) {
+export default async function FAQs({ locale,pageName }: PropsWithLocale<{pageName:string|null}>) {
   const siteConfig = await loadSiteConfig(pageName);
  
   if (!siteConfig.isShowFAQs) {

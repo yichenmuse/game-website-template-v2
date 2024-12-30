@@ -24,14 +24,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale = defaultLocale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale });
-  const pageName = siteConfig.pageName;
-  const pagePath = siteConfig.pagePath;
   return {
-    title: `${t(`${pageName}.title`)} | ${t(`${pageName}.slogan`)}`,
-    description: t(`${pageName}.description`),
+    title: `${t('title')} | ${t('slogan')}`,
+    description: t('description'),
     alternates: {
-      languages: alternatesLanguage(pagePath),
-    }
+      languages: alternatesLanguage(''),
+    },
+    icons: {
+      icon: siteConfig.icon,
+      apple: siteConfig.appleIcon,
+    },
   };
 }
 
@@ -39,7 +41,7 @@ export default async function Page({ params }: Props) {
   const { locale = defaultLocale } = await params;
   setRequestLocale(locale);
   const siteConfig2 = siteConfig as unknown as SiteConfig
-  const pageName = siteConfig.pageName;
+  const pageName = null;
   
   return (
     <div className="bg-black pt-5 pb-5">
