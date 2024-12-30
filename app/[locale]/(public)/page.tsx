@@ -9,7 +9,7 @@ import Recommendation from '@/app/[locale]/(public)/views/Recommendation';
 import RelatedVideo from '@/app/[locale]/(public)/views/RelatedVideo';
 import SectionWrapper from '@/app/[locale]/(public)/views/SectionWrapper';
 import DownloadGame from '@/app/[locale]/(public)/views/DownloadGame';
-import siteConfig from '@/lib/config/config.json';
+import {siteConfig} from '@/lib/config/site';
 import { SiteConfig} from '@/lib/types';
 import GameRecommendationCard from '@/app/[locale]/(public)/views/GameRecommendationCard';
 type Props = {
