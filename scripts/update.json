@@ -6,12 +6,16 @@
             "优化游戏页面布局，默认不加载iframe,调整推荐游戏列表位置",
             "页面详情增加自定义内容渲染功能"
         ],
+        "add": [
+            "app/[locale]/(public)/views/CustomizeFeatures.tsx",
+            "app/[locale]/(public)/views/GameCard.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx"
+        ],
         "modify": [
             "app/[locale]/(public)/page.tsx",
             "app/[locale]/(public)/t/page.tsx",
             "app/[locale]/(public)/views/Ad.tsx",
             "app/[locale]/(public)/views/Comments.tsx",
-            "app/[locale]/(public)/views/CustomizeFeatures.tsx",
             "app/[locale]/(public)/views/Features.tsx",
             "app/[locale]/(public)/views/GameRecommendationCard.tsx",
             "app/[locale]/(public)/views/IframeSection.tsx",
