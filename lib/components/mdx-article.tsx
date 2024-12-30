@@ -115,7 +115,7 @@ export default function MdxArticle({source, className, components = {}}: MdxArti
     try {
         return <article
             className={cn(
-                "prose prose-sm md:prose-base lg:prose-lg",
+                "prose prose-sm md:prose-base lg:prose-lg w-full max-w-full",
                 className,
             )}
         >

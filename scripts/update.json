@@ -32,6 +32,7 @@
             "lib/config/site.json",
             "lib/types/site.ts",
             "lib/utils/resource.ts",
+            "tailwind.config.ts",
             "messages/bn.json",
             "messages/de.json",
             "messages/en.json",

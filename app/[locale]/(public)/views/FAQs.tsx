@@ -40,11 +40,6 @@ export async function loadFaqs(locale:string,pageName:string|null){
 }
 
 export default async function FAQs({ locale,pageName }: PropsWithLocale<{pageName:string|null}>) {
-  const siteConfig = await loadSiteConfig(pageName);
- 
-  if (!siteConfig.isShowFAQs) {
-    return <></>;
-  }
   const prefix = pageName ? pageName + '.' : '';
   const t = await getTranslations(`${prefix}HomeFAQs`);
   const faqItems = await loadFaqs(locale,pageName);
