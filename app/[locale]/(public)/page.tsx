@@ -1,18 +1,17 @@
-import { siteConfig } from '@/lib/config/site';
 import { alternatesLanguage, defaultLocale, locales } from '@/lib/i18n/locales';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import Comments from './views/Comments';
-import FAQs from './views/FAQs';
-import Features from './views/Features';
-import IframeSection from './views/IframeSection';
-import Recommendation from './views/Recommendation';
-import RelatedVideo from './views/RelatedVideo';
-import SectionWrapper from './views/SectionWrapper';
-import DownloadGame from './views/DownloadGame';
-import GameRecommendationCard from './views/GameRecommendationCard';
-import { SiteConfig } from '@/lib/types';
-
+import Comments from '@/app/[locale]/(public)/views/Comments';
+import FAQs from '@/app/[locale]/(public)/views/FAQs';
+import Features from '@/app/[locale]/(public)/views/Features';
+import IframeSection from '@/app/[locale]/(public)/views/IframeSection';
+import Recommendation from '@/app/[locale]/(public)/views/Recommendation';
+import RelatedVideo from '@/app/[locale]/(public)/views/RelatedVideo';
+import SectionWrapper from '@/app/[locale]/(public)/views/SectionWrapper';
+import DownloadGame from '@/app/[locale]/(public)/views/DownloadGame';
+import siteConfig from '@/lib/config/config.json';
+import { SiteConfig} from '@/lib/types';
+import GameRecommendationCard from '@/app/[locale]/(public)/views/GameRecommendationCard';
 type Props = {
   params: Promise<{ locale: string }>;
 };
@@ -25,45 +24,50 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale = defaultLocale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale });
+  const pageName = siteConfig.pageName;
+  const pagePath = siteConfig.pagePath;
   return {
-    title: `${t('title')} | ${t('slogan')}`,
-    description: t('description'),
+    title: `${t(`${pageName}.title`)} | ${t(`${pageName}.slogan`)}`,
+    description: t(`${pageName}.description`),
     alternates: {
-      languages: alternatesLanguage(''),
-    },
-    icons: {
-      icon: siteConfig.icon,
-      apple: siteConfig.appleIcon,
-    },
+      languages: alternatesLanguage(pagePath),
+    }
   };
 }
 
 export default async function Page({ params }: Props) {
   const { locale = defaultLocale } = await params;
   setRequestLocale(locale);
-  // 默认页面名称为空
-  const pageName = "";
+  const siteConfig2 = siteConfig as unknown as SiteConfig
+  const pageName = siteConfig.pageName;
+  
   return (
-    <div className="bg-black pt-5 pb-5 ">
-      <IframeSection pageName={pageName} />
-      <div className="container mx-auto px-4 py-8">
+    <div className="bg-black pt-5 pb-5">
+      <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* 左侧主要内容区域 */}
-          <div className="lg:flex-1">
-            <SectionWrapper className="max-full">
-              <Features pageName={pageName} />
-              <FAQs locale={locale} pageName={pageName} />
-              <RelatedVideo pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
-              <Comments pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
-              <Recommendation locale={locale} />
-            </SectionWrapper>
+          <div className="flex-1 min-w-0">
+            <IframeSection pageName={pageName} />
+           
+            <div className="px-4">
+              <SectionWrapper className="max-full">
+                <Features pageName={pageName} />
+                <FAQs locale={locale} pageName={pageName} />
+                <RelatedVideo pageName={pageName} siteConfig={siteConfig2} />
+                <Comments pageName={pageName} siteConfig={siteConfig2} />
+               
+              </SectionWrapper>
+            </div>
+            <Recommendation locale={locale} />
+            <DownloadGame pageName={pageName} siteConfig={siteConfig2} />
           </div>
           
-          {/* 右侧推荐列表 */}
-          <GameRecommendationCard locale={locale} />
+          {/* 右侧推荐卡片 - 移动端隐藏 */}
+          <div className="hidden lg:block w-full lg:w-80 px-4">
+            <GameRecommendationCard locale={locale} />
+          </div>
         </div>
       </div>
-      <DownloadGame pageName={pageName} siteConfig={siteConfig as unknown as SiteConfig} />
     </div>
   );
 }

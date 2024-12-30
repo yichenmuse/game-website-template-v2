@@ -43,27 +43,31 @@ export default async function Page({ params }: Props) {
   
   return (
     <div className="bg-black pt-5 pb-5">
-      <IframeSection pageName={pageName} />
-      
-      <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* 左侧内容 */}
-            <div className="lg:flex-1">
+      <div className="container mx-auto">
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* 左侧主要内容区域 */}
+          <div className="flex-1 min-w-0">
+            <IframeSection pageName={pageName} />
+           
+            <div className="px-4">
               <SectionWrapper className="max-full">
                 <Features pageName={pageName} />
                 <FAQs locale={locale} pageName={pageName} />
                 <RelatedVideo pageName={pageName} siteConfig={siteConfig2} />
                 <Comments pageName={pageName} siteConfig={siteConfig2} />
-                <Recommendation locale={locale} />
+               
               </SectionWrapper>
             </div>
-            
-            {/* 右侧推荐列表 */}
+            <Recommendation locale={locale} />
+            <DownloadGame pageName={pageName} siteConfig={siteConfig2} />
+          </div>
+          
+          {/* 右侧推荐卡片 - 移动端隐藏 */}
+          <div className="hidden lg:block w-full lg:w-80 px-4">
             <GameRecommendationCard locale={locale} />
           </div>
         </div>
-      
-      <DownloadGame pageName={pageName} siteConfig={siteConfig2} />
+      </div>
     </div>
   );
 }

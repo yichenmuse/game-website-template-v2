@@ -131,7 +131,7 @@ export default function MdxArticle({source, className, components = {}}: MdxArti
         </article>
     } catch (error) {
         console.error("MDX 解析错误:", error)
-        return <div>内容加载失败，请稍后再试。</div>
+        return <div>Content loading failed. Please try again later.</div>
     }
 
 }

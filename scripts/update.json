@@ -1,4 +1,47 @@
 {
+    "2024-12-30": {
+        "version": "1.2.17",
+        "messagesKeyModify": true,
+        "changeLog": [
+            "优化游戏页面布局，默认不加载iframe,调整推荐游戏列表位置",
+            "页面详情增加自定义内容渲染功能"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/t/page.tsx",
+            "app/[locale]/(public)/views/Ad.tsx",
+            "app/[locale]/(public)/views/Comments.tsx",
+            "app/[locale]/(public)/views/CustomizeFeatures.tsx",
+            "app/[locale]/(public)/views/Features.tsx",
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/Recommendation.tsx",
+            "app/[locale]/(public)/views/SectionWrapper.tsx",
+            "app/robots.ts",
+            "lib/components/games-template/page.tsx",
+            "lib/components/mdx-article.tsx",
+            "lib/config/site.json",
+            "lib/types/site.ts",
+            "messages/bn.json",
+            "messages/de.json",
+            "messages/en.json",
+            "messages/es.json",
+            "messages/fr.json",
+            "messages/id.json",
+            "messages/it.json",
+            "messages/ja.json",
+            "messages/ko.json",
+            "messages/pt-BR.json",
+            "messages/pt.json",
+            "messages/ru.json",
+            "messages/th.json",
+            "messages/tr.json",
+            "messages/uk.json",
+            "messages/vi.json",
+            "messages/zh-CN.json",
+            "messages/zh-TW.json"
+        ]
+    },
     "2024-12-12": {
         "version": "1.2.16",
         "messagesKeyModify": false,
