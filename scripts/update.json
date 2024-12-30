@@ -1,4 +1,18 @@
 {
+    "2024-12-30 20": {
+        "version": "1.2.18",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "优化下载游戏页面布局，增加平台下载按钮动画效果",
+            "改进iframe懒加载机制，提升页面加载性能",
+            "修复游戏页面布局在不同设备上的显示问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/DownloadGame.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx"
+        ]
+    },
     "2024-12-30": {
         "version": "1.2.17",
         "messagesKeyModify": true,
