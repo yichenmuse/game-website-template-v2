@@ -9,14 +9,15 @@
     "title": "Navegação"
   },
   "Common": {
-    "createAt": "Criado em",
-    "guide": "Guia",
-    "privacyPolicy": "Política de Privacidade",
-    "termsOfServices": "Termos de Serviço",
-    "text": "Conteúdo",
-    "help": "Ajuda",
-    "friendlyLinks": "Links Amigáveis",
-    "articleList": "Article List"
+    "createAt": "Erstellt am",
+    "guide": "Anleitung",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfServices": "Nutzungsbedingungen",
+    "text": "Inhalt",
+    "help": "Hilfe",
+    "friendlyLinks": "Freundliche Links",
+    "articleList": "Artikelübersicht",
+    "home": "Home"
   },
   "HomeIframe": {
     "title": "",
