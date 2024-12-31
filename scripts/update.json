@@ -1,4 +1,16 @@
 {
+    "2024-12-31": {
+        "version": "1.2.19",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "当推荐游戏数据为空时，隐藏推荐列表"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx",
+            "lib/components/games-template/page.tsx"
+        ]
+    },
     "2024-12-30 20": {
         "version": "1.2.18",
         "messagesKeyModify": false,
