@@ -1,4 +1,39 @@
 {
+    "2024-12-31 17": {
+        "version": "1.2.20",
+        "messagesKeyModify": true,
+        "changeLog": [
+            "解决文章列表404的问题",
+            "文章详情页面增加面包屑导航"
+        ],
+        "add": [
+            "lib/utils/blogs.ts"
+        ],
+        "modify": [
+            "app/[locale]/(public)/t/how-to-play/page.tsx",
+            "app/[locale]/(public)/t/page.tsx",
+            "lib/components/t-file-page-template.tsx",
+            "messages/bn.json",
+            "messages/de.json",
+            "messages/en.json",
+            "messages/es.json",
+            "messages/fr.json",
+            "messages/game_page_template.json",
+            "messages/id.json",
+            "messages/it.json",
+            "messages/ja.json",
+            "messages/ko.json",
+            "messages/pt-BR.json",
+            "messages/pt.json",
+            "messages/ru.json",
+            "messages/th.json",
+            "messages/tr.json",
+            "messages/uk.json",
+            "messages/vi.json",
+            "messages/zh-CN.json",
+            "messages/zh-TW.json"
+        ]
+    },
     "2024-12-31": {
         "version": "1.2.19",
         "messagesKeyModify": false,
