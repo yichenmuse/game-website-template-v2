@@ -10,7 +10,6 @@
             "lib/utils/blogs.ts"
         ],
         "modify": [
-            "app/[locale]/(public)/t/how-to-play/page.tsx",
             "app/[locale]/(public)/t/page.tsx",
             "lib/components/t-file-page-template.tsx",
             "messages/bn.json",
