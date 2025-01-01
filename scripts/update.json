@@ -1,4 +1,18 @@
 {
+    "2025-01-01 10": {
+        "version": "1.2.22",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "优化广告组件的响应式布局",
+            "优化文章模板页面的图片显示",
+            "优化 LazyIframe 组件的加载体验"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/Ad.tsx",
+            "lib/components/t-file-page-template.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx"
+        ]
+    },
     "2025-01-01": {
         "version": "1.2.21",
         "messagesKeyModify": true,

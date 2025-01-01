@@ -1,13 +1,13 @@
 'use client';
 
-import { useEffect, useState, useRef, useCallback } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Card, CardBody } from '@nextui-org/card';
 import {Button} from '@nextui-org/button';
 import { motion, AnimatePresence } from 'framer-motion';
 import { siteConfig } from '@/lib/config/site';
 import { SiteConfig } from '@/lib/types';
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
+
 const AdContent = dynamic(() => Promise.resolve(Ad), {
   ssr: false
 });
@@ -18,50 +18,6 @@ function Ad() {
   const { enablePromotion, selectedMaterial } = siteConfig as SiteConfig;
   const [isVisible, setIsVisible] = useState(true);
   const [isSticky, setIsSticky] = useState(true);
-
-  const calculateDimensions = useCallback((size: string, ratio: string): { width: number; height: number; scale: number; isMobile: boolean } => {
-    const sizeObj = parseSize(size);
-    const ratioObj = parseRatio(ratio);
-    const isMobile = window.innerWidth <= 768;
-    const maxWidth = isMobile ? window.innerWidth : Math.min(window.innerWidth * 0.4, 600);
-    
-    if (!sizeObj && !ratioObj) {
-      return { 
-        width: maxWidth, 
-        height: Math.round(maxWidth * 9/16),
-        scale: 1,
-        isMobile
-      };
-    }
-
-    if (sizeObj) {
-      const scale = maxWidth / sizeObj.width;
-      return {
-        width: sizeObj.width,
-        height: sizeObj.height,
-        scale: scale,
-        isMobile
-      };
-    }
-
-    if (ratioObj) {
-      const aspectRatio = ratioObj.height / ratioObj.width;
-      return {
-        width: maxWidth,
-        height: Math.round(maxWidth * aspectRatio),
-        scale: 1,
-        isMobile
-      };
-    }
-
-    return { 
-      width: maxWidth, 
-      height: Math.round(maxWidth * 9/16),
-      scale: 1,
-      isMobile
-    };
-  }, []);
-
   const [dimensions, setDimensions] = useState(() => 
     calculateDimensions(selectedMaterial?.size || '', selectedMaterial?.ratio || '')
   );
@@ -120,7 +76,48 @@ function Ad() {
     return { width, height };
   }
 
-  
+  function calculateDimensions(size: string, ratio: string): { width: number; height: number; scale: number; isMobile: boolean } {
+    const sizeObj = parseSize(size);
+    const ratioObj = parseRatio(ratio);
+    const isMobile = window.innerWidth <= 768;
+    const maxWidth = isMobile ? window.innerWidth * 0.5 : Math.min(window.innerWidth * 0.25, 300);
+    
+    if (!sizeObj && !ratioObj) {
+      return { 
+        width: maxWidth, 
+        height: Math.round(maxWidth * 9/16),
+        scale: 1,
+        isMobile
+      };
+    }
+
+    if (sizeObj) {
+      const scale = maxWidth / sizeObj.width;
+      return {
+        width: sizeObj.width,
+        height: sizeObj.height,
+        scale: scale,
+        isMobile
+      };
+    }
+
+    if (ratioObj) {
+      const aspectRatio = ratioObj.height / ratioObj.width;
+      return {
+        width: maxWidth,
+        height: Math.round(maxWidth * aspectRatio),
+        scale: 1,
+        isMobile
+      };
+    }
+
+    return { 
+      width: maxWidth, 
+      height: Math.round(maxWidth * 9/16),
+      scale: 1,
+      isMobile
+    };
+  }
 
   const handleClose = () => {
     setIsVisible(false);
@@ -131,8 +128,8 @@ function Ad() {
 
     if (selectedMaterial.type === 'image') {
       return (
-        <a href={selectedMaterial?.clickUrl} target="_blank" title={selectedMaterial?.title || ''}>
-          <Image
+        <a href={selectedMaterial?.clickUrl} target="_blank">
+          <img
             src={selectedMaterial.materialUrl}
             alt={selectedMaterial?.title || ''}
             style={{

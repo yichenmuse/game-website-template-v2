@@ -74,9 +74,9 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
     const {content, data: frontMatter } = matter(Content);
     const t = await getTranslations({ locale });
     return <>
-      <div className="max-w-3xl mx-auto py-10 px-4 min-h-[65vh]">
+      <div className="max-w-3xl mx-auto py-2 px-4">
             {/* 添加面包屑导航 */}
-            <nav className="text-sm mb-8" aria-label="Breadcrumb">
+            <nav className="text-sm" aria-label="Breadcrumb">
                 <ol className="flex space-x-2">
                   <li>
                     <Link href="/" className="text-gray-500 hover:text-gray-700">
@@ -98,7 +98,7 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
 
       </div>
         <article
-          className="prose prose-sm md:prose-base lg:prose-lg  rounded-2xl max-w-3xl mx-auto py-10 px-4">
+          className="prose prose-sm md:prose-base lg:prose-lg  rounded-2xl max-w-3xl mx-auto py-5 px-4">
           
           <MdxArticle components={components} source={content} className="max-w-full"/>
         </article>
