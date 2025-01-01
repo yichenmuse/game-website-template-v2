@@ -2,15 +2,5 @@
   {
     "title": "হোম",
     "href": "/"
-  },
-  {
-    "title": "ইনফরমেশন",
-    "href": "/t",
-    "children": [
-      {
-        "title": " কিভাবে খেলা হয়?",
-        "href": "/t/how-to-play"
-      }
-    ]
   }
 ]

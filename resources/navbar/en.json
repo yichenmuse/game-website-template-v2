@@ -2,15 +2,5 @@
     {
         "title": "Home",
         "href": "/"
-    },
-    {
-        "title": "Information",
-        "href": "/t",
-        "children":[
-            {
-                "title": "How to play?",
-                "href": "/t/how-to-play"
-            }
-        ]
     }
 ]

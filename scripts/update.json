@@ -1,4 +1,47 @@
 {
+    "2025-01-01": {
+        "version": "1.2.21",
+        "messagesKeyModify": true,
+        "changeLog": [
+            "优化页面图片加载方式",
+            "解决文章列表404问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/error.tsx",
+            "app/[locale]/(public)/games/page.tsx",
+            "app/[locale]/(public)/not-found.tsx",
+            "app/[locale]/(public)/privacy-policy/page.tsx",
+            "app/[locale]/(public)/t/page.tsx",
+            "app/[locale]/(public)/terms-of-services/page.tsx",
+            "app/[locale]/(public)/views/Ad.tsx",
+            "app/[locale]/(public)/views/CustomizeFeatures.tsx",
+            "app/[locale]/(public)/views/Features.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx",
+            "app/[locale]/(public)/views/Recommendation.tsx",
+            "app/global-error.tsx",
+            "lib/components/t-file-page-template.tsx",
+            "lib/utils/blogs.ts",
+            "resources/navbar/bn.json",
+            "resources/navbar/de.json",
+            "resources/navbar/en.json",
+            "resources/navbar/es.json",
+            "resources/navbar/fr.json",
+            "resources/navbar/id.json",
+            "resources/navbar/it.json",
+            "resources/navbar/ja.json",
+            "resources/navbar/ko.json",
+            "resources/navbar/pt-BR.json",
+            "resources/navbar/pt.json",
+            "resources/navbar/ru.json",
+            "resources/navbar/th.json",
+            "resources/navbar/tr.json",
+            "resources/navbar/uk.json",
+            "resources/navbar/vi.json",
+            "resources/navbar/zh-CN.json",
+            "resources/navbar/zh-TW.json"
+        ]
+    },
     "2024-12-31 17": {
         "version": "1.2.20",
         "messagesKeyModify": true,

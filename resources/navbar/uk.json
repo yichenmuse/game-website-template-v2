@@ -2,15 +2,5 @@
   {
     "title": "Додому",
     "href": "/"
-  },
-  {
-    "title": "Інформація",
-    "href": "/t",
-    "children": [
-      {
-        "title": "Як грати?",
-        "href": "/t/how-to-play"
-      }
-    ]
   }
 ]

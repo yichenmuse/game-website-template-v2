@@ -8,9 +8,10 @@ import fs from 'fs';
 import path from 'path';
 import { Link } from '@/lib/i18n/navigation';
 import { getTranslations } from 'next-intl/server';
+import Image from 'next/image';
 const components: any = {
   img: ({src, alt}: { src: string, alt: string }) => {
-      return <img src={src} alt={alt} className="object-cover"/>
+      return <Image src={src} alt={alt} className="object-cover"/>
   }
 }
 

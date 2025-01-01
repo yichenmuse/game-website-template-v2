@@ -2,15 +2,5 @@
   {
     "title": "ホーム",
     "href": "/"
-  },
-  {
-    "title": "情報",
-    "href": "/t",
-    "children": [
-      {
-        "title": "遊び方は？",
-        "href": "/t/how-to-play"
-      }
-    ]
   }
 ]

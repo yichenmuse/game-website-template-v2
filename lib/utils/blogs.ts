@@ -3,7 +3,7 @@ import matter from 'gray-matter';
 import { locales } from '@/lib/i18n/locales';
 import path from 'path';
 // 定义文章元数据接口
-interface ArticleMetadata {
+export interface ArticleMetadata {
     title: string;
     image?: string;
     createdAt?: string;

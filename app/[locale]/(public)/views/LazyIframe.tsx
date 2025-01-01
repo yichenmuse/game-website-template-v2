@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import IframeActions from './IframeActions';
-
+import Image from 'next/image';
 export default function LazyIframe({ 
   gameIframeUrl, 
   title, 
@@ -41,11 +41,13 @@ export default function LazyIframe({
             <div className="relative group block md:hidden w-full max-w-[200px]">
               <div className="w-full aspect-square rounded-full overflow-hidden border-4 border-yellow-500/50">
                 {gameImage ? (
-                  <img 
+                  <Image 
                     src={gameImage} 
                     alt={title}
-                    loading="lazy"
-                    decoding="async"
+                    width={192}
+                    height={192}
+                    priority={true}
+                    quality={75}
                     className="w-full h-full object-cover will-change-transform group-hover:scale-110 transition-transform duration-300"
                   />
                 ) : (
@@ -114,11 +116,13 @@ export default function LazyIframe({
             <div className="relative group hidden md:block">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-yellow-500/50">
                 {gameImage ? (
-                  <img 
+                  <Image 
                     src={gameImage} 
                     alt={title}
-                    loading="lazy"
-                    decoding="async"
+                    width={192}
+                    height={192}
+                    priority={true}
+                    quality={75}
                     className="w-full h-full object-cover will-change-transform group-hover:scale-110 transition-transform duration-300"
                   />
                 ) : (

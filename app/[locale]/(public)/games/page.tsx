@@ -6,7 +6,7 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import { getPathnameWithLocale } from '@/lib/i18n/navigation';
-
+import Image from 'next/image';
 type Props = {
   params: Promise<{ locale: string }>;
 };
@@ -107,7 +107,7 @@ export default async function GamesPage({ params }: Props) {
               className="group block bg-gray-900 rounded-lg overflow-hidden hover:ring-2 hover:ring-primary transition-all duration-300"
             >
               <div className="aspect-video relative">
-                <img
+                <Image
                   src={`/games/${game.directory}/game_screenshot.webp`}
                   alt={game.name}
                   className="w-full h-full object-cover absolute inset-0"
