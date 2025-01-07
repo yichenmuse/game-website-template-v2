@@ -38,7 +38,16 @@ export default function LazyIframe({
         <div className="relative z-10 w-full max-w-4xl mx-auto">
           <div className="flex flex-col items-center gap-6 md:flex-row md:items-center md:justify-between md:gap-12">
             {/* 游戏图片 - 移动端显示在顶部 */}
-            <div className="relative group block md:hidden w-full max-w-[200px]">
+            <div 
+              className="relative group block md:hidden w-full max-w-[200px] cursor-pointer"
+              onClick={() => {
+                if (type === 'download') {
+                  window.location.href = "#download-game";
+                } else {
+                  setIsLoaded(true);
+                }
+              }}
+            >
               <div className="w-full aspect-square rounded-full overflow-hidden border-4 border-yellow-500/50">
                 {gameImage ? (
                   <Image 
@@ -113,7 +122,16 @@ export default function LazyIframe({
             </div>
 
             {/* 游戏图片 - 桌面端显示在右侧 */}
-            <div className="relative group hidden md:block">
+            <div 
+              className="relative group hidden md:block cursor-pointer"
+              onClick={() => {
+                if (type === 'download') {
+                  window.location.href = "#download-game";
+                } else {
+                  setIsLoaded(true);
+                }
+              }}
+            >
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-yellow-500/50">
                 {gameImage ? (
                   <Image 

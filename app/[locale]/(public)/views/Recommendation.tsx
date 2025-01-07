@@ -44,6 +44,8 @@ export default async function Recommendation({ locale }: PropsWithLocale) {
                 alt={game.title}
                 loading="lazy"
                 decoding="async"
+                width={100}
+                height={100}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
               
