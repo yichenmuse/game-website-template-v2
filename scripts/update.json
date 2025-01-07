@@ -8,7 +8,7 @@
             "修复部分Image组件缺失width属性的问题"
         ],
         "add":[
-            "app/[locale]/(public)/blogs/page.tsx"
+            "app/[locale]/(public)/blogs/[page]/page.tsx"
         ],
         "modify": [
             "app/[locale]/(public)/games/page.tsx",
