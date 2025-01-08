@@ -16,8 +16,10 @@
     "text": "コンテンツ",
     "help": "ヘルプ",
     "friendlyLinks": "関連リンク",
-    "articleList": "Article List",
-    "home": "Home"
+    "articleList": "記事リスト",
+    "home": "ホーム",
+    "next": "次へ",
+    "previous": "前へ"
   },
   "HomeIframe": {
     "title": "",

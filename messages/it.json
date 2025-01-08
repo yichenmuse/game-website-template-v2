@@ -16,8 +16,10 @@
     "text": "Contenuto",
     "help": "Aiuto",
     "friendlyLinks": "Link utili",
-    "articleList": "Article List",
-    "home": "Home"
+    "articleList": "Elenco articoli",
+    "home": "Home",
+    "next": "Successivo",
+    "previous": "Precedente"
   },
   "HomeIframe": {
     "title": "",

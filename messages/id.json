@@ -16,8 +16,10 @@
     "text": "Konten",
     "help": "Bantuan",
     "friendlyLinks": "Tautan Ramah",
-    "articleList": "Article List",
-    "home": "Home"
+    "articleList": "Daftar Artikel",
+    "home": "Beranda",
+    "next": "Selanjutnya",
+    "previous": "Sebelumnya"
   },
   "HomeIframe": {
     "title": "",

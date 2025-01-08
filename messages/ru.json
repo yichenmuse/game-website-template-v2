@@ -9,15 +9,17 @@
     "title": "Nav"
   },
   "Common": {
-    "createAt": "Create At",
-    "guide": "Guide",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfServices": "Terms of Services",
-    "text": "Content",
-    "help": "Help",
-    "friendlyLinks": "Friendly Links",
-    "articleList": "Article List",
-    "home": "Home"
+    "createAt": "Дата создания",
+    "guide": "Руководство",
+    "privacyPolicy": "Политика конфиденциальности",
+    "termsOfServices": "Условия использования",
+    "text": "Содержание",
+    "help": "Помощь",
+    "friendlyLinks": "Полезные ссылки",
+    "articleList": "Список статей",
+    "home": "Главная",
+    "next": "Следующий",
+    "previous": "Предыдущий"
   },
   "HomeIframe": {
     "title": "",

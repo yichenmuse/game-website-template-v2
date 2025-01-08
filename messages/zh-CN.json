@@ -9,15 +9,17 @@
     "title": "Nav"
   },
   "Common": {
-    "createAt": "Create At",
-    "guide": "Guide",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfServices": "Terms of Services",
-    "text": "Content",
-    "help": "Help",
-    "friendlyLinks": "Friendly Links",
-    "articleList": "Article List",
-    "home": "Home"
+    "createAt": "创建于",
+    "guide": "指南",
+    "privacyPolicy": "隐私政策",
+    "termsOfServices": "服务条款",
+    "text": "内容",
+    "help": "帮助",
+    "friendlyLinks": "友情链接",
+    "articleList": "文章列表",
+    "home": "首页",
+    "next": "下一页",
+    "previous": "上一页"
   },
   "HomeIframe": {
     "title": "",
