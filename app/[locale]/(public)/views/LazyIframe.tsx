@@ -36,7 +36,7 @@ export default function LazyIframe({
 
       return () => clearTimeout(timer);
     }
-  }, [isLoaded]);
+  }, [isLoaded,shouldLoad]);
 
   const containerClassName = "w-full h-[calc(100vh-20rem)] md:min-h-[600px] rounded-xl relative overflow-hidden";
 

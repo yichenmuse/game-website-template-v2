@@ -1,14 +1,15 @@
 {
-    "2025-01-07": {
+    "2025-01-08": {
         "version": "1.2.23",
         "messagesKeyModify": false,
         "changeLog": [
             "优化iframe蒙版样式和iframe自动加载策略",
             "增加文章列表分页功能以及调整文章显示顺序",
-            "修复部分Image组件缺失width属性的问题"
+            "修复部分Image组件缺失width属性的问题",
+            "增加隐私政策等页面的不被索引的配置"
         ],
         "add":[
-            "app/[locale]/(public)/blogs/[page]/page.tsx"
+            "app/[locale]/(public)/blogs/[[...page]]/page.tsx"
         ],
         "modify": [
             "app/[locale]/(public)/games/page.tsx",
@@ -19,7 +20,33 @@
             "app/[locale]/(public)/error.tsx",
             "app/[locale]/(public)/not-found.tsx",
             "app/global-error.tsx",
-            "lib/utils/blogs.ts"
+            "lib/utils/blogs.ts",
+            "app/[locale]/(public)/layout.tsx",
+            "app/[locale]/(public)/privacy-policy/page.tsx",
+            "app/[locale]/(public)/t/page.tsx",
+            "app/[locale]/(public)/terms-of-services/page.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx",
+            "lib/components/t-file-page-template.tsx",
+            "lib/utils/blogs.ts",
+            "messages/bn.json",
+            "messages/de.json",
+            "messages/en.json",
+            "messages/es.json",
+            "messages/fr.json",
+            "messages/game_page_template.json",
+            "messages/id.json",
+            "messages/it.json",
+            "messages/ja.json",
+            "messages/ko.json",
+            "messages/pt-BR.json",
+            "messages/pt.json",
+            "messages/ru.json",
+            "messages/th.json",
+            "messages/tr.json",
+            "messages/uk.json",
+            "messages/vi.json",
+            "messages/zh-CN.json",
+            "messages/zh-TW.json"
         ]
     },
     "2025-01-01 10": {

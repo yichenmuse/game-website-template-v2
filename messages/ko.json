@@ -16,8 +16,10 @@
     "text": "내용",
     "help": "도움",
     "friendlyLinks": "친절한 링크",
-    "articleList": "Article List",
-    "home": "Home"
+    "articleList": "게시물 목록",
+    "home": "홈",
+    "next": "다음",
+    "previous": "이전"
   },
   "HomeIframe": {
     "title": "",

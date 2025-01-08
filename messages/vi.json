@@ -9,15 +9,17 @@
     "title": "Nav"
   },
   "Common": {
-    "createAt": "Create At",
-    "guide": "Guide",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfServices": "Terms of Services",
-    "text": "Content",
-    "help": "Help",
-    "friendlyLinks": "Friendly Links",
-    "articleList": "Article List",
-    "home": "Home"
+    "createAt": "Tạo lúc",
+    "guide": "Hướng dẫn",
+    "privacyPolicy": "Chính sách bảo mật",
+    "termsOfServices": "Điều khoản dịch vụ",
+    "text": "Nội dung",
+    "help": "Trợ giúp",
+    "friendlyLinks": "Liên kết hữu ích",
+    "articleList": "Danh sách bài viết",
+    "home": "Trang chủ",
+    "next": "Tiếp theo",
+    "previous": "Trước đó"
   },
   "HomeIframe": {
     "title": "",

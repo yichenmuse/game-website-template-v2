@@ -16,8 +16,10 @@
     "text": "বিষয়বস্তু",
     "help": "সাহায্য",
     "friendlyLinks": "বন্ধুত্বপূর্ণ লিঙ্ক",
-    "articleList": "Article List",
-    "home": "Home"
+    "articleList": "নিবন্ধ তালিকা",
+    "home": "হোম",
+    "next": "পরবর্তী",
+    "previous": "পূর্ববর্তী"
   },
   "HomeIframe": {
     "title": "",

@@ -9,15 +9,17 @@
     "title": "Nav"
   },
   "Common": {
-    "createAt": "Create At",
-    "guide": "Guide",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfServices": "Terms of Services",
-    "text": "Content",
-    "help": "Help",
-    "friendlyLinks": "Friendly Links",
-    "articleList": "Article List",
-    "home": "Home"
+    "createAt": "สร้างเมื่อ",
+    "guide": "คู่มือ",
+    "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+    "termsOfServices": "ข้อกำหนดการให้บริการ",
+    "text": "เนื้อหา",
+    "help": "ช่วยเหลือ",
+    "friendlyLinks": "ลิงก์ที่เป็นมิตร",
+    "articleList": "รายการบทความ",
+    "home": "หน้าหลัก",
+    "next": "ถัดไป",
+    "previous": "ก่อนหน้า"
   },
   "HomeIframe": {
     "title": "",

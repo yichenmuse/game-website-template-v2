@@ -9,15 +9,17 @@
     "title": "Nav"
   },
   "Common": {
-    "createAt": "Create At",
-    "guide": "Guide",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfServices": "Terms of Services",
-    "text": "Content",
-    "help": "Help",
-    "friendlyLinks": "Friendly Links",
-    "articleList": "Article List",
-    "home": "Home"
+    "createAt": "Створено",
+    "guide": "Посібник",
+    "privacyPolicy": "Політика конфіденційності",
+    "termsOfServices": "Умови надання послуг",
+    "text": "Зміст",
+    "help": "Допомога",
+    "friendlyLinks": "Дружні посилання",
+    "articleList": "Список статей",
+    "home": "Головна",
+    "next": "Далі",
+    "previous": "Назад"
   },
   "HomeIframe": {
     "title": "",
