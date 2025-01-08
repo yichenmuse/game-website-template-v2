@@ -38,7 +38,7 @@ export async function generateStaticParams() {
   const allParams = [];
   for (const locale of locales) {
     const articles = getArticlesData()[locale] || [];
-    const totalPages = Math.ceil(articles.length / 2);
+    const totalPages = Math.ceil(articles.length / 20);
     
     // 为所有语言生成对应的路径
     allParams.push({ locale, page: [] });
@@ -64,7 +64,7 @@ export default async function Page({ params }: PageProps) {
     const t = await getTranslations({ locale });
 
     const currentPage = page ? Number(page[0]) || 1 : 1;
-    const pageSize = 2;
+    const pageSize = 20;
     const totalPages = Math.ceil(articles.length / pageSize);
     const startIndex = (currentPage - 1) * pageSize;
     const endIndex = startIndex + pageSize;
