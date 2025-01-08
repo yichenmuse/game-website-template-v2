@@ -28,6 +28,7 @@
             "app/[locale]/(public)/views/LazyIframe.tsx",
             "lib/components/t-file-page-template.tsx",
             "lib/utils/blogs.ts",
+            "next.config.ts",
             "messages/bn.json",
             "messages/de.json",
             "messages/en.json",

@@ -37,6 +37,14 @@ const nextConfig: NextConfig = {
     experimental: {
         cssChunking: "strict"
     },
+    images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'public-image.fafafa.ai',
+          },
+        ],
+    },
     // output: 'standalone',
     productionBrowserSourceMaps: true,
     pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
