@@ -19,6 +19,7 @@
             "app/[locale]/(public)/views/Recommendation.tsx",
             "app/[locale]/(public)/error.tsx",
             "app/[locale]/(public)/not-found.tsx",
+            "lib/components/navbar.tsx",
             "app/global-error.tsx",
             "lib/utils/blogs.ts",
             "app/[locale]/(public)/layout.tsx",
