@@ -7,7 +7,7 @@ import { notFound, permanentRedirect } from 'next/navigation';
 import {siteConfig} from '@/lib/config/site';
 import Image from 'next/image';
 import dayjs from 'dayjs';
-
+export const dynamic = 'force-static'
 type Props = {
   params: Promise<{ locale: string; page: string }>;
 };
@@ -62,18 +62,13 @@ export default async function Page({ params }: PageProps) {
     setRequestLocale(locale);
     const articles = getArticlesData()[locale] || [];
     const t = await getTranslations({ locale });
-
+    console.log("###articles#####",articles);
     const currentPage = page ? Number(page[0]) || 1 : 1;
     const pageSize = 20;
     const totalPages = Math.ceil(articles.length / pageSize);
     const startIndex = (currentPage - 1) * pageSize;
     const endIndex = startIndex + pageSize;
     const currentArticles = articles.slice(startIndex, endIndex);
-
-    if (currentPage > totalPages) {
-      permanentRedirect(`${alternatesCanonical(locale, '/blogs')}`);
-    }
-
     // 生成分页链接
     const paginationLinks = [];
     for (let i = 1; i <= totalPages; i++) {
