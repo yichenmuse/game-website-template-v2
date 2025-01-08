@@ -19,7 +19,8 @@ export default async function IframeSection({pageName}:{pageName:string|null}) {
   const isIframe = siteConfig.gameType === 'iframe';
   const isPopup = siteConfig.gameType === 'popup';
   const screenshot_prefix = pageName ? '/games/' + pageName : '';
-  const game_screenshot_path = `${screenshot_prefix}/game_screenshot.webp`;
+  const game_screenshot_path = siteConfig.screenshotUrl || `${screenshot_prefix}/game_screenshot.webp`;
+
   return (
     <section className="bg-black text-white flex flex-col items-center justify-center p-4 pt-0 relative mb-6 min-h-[calc(40vh-6rem)] md:min-h-[400px] lg:min-h-[600px]">
       {/* 背景图片处理 */}
