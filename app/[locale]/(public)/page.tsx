@@ -51,7 +51,7 @@ export default async function Page({ params }: Props) {
     const { content } = matter(Content);
     features2ContentResult = content;
   } catch (error) {
-    console.log(`features2 section can not find ${locale}.mdx`, error);
+    console.warn(`features2 section can not find ${locale}.mdx`, error);
   }
   return (
     <div className="bg-black pt-5 pb-5">

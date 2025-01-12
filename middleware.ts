@@ -13,7 +13,6 @@ const doIntlMiddleware = createMiddleware({
 // eslint-disable-next-line import/no-anonymous-default-export
 export default async (request: NextRequest) => {
   const path = request.nextUrl.pathname;
-
   // 检查是否是带文件扩展名的请求
   if (path.includes('.')) {
     return NextResponse.next();

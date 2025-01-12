@@ -185,6 +185,12 @@ const config: Config = {
             hr: {
               borderColor: 'rgba(255, 255, 255, 0.1)',
             },
+            th:{
+              color: '#E2E8F0',
+            },
+            tr:{
+              color: '#E2E8F0',
+            },
             ul: {
               li: {
                 '&::marker': {

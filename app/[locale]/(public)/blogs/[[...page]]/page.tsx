@@ -62,7 +62,7 @@ export default async function Page({ params }: PageProps) {
     setRequestLocale(locale);
     const articles = getArticlesData()[locale] || [];
     const t = await getTranslations({ locale });
-    console.log("###articles#####",articles);
+    // console.log("###articles#####",articles);
     const currentPage = page ? Number(page[0]) || 1 : 1;
     const pageSize = 20;
     const totalPages = Math.ceil(articles.length / pageSize);

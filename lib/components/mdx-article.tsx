@@ -1,6 +1,5 @@
 import { cn } from '@/lib/utils/commons';
 import { MDXRemote } from 'next-mdx-remote/rsc';
-import Image from 'next/image';
 import Link from "next/link";
 import React from "react";
 import remarkGfm from "remark-gfm";
@@ -47,7 +46,7 @@ function CustomLink(props: any) {
 }
 
 function RoundedImage(props: any) {
-    return <Image alt={props.alt} className="rounded-lg" {...props} />
+    return <img alt={props.alt} className="rounded-lg" {...props} />
 }
 
 function Code({children, ...props}: { children: any }) {
@@ -100,7 +99,6 @@ const overrideComponents: any = {
     Image: RoundedImage,
     a: CustomLink,
     code: Code,
-    table:Table,
 }
 
 
@@ -115,7 +113,7 @@ export default function MdxArticle({source, className, components = {}}: MdxArti
     try {
         return <article
             className={cn(
-                "prose prose-sm md:prose-base lg:prose-lg w-full max-w-full",
+                "prose prose-sm md:prose-base lg:prose-lg w-full max-w-full prose-green-dark",
                 className,
             )}
         >
