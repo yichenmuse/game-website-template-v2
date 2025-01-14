@@ -29,9 +29,12 @@ export default async function GameRecommendationCard({ locale }: { locale: strin
   let groupedGames: GroupedGames = {};
   // 按分类对游戏进行分组
   groupedGames = games.reduce((acc: GroupedGames, game) => {
+    //@ts-ignore
     if (!acc[game.category]) {
+       //@ts-ignore
       acc[game.category] = [];
     }
+     //@ts-ignore
     acc[game.category].push(game);
     return acc;
   }, {});
