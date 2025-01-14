@@ -1,4 +1,24 @@
 {
+    "2025-01-14": {
+        "version": "1.2.29",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修改图片使用方式，去除nextjs默认的图片加载策略"
+        ],
+        "modify": [
+            "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
+            "app/[locale]/(public)/games/page.tsx",
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/privacy-policy/page.tsx",
+            "app/[locale]/(public)/terms-of-services/page.tsx",
+            "app/[locale]/(public)/views/CustomizeFeatures.tsx",
+            "app/[locale]/(public)/views/Features.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx",
+            "app/[locale]/(public)/views/Recommendation.tsx",
+            "lib/components/games-template/page.tsx"
+        ]
+    },
+
 "2025-01-09": {
     "version": "1.2.28",
     "messagesKeyModify": false,

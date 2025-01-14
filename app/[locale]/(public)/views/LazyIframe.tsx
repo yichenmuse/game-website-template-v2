@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import IframeActions from './IframeActions';
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 export default function LazyIframe({ 
@@ -60,13 +59,11 @@ export default function LazyIframe({
           <div className="relative group w-full max-w-[480px] cursor-pointer" onClick={handlePlayClick}>
             <div className="w-full aspect-video rounded-2xl overflow-hidden  border-yellow-500/50">
               {gameImage ? (
-                <Image 
+                <img 
                   src={gameImage} 
                   alt={title}
                   width={480}
                   height={270}
-                  priority={true}
-                  quality={75}
                   className="w-full h-full object-cover will-change-transform group-hover:scale-110 transition-transform duration-300"
                 />
               ) : (

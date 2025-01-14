@@ -92,7 +92,7 @@ export default async function Page({ params }: PageProps) {
               <div className="flex items-center gap-4">
                 <div className='aspect-[4/3] md:aspect-[16/9] relative'>
                 {article.image && (
-                    <Image
+                    <img
                     src={article.image} 
                     alt={article.title} 
                     loading="lazy"

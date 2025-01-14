@@ -119,7 +119,7 @@ export default async function GamesPage({ params }: Props) {
               className="group block bg-gray-900 rounded-lg overflow-hidden hover:ring-2 hover:ring-primary transition-all duration-300"
             >
               <div className="aspect-video relative">
-                <Image
+                <img
                   src={game.screenshotUrl}
                   alt={game.name}
                   className="w-full h-full object-cover absolute inset-0"

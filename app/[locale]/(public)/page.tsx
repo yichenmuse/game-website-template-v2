@@ -46,12 +46,14 @@ export default async function Page({ params }: Props) {
   const siteConfig2 = siteConfig as unknown as SiteConfig
   const pageName = null;
   let features2ContentResult = null;
-  try {
-    const Content = (await import(`!!raw-loader!./config/features/${locale}.mdx`)).default;
-    const { content } = matter(Content);
-    features2ContentResult = content;
-  } catch (error) {
-    console.warn(`features2 section can not find ${locale}.mdx`, error);
+  if(siteConfig2.customizeFeatures){
+    try {
+      const Content = (await import(`!!raw-loader!./config/features/${locale}.mdx`)).default;
+      const { content } = matter(Content);
+      features2ContentResult = content;
+    } catch (error) {
+      console.warn(`features2 section can not find ${locale}.mdx`, error);
+    }
   }
   return (
     <div className="bg-black pt-5 pb-5">
