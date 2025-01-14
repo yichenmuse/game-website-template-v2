@@ -1,4 +1,25 @@
 {
+    "2025-01-15": {
+        "version": "1.3.0",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "新增游戏盒子页面",
+            "优化游戏推荐卡片组件",
+            "新增游戏盒子设置功能"
+        ],
+        "add": [
+            "app/[locale]/(public)/c/[[...page]]/page.tsx",
+            "app/[locale]/(public)/game-page.tsx",
+            "lib/components/game-category/index.tsx",
+            "lib/utils/game-box-settings.ts",
+            "resources/game-box/en.json"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx",
+            "lib/types/site.ts"
+        ]
+    },
     "2025-01-14": {
         "version": "1.2.29",
         "messagesKeyModify": false,
@@ -18,27 +39,25 @@
             "lib/components/games-template/page.tsx"
         ]
     },
-
-"2025-01-09": {
-    "version": "1.2.28",
-    "messagesKeyModify": false,
-    "changeLog": [
-        "解决自定义页面内容无法渲染表格的问题，修改自定义内容样式与首页其他页面一致"
-    ],
-    "add":[
-        "lib/config/game-box.json.json"
-    ],
-    "modify": [
-        "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
-        "app/[locale]/(public)/page.tsx",
-        "lib/components/games-template/page.tsx",
-        "lib/components/mdx-article.tsx",
-        "lib/components/t-file-page-template.tsx",
-        "middleware.ts",
-        "tailwind.config.ts"
-    ]
-},
-
+    "2025-01-09": {
+        "version": "1.2.28",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "解决自定义页面内容无法渲染表格的问题，修改自定义内容样式与首页其他页面一致"
+        ],
+        "add": [
+            "lib/config/game-box.json.json"
+        ],
+        "modify": [
+            "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
+            "app/[locale]/(public)/page.tsx",
+            "lib/components/games-template/page.tsx",
+            "lib/components/mdx-article.tsx",
+            "lib/components/t-file-page-template.tsx",
+            "middleware.ts",
+            "tailwind.config.ts"
+        ]
+    },
     "2025-01-08 20": {
         "version": "1.2.27",
         "messagesKeyModify": false,
