@@ -1,69 +1,75 @@
 {
-  "title": "",
-  "slogan": "",
-  "description": "",
+  "title": "เกม Jujutsu Infinite | Jujutsu infinity | Game Wiki(Jujutsu Infinite | Jujutsu infinity | Game Wiki)",
+  "slogan": "สำรวจจักรวาลเวทมนต์อันไร้ขอบเขต(Explore the Infinite Realm of Sorcerers)",
+  "description": "ดื่มด่ำไปกับโลก Jujutsu Infinite (Jujutsu infinity) ที่ผู้เล่นจะได้เป็นนักเวทย์มนต์ต่อสู้กับวิญญาณผีดิบและมีปฏิสัมพันธ์กับจักรวาลอนิเมะ (Dive into the world of Jujutsu Infinite (Jujutsu infinity) where players become sorcerers, battle cursed spirits, and interact with the anime universe.)",
   "Loading": {
-    "title": ""
+    "title": "กำลังโหลด Jujutsu Infinite (Jujutsu infinity)...(Loading Jujutsu Infinite (Jujutsu infinity)...)"
   },
   "Navbar": {
-    "title": "Nav"
+    "title": "เมนู(Nav)"
   },
   "Common": {
-    "createAt": "สร้างเมื่อ",
+    "createAt": "สร้างใน",
     "guide": "คู่มือ",
     "privacyPolicy": "นโยบายความเป็นส่วนตัว",
     "termsOfServices": "ข้อกำหนดการให้บริการ",
     "text": "เนื้อหา",
-    "help": "ช่วยเหลือ",
-    "friendlyLinks": "ลิงก์ที่เป็นมิตร",
-    "articleList": "รายการบทความ",
+    "help": "ความช่วยเหลือ",
+    "friendlyLinks": "ลิงก์แนะนำ",
+    "articleList": "Article List",
     "home": "หน้าหลัก",
     "next": "ถัดไป",
     "previous": "ก่อนหน้า"
   },
   "HomeIframe": {
-    "title": "",
-    "description": "",
-    "iframeTitle": "Game Preview",
-    "fullscreenButton": "Fullscreen",
-    "shareButton": "Share",
-    "urlCopied": "URL copied to clipboard!",
-    "downloadGame": "Download Game",
+    "title": "เกม Jujutsu Infinite | Jujutsu infinity | Game Wiki(Jujutsu Infinite | Jujutsu infinity | Game Wiki)",
+    "description": "สัมผัสประสบการณ์การเล่นเกม Jujutsu Infinite ที่มีการเคลื่อนไหวพลวัตพร้อมภารกิจและความท้าทายในสภาพแวดล้อมอันเต็มเปี่ยมด้วยเรื่องราว(Experience Jujutsu Infinite's dynamic gameplay with missions and challenges within a story-rich environment.)",
+    "iframeTitle": "ตัวอย่างเกม",
+    "fullscreenButton": "เต็มหน้าจอ",
+    "shareButton": "แชร์",
+    "urlCopied": "URL คัดลอกไปยังคลิปบอร์ดเรียบร้อยแล้ว!",
+    "downloadGame": "แลกโค้ด",
     "playGame": "เล่นเกม"
   },
   "HomeFeatures": {
-    "gameTitle": "",
-    "whatIsTitle": "",
-    "whatIsDescription": "",
-    "howToPlayTitle": "How to Play",
-    "howToPlayStep1": "",
-    "howToPlayStep2": "",
-    "howToPlayStep3": "",
-    "keyFeaturesTitle": "Key Features",
-    "feature1Title": "",
-    "feature1Description": "",
-    "feature2Title": "",
-    "feature2Description": "",
-    "feature3Title": "",
-    "feature3Description": "",
-    "feature4Title": "",
-    "feature4Description": ""
+    "gameTitle": "คุณสมบัติของเกม Jujutsu Infinite | Jujutsu infinity | Game Wiki(Jujutsu Infinite | Jujutsu infinity | Game Wiki Features)",
+    "whatIsTitle": "Jujutsu Infinite คืออะไร?",
+    "whatIsDescription": "Jujutsu Infinite เป็นเกม Roblox MMORPG ที่ดื่มด่ำไปกับโลกที่ได้รับแรงบันดาลใจจาก Jujutsu Kaisen โดยมีการปรับแต่งตัวละคร การต่อสู้กับวิญญาณผีดิบและอื่นๆ (Jujutsu Infinite is a Roblox MMORPG that immerses players in a world inspired by Jujutsu Kaisen, offering character customization, combat with cursed spirits, and more.)",
+    "howToPlayTitle": "วิธีการเล่น",
+    "howToPlayStep1": "ปรับแต่งนักเวทย์ Jujutsu ของคุณด้วยเทคนิคที่ติดตัวมา",
+    "howToPlayStep2": "เสร็จสิ้นภารกิจและต่อสู้กับวิญญาณผีดิบเพื่อเพิ่มระดับ",
+    "howToPlayStep3": "มีส่วนร่วมในการต่อสู้ PvP และการโจมตีบอสเพื่อรับรางวัลหายาก",
+    "keyFeaturesTitle": "คุณสมบัติหลัก",
+    "feature1Title": "การสร้างตัวละคร",
+    "feature1Description": "ปรับแต่งนักเวทย์ของคุณด้วยความสามารถและทักษะเฉพาะตัว",
+    "feature2Title": "โหมดเรื่อง",
+    "feature2Description": "ดื่มด่ำไปกับเรื่องราวที่เกี่ยวข้องกับตัวละครในมังงะ",
+    "feature3Title": "การโจมตีบอส",
+    "feature3Description": "รวมทีมเพื่อเอาชนะบอสที่ทรงพลังเพื่อรับไอเท็มหายาก",
+    "feature4Title": "การต่อสู้ PvP",
+    "feature4Description": "ท้าทายผู้เล่นคนอื่นเพื่อทดสอบทักษะการต่อสู้ของคุณ"
   },
   "HomeFAQs": {
-    "title": "FAQs"
+    "title": "คำถามที่พบบ่อย"
   },
   "HomeRelatedVideo": {
-    "title": "Game Video"
+    "title": "วิดีโอเกม"
   },
   "HomeRecommendation": {
-    "title": "Recommends"
+    "title": "แนะนำ"
   },
   "HomeComments": {
-    "title": "Play Comments"
+    "title": "ความคิดเห็นของผู้เล่น"
   },
   "GamePage": {
     "title": "ทุกเกม",
     "description": "ทุกเกม",
     "games": "เกม"
+  },
+  "CategoryPage": {
+    "categories": "หมวดหมู่",
+    "noCategories": "ไม่พบหมวดหมู่",
+    "viewMore": "ดูเพิ่มเติม",
+    "page": "หน้า"
   }
 }

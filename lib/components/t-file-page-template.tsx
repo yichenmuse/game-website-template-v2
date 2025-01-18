@@ -69,25 +69,25 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
     }
     const {content, data: frontMatter } = matter(Content);
     const t = await getTranslations({ locale });
-    return <div className="bg-black  pt-5 pb-5">
+    return <div className="bg-background pt-5 pb-5">
       <div className="container mx-auto">
-      <div className=" py-2 px-4 max-w-4xl mx-auto text-white">
+      <div className="py-2 px-4 max-w-4xl mx-auto text-foreground">
             {/* 添加面包屑导航 */}
             <nav className="text-sm" aria-label="Breadcrumb">
                 <ol className="flex space-x-2">
                   <li>
-                    <Link href="/" className="">
+                    <Link href="/" className="text-link hover:text-link-hover">
                       {t('Common.home')}
                     </Link>
                   </li>
-                  <li>/</li>
+                  <li className="text-divider">/</li>
                   <li>
-                    <Link href="/blogs" >
+                    <Link href="/blogs" className="text-link hover:text-link-hover">
                       {t('Common.articleList')}
                     </Link>
                   </li>
-                  <li>/</li>
-                  <li className="text-gray-400" aria-current="page">
+                  <li className="text-divider">/</li>
+                  <li className="text-muted" aria-current="page">
                     {frontMatter.title}
                   </li>
                 </ol>
@@ -95,8 +95,8 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
 
       </div>
         <article
-          className=" rounded-2xl max-w-4xl mx-auto py-5 px-4 ">
-          <MdxArticle  source={content} className="max-w-full"/>
+          className="rounded-2xl max-w-4xl mx-auto py-5 px-4">
+          <MdxArticle source={content} className="max-w-full"/>
         </article>
         </div>
     </div>

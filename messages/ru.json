@@ -1,69 +1,75 @@
 {
-  "title": "",
-  "slogan": "",
-  "description": "",
+  "title": "Бескрайний Джудзуцу | Джудзуцу бесконечность | Википедия по игре",
+  "slogan": "Исследуйте Бескрайний мир колдунов",
+  "description": "Погрузитесь в мир Бескрайнего Джудзуцу (Джудзуцу бесконечность), где игроки становятся колдунами, сражаются с проклятыми духами и взаимодействуют с вселенной аниме.",
   "Loading": {
-    "title": ""
+    "title": "Загрузка Бескрайнего Джудзуцу (Джудзуцу бесконечность)..."
   },
   "Navbar": {
-    "title": "Nav"
+    "title": "Навигация"
   },
   "Common": {
-    "createAt": "Дата создания",
+    "createAt": "Создано",
     "guide": "Руководство",
     "privacyPolicy": "Политика конфиденциальности",
     "termsOfServices": "Условия использования",
-    "text": "Содержание",
+    "text": "Контент",
     "help": "Помощь",
     "friendlyLinks": "Полезные ссылки",
-    "articleList": "Список статей",
+    "articleList": "Article List",
     "home": "Главная",
     "next": "Следующий",
     "previous": "Предыдущий"
   },
   "HomeIframe": {
-    "title": "",
-    "description": "",
-    "iframeTitle": "Game Preview",
-    "fullscreenButton": "Fullscreen",
-    "shareButton": "Share",
-    "urlCopied": "URL copied to clipboard!",
-    "downloadGame": "Download Game",
-    "playGame": "Играть в игру"
+    "title": "Бескрайний Джудзуцу | Джудзуцу бесконечность | Википедия по игре",
+    "description": "Ощутите динамичный геймплей Бескрайнего Джудзуцу с миссиями и испытаниями в насыщенной историями среде.",
+    "iframeTitle": "Предварительный просмотр игры",
+    "fullscreenButton": "Полноэкранный режим",
+    "shareButton": "Поделиться",
+    "urlCopied": "Ссылка скопирована в буфер обмена!",
+    "downloadGame": "Выполнить обмен кодами",
+    "playGame": "Играть"
   },
   "HomeFeatures": {
-    "gameTitle": "",
-    "whatIsTitle": "",
-    "whatIsDescription": "",
-    "howToPlayTitle": "How to Play",
-    "howToPlayStep1": "",
-    "howToPlayStep2": "",
-    "howToPlayStep3": "",
-    "keyFeaturesTitle": "Key Features",
-    "feature1Title": "",
-    "feature1Description": "",
-    "feature2Title": "",
-    "feature2Description": "",
-    "feature3Title": "",
-    "feature3Description": "",
-    "feature4Title": "",
-    "feature4Description": ""
+    "gameTitle": "Особенности Бескрайнего Джудзуцу | Джудзуцу бесконечность | Википедия по игре",
+    "whatIsTitle": "Что такое Бескрайний Джудзуцу?",
+    "whatIsDescription": "Бескрайний Джудзуцу – это MMORPG Roblox, погружающая игроков в мир, вдохновленный Джудзуцу Кайсен. Здесь вы сможете настроить своего персонажа, сразиться с проклятыми духами и многое другое.",
+    "howToPlayTitle": "Как играть",
+    "howToPlayStep1": "Настройте своего колдуна Джудзуцу с уникальными навыками.",
+    "howToPlayStep2": "Выполняйте миссии и сражайтесь с проклятыми духами, чтобы повышать уровень.",
+    "howToPlayStep3": "Участвуйте в PvP-сражениях и рейдах на боссов за редкие награды.",
+    "keyFeaturesTitle": "Ключевые особенности",
+    "feature1Title": "Создание персонажа",
+    "feature1Description": "Настройте своего колдуна с уникальными способностями и навыками.",
+    "feature2Title": "Режим истории",
+    "feature2Description": "Погрузитесь в богатые повествования, связанные с персонажами манги.",
+    "feature3Title": "Рейды на боссов",
+    "feature3Description": "Объединитесь, чтобы победить сильных боссов ради редких предметов.",
+    "feature4Title": "PvP-сражения",
+    "feature4Description": "Соревнуйтесь с другими игроками, чтобы проверить свои навыки боя."
   },
   "HomeFAQs": {
-    "title": "FAQs"
+    "title": "ЧАВО"
   },
   "HomeRelatedVideo": {
-    "title": "Game Video"
+    "title": "Видео по игре"
   },
   "HomeRecommendation": {
-    "title": "Recommends"
+    "title": "Рекомендации"
   },
   "HomeComments": {
-    "title": "Play Comments"
+    "title": "Комментарии к игре"
   },
   "GamePage": {
     "title": "Все игры",
     "description": "Все игры",
     "games": "Игры"
+  },
+  "CategoryPage": {
+    "categories": "Категории",
+    "noCategories": "Категории не найдены",
+    "viewMore": "Посмотреть больше",
+    "page": "Страница"
   }
 }

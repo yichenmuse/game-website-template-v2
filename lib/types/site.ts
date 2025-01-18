@@ -39,10 +39,11 @@ export interface FriendLinkItem {
 }
 
 export interface Theme {
-  headFont: string | null;
-  primaryColor: string | null;
-  fontColor: string | null;
-  backgroundColor: string | null;
+  name?: string;
+  headFont?: string | null;
+  primaryColor?: string | null;
+  fontColor?: string | null;
+  backgroundColor?: string | null;
 }
 
 export interface MaterialItem {
@@ -59,7 +60,7 @@ export interface SiteConfig {
   name: string;
   // 网站标语
   slogan: string;
-   // 网站域名
+  // 网站域名
   domain: string
   // 网站图标
   icon: string;
@@ -128,8 +129,10 @@ export interface SiteConfig {
   screenshotUrl?: string | null;
   // 创建时间
   createdTime?: string | null;
- // 更新时间
+  // 更新时间
   updatedTime?: string | null;
+  // 标签
+  tags?:string[]
 }
 
 export interface GameCategory {

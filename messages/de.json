@@ -1,9 +1,9 @@
 {
-  "title": "",
-  "slogan": "",
-  "description": "",
+  "title": "Jujutsu Infinite | Jujutsu infinity | Spiel-Wiki",
+  "slogan": "Erkunde die unendliche Welt der Zauberer",
+  "description": "Tauche ein in die Welt von Jujutsu Infinite (Jujutsu infinity), in der Spieler zu Zauberern werden, gegen verfluchte Geister kämpfen und mit der Anime-Welt interagieren.",
   "Loading": {
-    "title": ""
+    "title": "Wird Jujutsu Infinite (Jujutsu infinity) geladen..."
   },
   "Navbar": {
     "title": "Navigation"
@@ -11,46 +11,46 @@
   "Common": {
     "createAt": "Erstellt am",
     "guide": "Leitfaden",
-    "privacyPolicy": "Datenschutzbestimmungen",
+    "privacyPolicy": "Datenschutzrichtlinie",
     "termsOfServices": "Nutzungsbedingungen",
     "text": "Inhalt",
     "help": "Hilfe",
     "friendlyLinks": "Freundliche Links",
-    "articleList": "Artikelliste",
+    "articleList": "Article List",
     "home": "Startseite",
     "next": "Weiter",
     "previous": "Zurück"
   },
   "HomeIframe": {
-    "title": "",
-    "description": "",
+    "title": "Jujutsu Infinite | Jujutsu infinity | Spiel-Wiki",
+    "description": "Erlebe das dynamische Gameplay von Jujutsu Infinite mit Missionen und Herausforderungen in einer geschichtsträchtigen Umgebung.",
     "iframeTitle": "Spielvorschau",
     "fullscreenButton": "Vollbild",
     "shareButton": "Teilen",
     "urlCopied": "URL in die Zwischenablage kopiert!",
-    "downloadGame": "Spiel herunterladen",
-    "playGame": "Spiel spielen"
+    "downloadGame": "Codes einlösen",
+    "playGame": "Spiel starten"
   },
   "HomeFeatures": {
-    "gameTitle": "",
-    "whatIsTitle": "",
-    "whatIsDescription": "",
-    "howToPlayTitle": "So spielt man",
-    "howToPlayStep1": "",
-    "howToPlayStep2": "",
-    "howToPlayStep3": "",
-    "keyFeaturesTitle": "Hauptmerkmale",
-    "feature1Title": "",
-    "feature1Description": "",
-    "feature2Title": "",
-    "feature2Description": "",
-    "feature3Title": "",
-    "feature3Description": "",
-    "feature4Title": "",
-    "feature4Description": ""
+    "gameTitle": "Jujutsu Infinite | Jujutsu infinity | Spiel-Wiki Funktionen",
+    "whatIsTitle": "Was ist Jujutsu Infinite?",
+    "whatIsDescription": "Jujutsu Infinite ist ein Roblox MMORPG, das Spieler in eine Welt eintauchen lässt, die von Jujutsu Kaisen inspiriert ist. Es bietet Charakteranpassung, Kämpfe mit verfluchten Geistern und mehr.",
+    "howToPlayTitle": "So spielst du",
+    "howToPlayStep1": "Passe deinen Jujutsu-Zauberer mit angeborenen Techniken an.",
+    "howToPlayStep2": "Schließe Missionen ab und kämpfe gegen verfluchte Geister, um aufzusteigen.",
+    "howToPlayStep3": "Nimm am PvP- und Boss-Raid-Modus teil, um seltene Belohnungen zu erhalten.",
+    "keyFeaturesTitle": "Wichtige Funktionen",
+    "feature1Title": "Charaktererstellung",
+    "feature1Description": "Passe deinen Zauberer mit einzigartigen Fähigkeiten und Fertigkeiten an.",
+    "feature2Title": "Geschichtenmodus",
+    "feature2Description": "Tauche in die reichhaltigen Erzählungen ein, die Manga-Charaktere beinhalten.",
+    "feature3Title": "Boss-Raids",
+    "feature3Description": "Schließe dich zusammen, um mächtige Bosse zu besiegen und seltene Gegenstände zu erhalten.",
+    "feature4Title": "PvP-Kämpfe",
+    "feature4Description": "Fordere andere Spieler heraus, um deine Kampfkünste zu testen."
   },
   "HomeFAQs": {
-    "title": "Häufige Fragen"
+    "title": "FAQ"
   },
   "HomeRelatedVideo": {
     "title": "Spielvideo"
@@ -65,5 +65,11 @@
     "title": "Alle Spiele",
     "description": "Alle Spiele",
     "games": "Spiele"
+  },
+  "CategoryPage": {
+    "categories": "Kategorien",
+    "noCategories": "Keine Kategorien gefunden",
+    "viewMore": "Mehr anzeigen",
+    "page": "Seite"
   }
 }

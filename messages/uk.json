@@ -1,69 +1,75 @@
 {
-  "title": "",
-  "slogan": "",
-  "description": "",
+  "title": "Jujutsu Infinite | Jujutsu infinity | Game Wiki",
+  "slogan": "Досліджуйте нескінченний світ чарівників",
+  "description": "Зануртесь у світ Jujutsu Infinite (Jujutsu infinity), де гравці стають чарівниками, борються з проклятими духами та взаємодіють з всесвітом аніме.",
   "Loading": {
-    "title": ""
+    "title": "Завантаження Jujutsu Infinite (Jujutsu infinity)..."
   },
   "Navbar": {
-    "title": "Nav"
+    "title": "Навігація"
   },
   "Common": {
     "createAt": "Створено",
     "guide": "Посібник",
     "privacyPolicy": "Політика конфіденційності",
-    "termsOfServices": "Умови надання послуг",
-    "text": "Зміст",
+    "termsOfServices": "Умови використання",
+    "text": "Контент",
     "help": "Допомога",
-    "friendlyLinks": "Дружні посилання",
-    "articleList": "Список статей",
+    "friendlyLinks": "Корисні посилання",
+    "articleList": "Article List",
     "home": "Головна",
     "next": "Далі",
     "previous": "Назад"
   },
   "HomeIframe": {
-    "title": "",
-    "description": "",
-    "iframeTitle": "Game Preview",
-    "fullscreenButton": "Fullscreen",
-    "shareButton": "Share",
-    "urlCopied": "URL copied to clipboard!",
-    "downloadGame": "Download Game",
-    "playGame": "Грати у гру"
+    "title": "Jujutsu Infinite | Jujutsu infinity | Game Wiki",
+    "description": "Досвідьте динамічну гру Jujutsu Infinite з місіями та викликами в історіївповненому середовищі.",
+    "iframeTitle": "Попередній перегляд гри",
+    "fullscreenButton": "Повноекранний режим",
+    "shareButton": "Поділитися",
+    "urlCopied": "Посилання скопійовано в буфер обміну!",
+    "downloadGame": "Викупити коди",
+    "playGame": "Грати"
   },
   "HomeFeatures": {
-    "gameTitle": "",
-    "whatIsTitle": "",
-    "whatIsDescription": "",
-    "howToPlayTitle": "How to Play",
-    "howToPlayStep1": "",
-    "howToPlayStep2": "",
-    "howToPlayStep3": "",
-    "keyFeaturesTitle": "Key Features",
-    "feature1Title": "",
-    "feature1Description": "",
-    "feature2Title": "",
-    "feature2Description": "",
-    "feature3Title": "",
-    "feature3Description": "",
-    "feature4Title": "",
-    "feature4Description": ""
+    "gameTitle": "Jujutsu Infinite | Jujutsu infinity | Game Wiki Особливості",
+    "whatIsTitle": "Що таке Jujutsu Infinite?",
+    "whatIsDescription": "Jujutsu Infinite – це MMORPG Roblox, яка занурює гравців у світ, натхненний Jujutsu Kaisen, пропонуючи налаштування персонажа, бойові зіткнення з проклятими духами та багато іншого.",
+    "howToPlayTitle": "Як грати",
+    "howToPlayStep1": "Налаштуйте свого чарівника Jujutsu з вродженими технікамі.",
+    "howToPlayStep2": "Виконайте місії та боріться з проклятими духами, щоб підвищити рівень.",
+    "howToPlayStep3": "Беріть участь у PvP та рейдах босів за рідкими нагородами.",
+    "keyFeaturesTitle": "Ключові особливості",
+    "feature1Title": "Створення персонажа",
+    "feature1Description": "Налаштуйте свого чарівника з унікальними здібностями та навичками.",
+    "feature2Title": "Ігровий режим",
+    "feature2Description": "Зануртесь у насичені історії з персонажами манги.",
+    "feature3Title": "Рейди босів",
+    "feature3Description": "Об'єднайтеся, щоб перемогти могутніх босів за рідкими предметами.",
+    "feature4Title": "PvP бої",
+    "feature4Description": "Викличіть інших гравців, щоб перевірити свої навички в бою."
   },
   "HomeFAQs": {
-    "title": "FAQs"
+    "title": "Часті запитання"
   },
   "HomeRelatedVideo": {
-    "title": "Game Video"
+    "title": "Відео про гру"
   },
   "HomeRecommendation": {
-    "title": "Recommends"
+    "title": "Рекомендації"
   },
   "HomeComments": {
-    "title": "Play Comments"
+    "title": "Коментарі до гри"
   },
   "GamePage": {
-    "title": "All Games",
-    "description": "All Games",
-    "games": "Games"
+    "title": "Всі ігри",
+    "description": "Всі ігри",
+    "games": "Ігри"
+  },
+  "CategoryPage": {
+    "categories": "Категорії",
+    "noCategories": "Категорії не знайдено",
+    "viewMore": "Переглянути більше",
+    "page": "Сторінка"
   }
 }

@@ -1,69 +1,75 @@
 {
-  "title": "",
-  "slogan": "",
-  "description": "",
+  "title": "Jujutsu Infinite | Jujutsu infinity | Oyun Wiki",
+  "slogan": "Sihirbazların Sonsuz Alemine Keşfedin",
+  "description": "Jujutsu Infinite (Jujutsu infinity) oyun dünyasına dalın, oyuncular sihirciler olarak lanetli ruhlarla savaşır ve anime evreninde etkileşime girer.",
   "Loading": {
-    "title": ""
+    "title": "Jujutsu Infinite (Jujutsu infinity) Yükleniyor..."
   },
   "Navbar": {
-    "title": "Nav"
+    "title": "Gezinti"
   },
   "Common": {
     "createAt": "Oluşturulma Tarihi",
-    "guide": "Rehber",
+    "guide": "Yönerge",
     "privacyPolicy": "Gizlilik Politikası",
     "termsOfServices": "Hizmet Şartları",
     "text": "İçerik",
     "help": "Yardım",
     "friendlyLinks": "Dost Bağlantılar",
-    "articleList": "Makale Listesi",
+    "articleList": "Article List",
     "home": "Ana Sayfa",
     "next": "Sonraki",
     "previous": "Önceki"
   },
   "HomeIframe": {
-    "title": "",
-    "description": "",
-    "iframeTitle": "Game Preview",
-    "fullscreenButton": "Fullscreen",
-    "shareButton": "Share",
-    "urlCopied": "URL copied to clipboard!",
-    "downloadGame": "Download Game",
-    "playGame": "Oyun Oyna"
+    "title": "Jujutsu Infinite | Jujutsu infinity | Oyun Wiki",
+    "description": "Jujutsu Infinite'ın hikaye bakımından zengin bir ortamda görevler ve zorluklarla dinamik oyun deneyimini yaşayın.",
+    "iframeTitle": "Oyun Önizlemesi",
+    "fullscreenButton": "Tam Ekran",
+    "shareButton": "Paylaş",
+    "urlCopied": "URL panoya kopyalandı!",
+    "downloadGame": "Kodları Çek",
+    "playGame": "Oyunu Oyna"
   },
   "HomeFeatures": {
-    "gameTitle": "",
-    "whatIsTitle": "",
-    "whatIsDescription": "",
-    "howToPlayTitle": "How to Play",
-    "howToPlayStep1": "",
-    "howToPlayStep2": "",
-    "howToPlayStep3": "",
-    "keyFeaturesTitle": "Key Features",
-    "feature1Title": "",
-    "feature1Description": "",
-    "feature2Title": "",
-    "feature2Description": "",
-    "feature3Title": "",
-    "feature3Description": "",
-    "feature4Title": "",
-    "feature4Description": ""
+    "gameTitle": "Jujutsu Infinite | Jujutsu infinity | Oyun Wiki Özellikleri",
+    "whatIsTitle": "Jujutsu Infinite Nedir?",
+    "whatIsDescription": "Jujutsu Infinite, Jujutsu Kaisen'den ilham alan bir Roblox MMORPG'dir. Oyuncular karakter özelleştirmesi, lanetli ruhlarla savaş ve daha fazlasını sunmaktadır.",
+    "howToPlayTitle": "Nasıl Oynanır?",
+    "howToPlayStep1": "Doğuştan Gelen Teknikler ile Jujutsu sihircinizi özelleştirin.",
+    "howToPlayStep2": "Görevleri tamamlayın ve seviye atlamak için lanetli ruhlarla savaşın.",
+    "howToPlayStep3": "Nadir ödüller için PvP ve patron baskınlarına katılın.",
+    "keyFeaturesTitle": "Ana Özellikler",
+    "feature1Title": "Karakter Oluşturma",
+    "feature1Description": "Benzersiz yetenekler ve becerilerle sihircinizi özelleştirin.",
+    "feature2Title": "Hikaye Modu",
+    "feature2Description": "Manga karakterlerini içeren zengin hikaye anlatımlarına dalın.",
+    "feature3Title": "Patron Baskınları",
+    "feature3Description": "Nadir eşyalar için güçlü patronları yenmek için takım olun.",
+    "feature4Title": "PvP Savaşları",
+    "feature4Description": "Savaş becerilerinizi test etmek için diğer oyunculara meydan okuyun."
   },
   "HomeFAQs": {
-    "title": "FAQs"
+    "title": "SSS"
   },
   "HomeRelatedVideo": {
-    "title": "Game Video"
+    "title": "Oyun Videosu"
   },
   "HomeRecommendation": {
-    "title": "Recommends"
+    "title": "Tavsiyeler"
   },
   "HomeComments": {
-    "title": "Play Comments"
+    "title": "Oyun Yorumları"
   },
   "GamePage": {
-    "title": "All Games",
-    "description": "All Games",
-    "games": "Games"
+    "title": "Tüm Oyunlar",
+    "description": "Tüm Oyunlar",
+    "games": "Oyunlar"
+  },
+  "CategoryPage": {
+    "categories": "Kategori",
+    "noCategories": "Kategori bulunamadı",
+    "viewMore": "Daha Fazla Görüntüle",
+    "page": "Sayfa"
   }
 }

@@ -1,12 +1,12 @@
 {
-  "title": "",
-  "slogan": "",
-  "description": "",
+  "title": "Jujutsu Infinite | Jujutsu infinity | Game Wiki (Jujutsu Infinite | Jujutsu infinity | Game Wiki)",
+  "slogan": "Khám phá Vương quốc Vô cực của các Pháp sư (Explore the Infinite Realm of Sorcerers)",
+  "description": "Chìm đắm vào thế giới Jujutsu Infinite (Jujutsu infinity) nơi người chơi trở thành pháp sư, chiến đấu với linh hồn bị nguyền rủa và tương tác với vũ trụ anime. (Dive into the world of Jujutsu Infinite (Jujutsu infinity) where players become sorcerers, battle cursed spirits, and interact with the anime universe.)",
   "Loading": {
-    "title": ""
+    "title": "Đang tải Jujutsu Infinite (Jujutsu infinity)... (Loading Jujutsu Infinite (Jujutsu infinity)...)"
   },
   "Navbar": {
-    "title": "Nav"
+    "title": "Định hướng (Nav)"
   },
   "Common": {
     "createAt": "Tạo lúc",
@@ -15,55 +15,61 @@
     "termsOfServices": "Điều khoản dịch vụ",
     "text": "Nội dung",
     "help": "Trợ giúp",
-    "friendlyLinks": "Liên kết hữu ích",
-    "articleList": "Danh sách bài viết",
+    "friendlyLinks": "Liên kết hữu nghị",
+    "articleList": "Article List",
     "home": "Trang chủ",
     "next": "Tiếp theo",
     "previous": "Trước đó"
   },
   "HomeIframe": {
-    "title": "",
-    "description": "",
-    "iframeTitle": "Game Preview",
-    "fullscreenButton": "Fullscreen",
-    "shareButton": "Share",
-    "urlCopied": "URL copied to clipboard!",
-    "downloadGame": "Download Game",
-    "playGame": "Ch i game"
+    "title": "Jujutsu Infinite | Jujutsu infinity | Game Wiki (Jujutsu Infinite | Jujutsu infinity | Game Wiki)",
+    "description": "Trải nghiệm lối chơi năng động của Jujutsu Infinite với các nhiệm vụ và thách thức trong môi trường giàu câu chuyện. (Experience Jujutsu Infinite's dynamic gameplay with missions and challenges within a story-rich environment.)",
+    "iframeTitle": "Xem trước trò chơi",
+    "fullscreenButton": "Toàn màn hình",
+    "shareButton": "Chia sẻ",
+    "urlCopied": "Đã sao chép URL vào khay nhớ tạm!",
+    "downloadGame": "Nhận mã",
+    "playGame": "Chơi game"
   },
   "HomeFeatures": {
-    "gameTitle": "",
-    "whatIsTitle": "",
-    "whatIsDescription": "",
-    "howToPlayTitle": "How to Play",
-    "howToPlayStep1": "",
-    "howToPlayStep2": "",
-    "howToPlayStep3": "",
-    "keyFeaturesTitle": "Key Features",
-    "feature1Title": "",
-    "feature1Description": "",
-    "feature2Title": "",
-    "feature2Description": "",
-    "feature3Title": "",
-    "feature3Description": "",
-    "feature4Title": "",
-    "feature4Description": ""
+    "gameTitle": "Các tính năng của Jujutsu Infinite | Jujutsu infinity | Game Wiki (Jujutsu Infinite | Jujutsu infinity | Game Wiki Features)",
+    "whatIsTitle": "Jujutsu Infinite là gì?",
+    "whatIsDescription": "Jujutsu Infinite là một MMORPG Roblox đắm chìm người chơi trong một thế giới lấy cảm hứng từ Jujutsu Kaisen, cung cấp tùy chỉnh nhân vật, chiến đấu với linh hồn bị nguyền rủa và hơn thế nữa. (Jujutsu Infinite is a Roblox MMORPG that immerses players in a world inspired by Jujutsu Kaisen, offering character customization, combat with cursed spirits, and more.)",
+    "howToPlayTitle": "Cách chơi",
+    "howToPlayStep1": "Tùy chỉnh Pháp sư Jujutsu của bạn với Kỹ thuật Tiềm ẩn.",
+    "howToPlayStep2": "Hoàn thành nhiệm vụ và chiến đấu với các linh hồn bị nguyền rủa để thăng cấp.",
+    "howToPlayStep3": "Tham gia PvP và đột kích boss để nhận phần thưởng quý hiếm.",
+    "keyFeaturesTitle": "Các tính năng chính",
+    "feature1Title": "Tạo nhân vật",
+    "feature1Description": "Tùy chỉnh pháp sư của bạn với các khả năng và kỹ năng độc đáo.",
+    "feature2Title": "Chế độ câu chuyện",
+    "feature2Description": "Chìm đắm trong các câu chuyện phong phú liên quan đến các nhân vật trong manga.",
+    "feature3Title": "Đột kích boss",
+    "feature3Description": "Đoàn kết để đánh bại các boss mạnh mẽ để lấy vật phẩm hiếm.",
+    "feature4Title": "Chiến đấu PvP",
+    "feature4Description": "Thử thách người chơi khác để kiểm tra kỹ năng chiến đấu của bạn."
   },
   "HomeFAQs": {
-    "title": "FAQs"
+    "title": "Câu hỏi thường gặp"
   },
   "HomeRelatedVideo": {
-    "title": "Game Video"
+    "title": "Video trò chơi"
   },
   "HomeRecommendation": {
-    "title": "Recommends"
+    "title": "Đề xuất"
   },
   "HomeComments": {
-    "title": "Play Comments"
+    "title": "Nhận xét trò chơi"
   },
   "GamePage": {
-    "title": "All Games",
-    "description": "All Games",
-    "games": "Games"
+    "title": "Tất cả các trò chơi",
+    "description": "Tất cả các trò chơi",
+    "games": "Các trò chơi"
+  },
+  "CategoryPage": {
+    "categories": "Danh mục",
+    "noCategories": "Không tìm thấy danh mục nào",
+    "viewMore": "Xem thêm",
+    "page": "Trang"
   }
 }

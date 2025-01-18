@@ -5,7 +5,7 @@
   "Loading": {
     "title": ""
   },
-  "Navbar":{
+  "Navbar": {
     "title": "Nav"
   },
   "Common": {
@@ -18,8 +18,8 @@
     "friendlyLinks": "Friendly Links",
     "articleList": "Article List",
     "home": "Home",
-    "next":"Next",
-    "previous":"Previous"
+    "next": "Next",
+    "previous": "Previous"
   },
   "HomeIframe": {
     "title": "",
@@ -64,6 +64,12 @@
   "GamePage": {
     "title": "All Games",
     "description": "All Games",
-    "games":"Games"
+    "games": "Games"
+  },
+  "CategoryPage": {
+    "categories": "Categories",
+    "noCategories": "No categories found",
+    "viewMore": "View More",
+    "page": "Page"
   }
 }

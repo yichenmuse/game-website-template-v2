@@ -1,11 +1,11 @@
 {
-  "title": "",
-  "slogan": "",
-  "description": "",
+  "title": "Jujutsu Infinite | Jujutsu infinity | Game Wiki",
+  "slogan": "Explore the Infinite Realm of Sorcerers",
+  "description": "Dive into the world of Jujutsu Infinite (Jujutsu infinity) where players become sorcerers, battle cursed spirits, and interact with the anime universe.",
   "Loading": {
-    "title": ""
+    "title": "Loading Jujutsu Infinite (Jujutsu infinity)..."
   },
-  "Navbar":{
+  "Navbar": {
     "title": "Nav"
   },
   "Common": {
@@ -18,36 +18,36 @@
     "friendlyLinks": "Friendly Links",
     "articleList": "Article List",
     "home": "Home",
-    "next":"Next",
-    "previous":"Previous"
+    "next": "Next",
+    "previous": "Previous"
   },
   "HomeIframe": {
-    "title": "",
-    "description": "",
+    "title": "Jujutsu Infinite | Jujutsu infinity | Game Wiki",
+    "description": "Experience Jujutsu Infinite's dynamic gameplay with missions and challenges within a story-rich environment.",
     "iframeTitle": "Game Preview",
     "fullscreenButton": "Fullscreen",
     "shareButton": "Share",
     "urlCopied": "URL copied to clipboard!",
-    "downloadGame": "Download Game",
+    "downloadGame": "Redeem codes",
     "playGame": "Play Game"
   },
   "HomeFeatures": {
-    "gameTitle": "",
-    "whatIsTitle": "",
-    "whatIsDescription": "",
+    "gameTitle": "Jujutsu Infinite | Jujutsu infinity | Game Wiki Features",
+    "whatIsTitle": "What is Jujutsu Infinite?",
+    "whatIsDescription": "Jujutsu Infinite is a Roblox MMORPG that immerses players in a world inspired by Jujutsu Kaisen, offering character customization, combat with cursed spirits, and more.",
     "howToPlayTitle": "How to Play",
-    "howToPlayStep1": "",
-    "howToPlayStep2": "",
-    "howToPlayStep3": "",
+    "howToPlayStep1": "Customize your Jujutsu sorcerer with Innate Techniques.",
+    "howToPlayStep2": "Complete missions and fight cursed spirits to level up.",
+    "howToPlayStep3": "Engage in PvP and boss raids for rare rewards.",
     "keyFeaturesTitle": "Key Features",
-    "feature1Title": "",
-    "feature1Description": "",
-    "feature2Title": "",
-    "feature2Description": "",
-    "feature3Title": "",
-    "feature3Description": "",
-    "feature4Title": "",
-    "feature4Description": ""
+    "feature1Title": "Character Creation",
+    "feature1Description": "Customize your sorcerer with unique abilities and skills.",
+    "feature2Title": "Story Mode",
+    "feature2Description": "Immerse in rich narratives involving manga characters.",
+    "feature3Title": "Boss Raids",
+    "feature3Description": "Team up to defeat powerful bosses for rare items.",
+    "feature4Title": "PvP Battles",
+    "feature4Description": "Challenge other players to test your combat skills."
   },
   "HomeFAQs": {
     "title": "FAQs"
@@ -64,6 +64,12 @@
   "GamePage": {
     "title": "All Games",
     "description": "All Games",
-    "games":"Games"
+    "games": "Games"
+  },
+  "CategoryPage": {
+    "categories": "Categories",
+    "noCategories": "No categories found",
+    "viewMore": "View More",
+    "page": "Page"
   }
 }

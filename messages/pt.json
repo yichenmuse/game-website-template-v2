@@ -1,53 +1,53 @@
 {
-  "title": "",
-  "slogan": "",
-  "description": "",
+  "title": "Jujutsu Infinite | Jujutsu infinity | Jogo Wiki",
+  "slogan": "Explore o Reino Infinito dos Feiticeiros",
+  "description": "Mergulhe no mundo de Jujutsu Infinite (Jujutsu infinity), onde os jogadores se tornam feiticeiros, lutam contra espíritos amaldiçoados e interagem com o universo do anime.",
   "Loading": {
-    "title": ""
+    "title": "Carregando Jujutsu Infinite (Jujutsu infinity)..."
   },
   "Navbar": {
     "title": "Navegação"
   },
   "Common": {
-    "createAt": "Erstellt am",
-    "guide": "Anleitung",
-    "privacyPolicy": "Datenschutzrichtlinie",
-    "termsOfServices": "Nutzungsbedingungen",
-    "text": "Inhalt",
-    "help": "Hilfe",
-    "friendlyLinks": "Freundliche Links",
-    "articleList": "Artikelübersicht",
+    "createAt": "Criado em",
+    "guide": "Guia",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfServices": "Termos de Serviço",
+    "text": "Conteúdo",
+    "help": "Ajuda",
+    "friendlyLinks": "Links Amigáveis",
+    "articleList": "Article List",
     "home": "Início",
     "next": "Próximo",
     "previous": "Anterior"
   },
   "HomeIframe": {
-    "title": "",
-    "description": "",
+    "title": "Jujutsu Infinite | Jujutsu infinity | Jogo Wiki",
+    "description": "Experimente o jogo dinâmico de Jujutsu Infinite com missões e desafios em um ambiente rico em história.",
     "iframeTitle": "Pré-visualização do Jogo",
     "fullscreenButton": "Tela Cheia",
     "shareButton": "Compartilhar",
     "urlCopied": "URL copiado para a área de transferência!",
-    "downloadGame": "Baixar Jogo",
+    "downloadGame": "Resgatar códigos",
     "playGame": "Jogar"
   },
   "HomeFeatures": {
-    "gameTitle": "",
-    "whatIsTitle": "",
-    "whatIsDescription": "",
+    "gameTitle": "Jujutsu Infinite | Jujutsu infinity | Jogo Wiki Recursos",
+    "whatIsTitle": "O que é Jujutsu Infinite?",
+    "whatIsDescription": "Jujutsu Infinite é um MMORPG do Roblox que mergulha os jogadores em um mundo inspirado em Jujutsu Kaisen, oferecendo personalização de personagens, combate com espíritos amaldiçoados e muito mais.",
     "howToPlayTitle": "Como Jogar",
-    "howToPlayStep1": "",
-    "howToPlayStep2": "",
-    "howToPlayStep3": "",
+    "howToPlayStep1": "Personalize seu feiticeiro Jujutsu com Técnicas Inatas.",
+    "howToPlayStep2": "Complete missões e lute contra espíritos amaldiçoados para subir de nível.",
+    "howToPlayStep3": "Participe de PvP e invasões de chefes para recompensas raras.",
     "keyFeaturesTitle": "Principais Recursos",
-    "feature1Title": "",
-    "feature1Description": "",
-    "feature2Title": "",
-    "feature2Description": "",
-    "feature3Title": "",
-    "feature3Description": "",
-    "feature4Title": "",
-    "feature4Description": ""
+    "feature1Title": "Criação de Personagem",
+    "feature1Description": "Personalize seu feiticeiro com habilidades e talentos únicos.",
+    "feature2Title": "Modo História",
+    "feature2Description": "Mergulhe em narrativas ricas envolvendo personagens do mangá.",
+    "feature3Title": "Invasões de Chefes",
+    "feature3Description": "Junte-se a outros jogadores para derrotar chefes poderosos por itens raros.",
+    "feature4Title": "Combates PvP",
+    "feature4Description": "Desafie outros jogadores para testar suas habilidades de combate."
   },
   "HomeFAQs": {
     "title": "Perguntas Frequentes"
@@ -59,11 +59,17 @@
     "title": "Recomendações"
   },
   "HomeComments": {
-    "title": "Comentários sobre o Jogo"
+    "title": "Comentários do Jogo"
   },
   "GamePage": {
     "title": "Todos os Jogos",
     "description": "Todos os Jogos",
     "games": "Jogos"
+  },
+  "CategoryPage": {
+    "categories": "Categorias",
+    "noCategories": "Nenhuma categoria encontrada",
+    "viewMore": "Ver Mais",
+    "page": "Página"
   }
 }

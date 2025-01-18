@@ -1,16 +1,16 @@
 {
   "recommended": [
     {
-      "title": "Sprunki Retake",
-      "cover": "https://public-image.fafafa.ai/cm3tvyn990002mp4f5v0tdr5g/2025-01-07/images/1736234827168-l03ang.png",
-      "url": "/",
+      "title": "",
+      "cover": "",
+      "url": "",
       "visible": true,
       "position": 1
     },
     {
-      "title": "Sprunki Retake",
-      "cover": "https://public-image.fafafa.ai/cm3tvyn990002mp4f5v0tdr5g/2025-01-07/images/1736252447476-xxuii9.webp",
-      "url": "/",
+      "title": "",
+      "cover": "",
+      "url": "",
       "visible": true,
       "position": 2
     }
@@ -22,25 +22,25 @@
       "pageSize": 15,
       "backgroundColor": "#ffdde1",
       "displayStyle": "horizontal",
-      "icon": "/images/featured.png",
+      "icon": "",
       "description": "We have selected the best games for you!"
     },
     {
       "name": "Action Games",
       "path": "/c/action",
-      "pageSize": 12,
+      "pageSize": 15,
       "backgroundColor": "#c1f8cf",
       "displayStyle": "vertical",
-      "icon": "/images/action.png",
+      "icon": "",
       "description": "Exciting action games!"
     },
     {
       "name": "Sports Games",
       "path": "/c/sports",
-      "pageSize": 8,
+      "pageSize": 15,
       "backgroundColor": "#d2e7ff",
       "displayStyle": "horizontal",
-      "icon": "/images/sports.png",
+      "icon": "",
       "description": "Exciting sports games!"
     }
   ]

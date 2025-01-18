@@ -1,69 +1,75 @@
 {
-  "title": "",
-  "slogan": "",
-  "description": "",
+  "title": "咒术回战无限 | 咒术回战无限 | 游戏维基",
+  "slogan": "探索术师无限领域",
+  "description": "深入咒术回战无限 (咒术回战无限)的世界，玩家化身术师，对抗诅咒灵，并与动漫宇宙互动。(Jujutsu Infinite | Jujutsu infinity | Game Wiki)",
   "Loading": {
-    "title": ""
+    "title": "正在加载咒术回战无限 (咒术回战无限)... (Jujutsu Infinite | Jujutsu infinity | Game Wiki)"
   },
   "Navbar": {
-    "title": "Nav"
+    "title": "导航"
   },
   "Common": {
-    "createAt": "创建于",
+    "createAt": "创建时间",
     "guide": "指南",
     "privacyPolicy": "隐私政策",
     "termsOfServices": "服务条款",
     "text": "内容",
     "help": "帮助",
     "friendlyLinks": "友情链接",
-    "articleList": "文章列表",
+    "articleList": "Article List",
     "home": "首页",
     "next": "下一页",
     "previous": "上一页"
   },
   "HomeIframe": {
-    "title": "",
-    "description": "",
-    "iframeTitle": "遊戲預覽",
-    "fullscreenButton": "全螢幕",
+    "title": "咒术回战无限 | 咒术回战无限 | 游戏维基",
+    "description": "体验咒术回战无限的动态游戏玩法，在充满故事的环境中完成任务和挑战。(Jujutsu Infinite | Jujutsu infinity | Game Wiki)",
+    "iframeTitle": "游戏预览",
+    "fullscreenButton": "全屏",
     "shareButton": "分享",
-    "urlCopied": "網址已複製到剪貼板!",
-    "downloadGame": "下載遊戲",
+    "urlCopied": "URL 已复制到剪贴板！",
+    "downloadGame": "兑换代码",
     "playGame": "开始游戏"
   },
   "HomeFeatures": {
-    "gameTitle": "",
-    "whatIsTitle": "",
-    "whatIsDescription": "",
-    "howToPlayTitle": "如何遊玩",
-    "howToPlayStep1": "",
-    "howToPlayStep2": "",
-    "howToPlayStep3": "",
-    "keyFeaturesTitle": "Key Features",
-    "feature1Title": "",
-    "feature1Description": "",
-    "feature2Title": "",
-    "feature2Description": "",
-    "feature3Title": "",
-    "feature3Description": "",
-    "feature4Title": "",
-    "feature4Description": ""
+    "gameTitle": "咒术回战无限 | 咒术回战无限 | 游戏维基 特性",
+    "whatIsTitle": "咒术回战无限是什么？",
+    "whatIsDescription": "咒术回战无限是一款基于咒术回战的 Roblox MMORPG，让玩家沉浸在一个充满特点的世界里，提供角色定制、与诅咒灵的战斗等内容。(Jujutsu Infinite | Jujutsu infinity | Game Wiki)",
+    "howToPlayTitle": "如何游戏",
+    "howToPlayStep1": "用天生的技巧定制你的咒术师。",
+    "howToPlayStep2": "完成任务并与诅咒灵战斗以升级。",
+    "howToPlayStep3": "参与 PvP 和 Boss 突袭以获得稀有奖励。",
+    "keyFeaturesTitle": "主要特点",
+    "feature1Title": "角色创建",
+    "feature1Description": "使用独特的技能和能力定制你的术师。",
+    "feature2Title": "故事模式",
+    "feature2Description": "沉浸在与漫画角色相关的故事中。",
+    "feature3Title": "Boss 突袭",
+    "feature3Description": "联手击败强大的 Boss 以获得稀有物品。",
+    "feature4Title": "PvP 战斗",
+    "feature4Description": "与其他玩家对抗，测试你的战斗技巧。"
   },
   "HomeFAQs": {
-    "title": "FAQs"
+    "title": "常见问题解答"
   },
   "HomeRelatedVideo": {
-    "title": "Game Video"
+    "title": "游戏视频"
   },
   "HomeRecommendation": {
-    "title": "Recommends"
+    "title": "推荐"
   },
   "HomeComments": {
-    "title": "Play Comments"
+    "title": "游戏评论"
   },
   "GamePage": {
-    "title": "All Games",
-    "description": "All Games",
-    "games": "Games"
+    "title": "所有游戏",
+    "description": "所有游戏",
+    "games": "游戏"
+  },
+  "CategoryPage": {
+    "categories": "类别",
+    "noCategories": "未找到类别",
+    "viewMore": "查看更多",
+    "page": "页"
   }
 }

@@ -1,53 +1,53 @@
 {
-  "title": "",
-  "slogan": "",
-  "description": "",
+  "title": "Jujutsu Infinite | Jujutsu infinity | Wiki del Juego",
+  "slogan": "Explora el Infinito Reino de los Hechiceros",
+  "description": "Sumérgete en el mundo de Jujutsu Infinite (Jujutsu infinity), donde los jugadores se convierten en hechiceros, luchan contra espíritus malditos e interactúan con el universo del anime.",
   "Loading": {
-    "title": ""
+    "title": "Cargando Jujutsu Infinite (Jujutsu infinity)..."
   },
   "Navbar": {
     "title": "Navegación"
   },
   "Common": {
-    "createAt": "Creado En",
+    "createAt": "Crear En",
     "guide": "Guía",
     "privacyPolicy": "Política de Privacidad",
     "termsOfServices": "Términos de Servicio",
     "text": "Contenido",
     "help": "Ayuda",
-    "friendlyLinks": "Enlaces Amigables",
-    "articleList": "Lista de Artículos",
+    "friendlyLinks": "Enlaces Amistosos",
+    "articleList": "Article List",
     "home": "Inicio",
     "next": "Siguiente",
     "previous": "Anterior"
   },
   "HomeIframe": {
-    "title": "",
-    "description": "",
+    "title": "Jujutsu Infinite | Jujutsu infinity | Wiki del Juego",
+    "description": "Experimenta la dinámica jugabilidad de Jujutsu Infinite con misiones y desafíos dentro de un entorno rico en historia.",
     "iframeTitle": "Vista Previa del Juego",
     "fullscreenButton": "Pantalla Completa",
     "shareButton": "Compartir",
     "urlCopied": "¡URL copiada al portapapeles!",
-    "downloadGame": "Descargar Juego",
+    "downloadGame": "Canjear códigos",
     "playGame": "Jugar"
   },
   "HomeFeatures": {
-    "gameTitle": "",
-    "whatIsTitle": "",
-    "whatIsDescription": "",
+    "gameTitle": "Características de Jujutsu Infinite | Jujutsu infinity | Wiki del Juego",
+    "whatIsTitle": "¿Qué es Jujutsu Infinite?",
+    "whatIsDescription": "Jujutsu Infinite es un MMORPG de Roblox que sumerge a los jugadores en un mundo inspirado en Jujutsu Kaisen, ofreciendo personalización de personajes, combate contra espíritus malditos y más.",
     "howToPlayTitle": "Cómo Jugar",
-    "howToPlayStep1": "",
-    "howToPlayStep2": "",
-    "howToPlayStep3": "",
+    "howToPlayStep1": "Personaliza a tu hechicero Jujutsu con Técnicas Innatas.",
+    "howToPlayStep2": "Completa misiones y lucha contra espíritus malditos para subir de nivel.",
+    "howToPlayStep3": "Participa en batallas PvP y incursiones de jefes para obtener recompensas raras.",
     "keyFeaturesTitle": "Características Clave",
-    "feature1Title": "",
-    "feature1Description": "",
-    "feature2Title": "",
-    "feature2Description": "",
-    "feature3Title": "",
-    "feature3Description": "",
-    "feature4Title": "",
-    "feature4Description": ""
+    "feature1Title": "Creación de Personajes",
+    "feature1Description": "Personaliza a tu hechicero con habilidades y destrezas únicas.",
+    "feature2Title": "Modo Historia",
+    "feature2Description": "Sumérgete en narrativas ricas que involucran personajes del manga.",
+    "feature3Title": "Incursiones de Jefes",
+    "feature3Description": "Únete a un equipo para derrotar a poderosos jefes y obtener objetos raros.",
+    "feature4Title": "Batallas PvP",
+    "feature4Description": "Desafía a otros jugadores para poner a prueba tus habilidades de combate."
   },
   "HomeFAQs": {
     "title": "Preguntas Frecuentes"
@@ -65,5 +65,11 @@
     "title": "Todos los Juegos",
     "description": "Todos los Juegos",
     "games": "Juegos"
+  },
+  "CategoryPage": {
+    "categories": "Categorías",
+    "noCategories": "No se encontraron categorías",
+    "viewMore": "Ver más",
+    "page": "Página"
   }
 }
