@@ -99,7 +99,6 @@
         ],
         "add": [
             "app/[locale]/(public)/c/[[...page]]/page.tsx",
-            "app/[locale]/(public)/game-page.tsx",
             "lib/components/game-category/index.tsx",
             "lib/utils/game-box-settings.ts",
             "resources/game-box/en.json"
