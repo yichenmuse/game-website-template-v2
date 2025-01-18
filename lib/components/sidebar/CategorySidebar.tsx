@@ -7,14 +7,6 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
-const defaultMenus = [
-  { id: 'home', name: 'Home', icon: <IconHome size={24} /> },
-  { id: 'recently', name: 'Recently played', icon: <IconClock size={24} /> },
-  { id: 'new', name: 'New', icon: <IconStar size={24} /> },
-  { id: 'trending', name: 'Trending now', icon: <IconFlame size={24} /> },
-  { id: 'updated', name: 'Updated', icon: <IconRefresh size={24} /> },
-  { id: 'originals', name: 'Originals', icon: <IconDeviceGamepad2 size={24} /> },
-];
 
 interface CategorySidebarProps {
   categories: GameCategory[];
@@ -33,7 +25,7 @@ export function CategorySidebar({ categories }: CategorySidebarProps) {
       <ScrollShadow className="h-full">
         <div className="flex flex-col p-4 space-y-2">
           {/* Default Menus */}
-          {defaultMenus.map((menu) => (
+          {/* {defaultMenus.map((menu) => (
             <Link
               key={menu.id}
               href={`/${menu.id}`}
@@ -48,10 +40,10 @@ export function CategorySidebar({ categories }: CategorySidebarProps) {
                 {menu.name}
               </span>
             </Link>
-          ))}
+          ))} */}
 
           {/* Divider */}
-          <div className="h-px bg-border my-2" />
+          {/* <div className="h-px bg-border my-2" /> */}
 
           {/* Categories */}
           {categories.map((category) => (
