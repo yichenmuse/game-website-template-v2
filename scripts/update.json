@@ -1,4 +1,14 @@
 {
+    "2025-01-18 16": {
+        "version": "2.0.1",
+        "messagesKeyModify": true,
+        "changeLog": [
+            "修复游戏分类获取报错问题"
+        ],
+        "modify": [
+            "lib/utils/game-box-settings.ts"
+        ]
+    },
     "2025-01-18": {
         "version": "2.0.0",
         "messagesKeyModify": true,
