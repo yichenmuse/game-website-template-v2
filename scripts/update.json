@@ -135,9 +135,6 @@
         "changeLog": [
             "解决自定义页面内容无法渲染表格的问题，修改自定义内容样式与首页其他页面一致"
         ],
-        "add": [
-            "lib/config/game-box.json.json"
-        ],
         "modify": [
             "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
             "app/[locale]/(public)/page.tsx",
