@@ -87,9 +87,7 @@
             "resources/game-box/en.json",
             "tailwind.config.ts"
         ]
-    }
-}
-
+    },
 
 "2025-01-15": {
         "version": "1.3.0",
