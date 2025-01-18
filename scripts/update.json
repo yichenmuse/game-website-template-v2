@@ -1,14 +1,4 @@
 {
-    "2025-01-18 16": {
-        "version": "2.0.1",
-        "messagesKeyModify": true,
-        "changeLog": [
-            "修复游戏分类获取报错问题"
-        ],
-        "modify": [
-            "lib/utils/game-box-settings.ts"
-        ]
-    },
     "2025-01-18": {
         "version": "2.0.0",
         "messagesKeyModify": true,
@@ -22,6 +12,7 @@
             "lib/components/game-category/GameCard.tsx",
             "lib/components/game-category/GameGroup.tsx",
             "lib/components/games-template/game-box.tsx",
+            "lib/components/games-template/c/[[...page]]/page.tsx",
             "lib/components/layout/AppLayout.tsx",
             "lib/components/layout/MainLayout.tsx",
             "lib/components/sidebar/CategorySidebar.tsx",
@@ -37,7 +28,6 @@
         ],
         "modify": [
             "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
-            "app/[locale]/(public)/c/[[...page]]/page.tsx",
             "app/[locale]/(public)/error.tsx",
             "app/[locale]/(public)/games/page.tsx",
             "app/[locale]/(public)/loading.tsx",
@@ -74,6 +64,8 @@
             "lib/config/game-page-messages.json",
             "lib/config/site.json",
             "lib/ui/components/sheet.tsx",
+            "lib/utils/blogs.ts",
+            "lib/utils/game-box-settings.ts",
             "messages/bn.json",
             "messages/de.json",
             "messages/en.json",
@@ -95,30 +87,11 @@
             "messages/zh-TW.json",
             "next.config.ts",
             "resources/game-box/en.json",
-            "tailwind.config.ts"
+            "tailwind.config.ts",
+            "package.json"
         ]
     },
 
-"2025-01-15": {
-        "version": "1.3.0",
-        "messagesKeyModify": false,
-        "changeLog": [
-            "新增游戏盒子页面",
-            "优化游戏推荐卡片组件",
-            "新增游戏盒子设置功能"
-        ],
-        "add": [
-            "app/[locale]/(public)/c/[[...page]]/page.tsx",
-            "lib/components/game-category/index.tsx",
-            "lib/utils/game-box-settings.ts",
-            "resources/game-box/en.json"
-        ],
-        "modify": [
-            "app/[locale]/(public)/page.tsx",
-            "app/[locale]/(public)/views/GameRecommendationCard.tsx",
-            "lib/types/site.ts"
-        ]
-    },
     "2025-01-14": {
         "version": "1.2.29",
         "messagesKeyModify": false,
