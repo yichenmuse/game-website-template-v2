@@ -83,7 +83,7 @@ export const getHomeSettings = async (locale: string) => {
       // 将游戏添加到对应的分类中
       if (Array.isArray(game.config.tags)) {
         for (const tag of game.config.tags) {
-          const category = settings.categories.find(c => c.name === tag);
+          const category = settings.categories.find(c => c.path === tag);
           if (category) {
             if (!category.games) {
               category.games = [];
