@@ -70,6 +70,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   }
   // console.log("###messages#####",messages);
   return {
+    locale,
     onError(error: any) {
       console.error('load internationalization content error:');
       console.error(error);

@@ -1,4 +1,15 @@
 {
+    "2025-01-22": {
+        "version": "1.2.30",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复国际化编译报错问题"
+        ],
+        "modify": [
+            "i18n.ts"
+        ]
+    },
+
     "2025-01-14": {
         "version": "1.2.29",
         "messagesKeyModify": false,
