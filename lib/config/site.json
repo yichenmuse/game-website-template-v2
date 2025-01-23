@@ -4,7 +4,9 @@
   "domain": "",
   "icon": "/favicon.ico",
   "appleIcon": "/apple-touch-icon.png",
+  "templateType":"single-game",
   "theme": {
+    "name":"dark",
     "headFont": "Arial, sans-serif",
     "primaryColor": "#007bff",
     "fontColor": "#333333",
@@ -13,26 +15,13 @@
   "gaId": "",
   "clarityId": "",
   "plausible": "",
-  "navbarItems": [
-    {
-      "title": "home",
-      "href": "/"
-    },
-    {
-      "title": "guide",
-      "href": "/guide"
-    },
-    {
-      "title": "information",
-      "href": "/t"
-    }
-  ],
   "gameType": "iframe",
   "gameIframeUrl": "",
   "gameRedirectUrl": "",
   "bgType": "iframe",
   "bgImage": "",
   "bgVideo": "",
+  "friendLinks":[],
   "gameDownload": {
     "showDownloadButton": true,
     "downloadUrls": {
@@ -45,7 +34,6 @@
   },
   "isShowFAQs": true,
   "isShowVideo": false,
-  "isShowGuide": true,
   "videos": [
     {
       "title": "",
@@ -67,13 +55,6 @@
     }
   ],
   "isShowRecommendation": true,
-  "friendLinks": [
-    {
-      "title": "",
-      "url": ""
-    }
-  ],
-  "isShowRightGames": true,
   "enablePromotion": false,
   "customizeFeatures": true
 }

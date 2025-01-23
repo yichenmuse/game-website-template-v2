@@ -1,4 +1,109 @@
 {
+
+    "2025-01-23": {
+        "version": "2.0.1",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "更新站点配置文件和默认配置"
+        ],
+        "modify": [
+            "lib/config/site.json",
+            "lib/types/site.ts"
+        ]
+    },
+    "2025-01-18": {
+        "version": "2.0.0",
+        "messagesKeyModify": true,
+        "changeLog": [
+            "新增游戏主题功能，支持多种预设主题",
+            "新增游戏盒子布局组件",
+            "新增游戏分类组件",
+            "优化整体页面布局结构"
+        ],
+        "add": [
+            "lib/components/game-category/GameCard.tsx",
+            "lib/components/game-category/GameGroup.tsx",
+            "lib/components/games-template/game-box.tsx",
+            "lib/components/games-template/c/[[...page]]/page.tsx",
+            "lib/components/layout/AppLayout.tsx",
+            "lib/components/layout/MainLayout.tsx",
+            "lib/components/sidebar/CategorySidebar.tsx",
+            "lib/config/themes/cyberpunk-neon.json",
+            "lib/config/themes/dark.json",
+            "lib/config/themes/deep-red.json",
+            "lib/config/themes/deep-sea.json",
+            "lib/config/themes/default.json",
+            "lib/config/themes/forest-theme.json",
+            "lib/config/themes/index.ts",
+            "lib/config/themes/purple-tech.json",
+            "lib/types/site.ts"
+        ],
+        "modify": [
+            "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
+            "app/[locale]/(public)/error.tsx",
+            "app/[locale]/(public)/games/page.tsx",
+            "app/[locale]/(public)/loading.tsx",
+            "app/[locale]/(public)/not-found.tsx",
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/privacy-policy/en.mdx",
+            "app/[locale]/(public)/terms-of-services/en.mdx",
+            "app/[locale]/(public)/views/Ad.tsx",
+            "app/[locale]/(public)/views/Comments.tsx",
+            "app/[locale]/(public)/views/DownloadGame.tsx",
+            "app/[locale]/(public)/views/FAQs.tsx",
+            "app/[locale]/(public)/views/Features.tsx",
+            "app/[locale]/(public)/views/GameCard.tsx",
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx",
+            "app/[locale]/(public)/views/Guide.tsx",
+            "app/[locale]/(public)/views/IframeActions.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx",
+            "app/[locale]/(public)/views/PopupWindows.tsx",
+            "app/[locale]/(public)/views/Recommendation.tsx",
+            "app/[locale]/(public)/views/SectionWrapper.tsx",
+            "lib/components/breadcrumbs.tsx",
+            "lib/components/faq.tsx",
+            "lib/components/footer.tsx",
+            "lib/components/game-category/index.tsx",
+            "lib/components/games-template/page.tsx",
+            "lib/components/iframe_button.tsx",
+            "lib/components/locale-dropdown.tsx",
+            "lib/components/mdx-article.tsx",
+            "lib/components/navbar.tsx",
+            "lib/components/skeletons.tsx",
+            "lib/components/social-icons.tsx",
+            "lib/components/t-file-page-template.tsx",
+            "lib/config/game-page-messages.json",
+            "lib/config/site.json",
+            "lib/ui/components/sheet.tsx",
+            "lib/utils/blogs.ts",
+            "lib/utils/game-box-settings.ts",
+            "messages/bn.json",
+            "messages/de.json",
+            "messages/en.json",
+            "messages/es.json",
+            "messages/fr.json",
+            "messages/game_page_template.json",
+            "messages/id.json",
+            "messages/it.json",
+            "messages/ja.json",
+            "messages/ko.json",
+            "messages/pt-BR.json",
+            "messages/pt.json",
+            "messages/ru.json",
+            "messages/th.json",
+            "messages/tr.json",
+            "messages/uk.json",
+            "messages/vi.json",
+            "messages/zh-CN.json",
+            "messages/zh-TW.json",
+            "next.config.ts",
+            "resources/game-box/en.json",
+            "tailwind.config.ts",
+            "package.json",
+          ]
+    },
+
     "2025-01-22": {
         "version": "1.2.30",
         "messagesKeyModify": false,
@@ -29,27 +134,22 @@
             "lib/components/games-template/page.tsx"
         ]
     },
-
-"2025-01-09": {
-    "version": "1.2.28",
-    "messagesKeyModify": false,
-    "changeLog": [
-        "解决自定义页面内容无法渲染表格的问题，修改自定义内容样式与首页其他页面一致"
-    ],
-    "add":[
-        "lib/config/game-box.json.json"
-    ],
-    "modify": [
-        "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
-        "app/[locale]/(public)/page.tsx",
-        "lib/components/games-template/page.tsx",
-        "lib/components/mdx-article.tsx",
-        "lib/components/t-file-page-template.tsx",
-        "middleware.ts",
-        "tailwind.config.ts"
-    ]
-},
-
+    "2025-01-09": {
+        "version": "1.2.28",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "解决自定义页面内容无法渲染表格的问题，修改自定义内容样式与首页其他页面一致"
+        ],
+        "modify": [
+            "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
+            "app/[locale]/(public)/page.tsx",
+            "lib/components/games-template/page.tsx",
+            "lib/components/mdx-article.tsx",
+            "lib/components/t-file-page-template.tsx",
+            "middleware.ts",
+            "tailwind.config.ts"
+        ]
+    },
     "2025-01-08 20": {
         "version": "1.2.27",
         "messagesKeyModify": false,

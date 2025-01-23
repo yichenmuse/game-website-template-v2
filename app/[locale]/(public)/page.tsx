@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   setRequestLocale(locale);
   const t = await getTranslations({ locale });
   return {
-    title: `${t('title')} | ${t('slogan')}`,
+    title: `${t('title')} | ${siteConfig.name}`,
     description: t('description'),
     alternates: {
       languages: alternatesLanguage(''),
@@ -52,11 +52,11 @@ export default async function Page({ params }: Props) {
       const { content } = matter(Content);
       features2ContentResult = content;
     } catch (error) {
-      console.warn(`features2 section can not find ${locale}.mdx`, error);
+      // console.warn(`features2 section can not find ${locale}.mdx`, error);
     }
   }
   return (
-    <div className="bg-black pt-5 pb-5">
+    <div className="bg-background pt-5 pb-5">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* 左侧主要内容区域 */}

@@ -1,5 +1,5 @@
 {
-  "title": "",
+ "title": "",
   "slogan": "",
   "description": "",
   "Loading": {
@@ -61,9 +61,10 @@
   "HomeComments": {
     "title": "Commentaires sur le jeu"
   },
-  "GamePage": {
-    "title": "Tous les jeux",
-    "description": "Tous les jeux",
-    "games": "Jeux"
+  "CategoryPage": {
+    "categories": "Catégories",
+    "noCategories": "Aucune catégorie trouvée",
+    "viewMore": "Voir plus",
+    "page": "Page"
   }
 }
