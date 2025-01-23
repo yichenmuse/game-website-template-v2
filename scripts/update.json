@@ -100,7 +100,7 @@
             "next.config.ts",
             "resources/game-box/en.json",
             "tailwind.config.ts",
-            "package.json",
+            "package.json"
           ]
     },
 
