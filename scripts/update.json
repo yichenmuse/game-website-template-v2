@@ -1,4 +1,5 @@
 {
+
     "2025-01-23": {
         "version": "2.0.1",
         "messagesKeyModify": false,
@@ -100,6 +101,16 @@
             "resources/game-box/en.json",
             "tailwind.config.ts",
             "package.json",
+          ]
+    },
+
+    "2025-01-22": {
+        "version": "1.2.30",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复国际化编译报错问题"
+        ],
+        "modify": [
             "i18n.ts"
         ]
     },
