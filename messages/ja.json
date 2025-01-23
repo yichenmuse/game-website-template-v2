@@ -1,9 +1,9 @@
 {
-  "title": "呪術廻戦無限 | Jujutsu infinity | ゲームウィキ",
-  "slogan": "呪術師の無限の領域を探求する",
-  "description": "プレイヤーが呪術師となり、呪われた霊と戦い、アニメの宇宙と交流する呪術廻戦無限（呪術 infinity）の世界に没頭しましょう。",
+  "title": "",
+  "slogan": "",
+  "description": "",
   "Loading": {
-    "title": "呪術廻戦無限（呪術 infinity）を読み込んでいます…"
+    "title": "読み込み中"
   },
   "Navbar": {
     "title": "ナビゲーション"
@@ -12,48 +12,48 @@
     "createAt": "作成日時",
     "guide": "ガイド",
     "privacyPolicy": "プライバシーポリシー",
-    "termsOfServices": "サービス利用規約",
+    "termsOfServices": "利用規約",
     "text": "コンテンツ",
     "help": "ヘルプ",
-    "friendlyLinks": "フレンドリーリンク",
-    "articleList": "Article List",
+    "friendlyLinks": "関連リンク",
+    "articleList": "記事リスト",
     "home": "ホーム",
     "next": "次へ",
     "previous": "前へ"
   },
   "HomeIframe": {
-    "title": "呪術廻戦無限 | Jujutsu infinity | ゲームウィキ",
-    "description": "ストーリー豊富な環境でのミッションと挑戦を通して、呪術廻戦無限のダイナミックなゲームプレイを体験してください。",
+    "title": "",
+    "description": "",
     "iframeTitle": "ゲームプレビュー",
-    "fullscreenButton": "全画面表示",
+    "fullscreenButton": "全画面",
     "shareButton": "共有",
     "urlCopied": "URLがクリップボードにコピーされました！",
-    "downloadGame": "コードを交換する",
-    "playGame": "ゲームをプレイする"
+    "downloadGame": "ゲームをダウンロード",
+    "playGame": "ゲームをプレイ"
   },
   "HomeFeatures": {
-    "gameTitle": "呪術廻戦無限 | Jujutsu infinity | ゲームウィキの特徴",
-    "whatIsTitle": "呪術廻戦無限とは？",
-    "whatIsDescription": "呪術廻戦無限は、呪術廻戦にインスパイアされた世界にプレイヤーを没頭させるRoblox MMORPGで、キャラクターのカスタマイズ、呪われた霊との戦闘、その他多くの機能を提供します。",
+    "gameTitle": "",
+    "whatIsTitle": "",
+    "whatIsDescription": "",
     "howToPlayTitle": "遊び方",
-    "howToPlayStep1": "先天的なテクニックであなたの呪術師をカスタマイズします。",
-    "howToPlayStep2": "ミッションを完了し、呪われた霊と戦い、レベルアップします。",
-    "howToPlayStep3": "レアな報酬を得るためにPvPとボスレイドに参加します。",
-    "keyFeaturesTitle": "主な特徴",
-    "feature1Title": "キャラクター作成",
-    "feature1Description": "ユニークな能力とスキルであなたの呪術師をカスタマイズします。",
-    "feature2Title": "ストーリーモード",
-    "feature2Description": "漫画のキャラクターに関わる豊かな物語に没頭します。",
-    "feature3Title": "ボスレイド",
-    "feature3Description": "レアアイテムのために強力なボスを倒すためにチームを組む。",
-    "feature4Title": "PvPバトル",
-    "feature4Description": "あなたの戦闘スキルを試すために他のプレイヤーに挑戦します。"
+    "howToPlayStep1": "",
+    "howToPlayStep2": "",
+    "howToPlayStep3": "",
+    "keyFeaturesTitle": "主な機能",
+    "feature1Title": "",
+    "feature1Description": "",
+    "feature2Title": "",
+    "feature2Description": "",
+    "feature3Title": "",
+    "feature3Description": "",
+    "feature4Title": "",
+    "feature4Description": ""
   },
   "HomeFAQs": {
     "title": "よくある質問"
   },
   "HomeRelatedVideo": {
-    "title": "ゲームビデオ"
+    "title": "ゲーム動画"
   },
   "HomeRecommendation": {
     "title": "おすすめ"

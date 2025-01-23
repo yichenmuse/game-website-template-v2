@@ -1,70 +1,65 @@
 {
-  "title": "Jujutsu Infinite | Jujutsu infinity | Game Wiki",
-  "slogan": "Explorez l'univers infini des sorciers",
-  "description": "Plongez-vous dans le monde de Jujutsu Infinite (Jujutsu infinity) où les joueurs deviennent des sorciers, affrontent des esprits maudits et interagissent avec l'univers de l'anime.",
+ "title": "",
+  "slogan": "",
+  "description": "",
   "Loading": {
-    "title": "Chargement de Jujutsu Infinite (Jujutsu infinity)..."
+    "title": ""
   },
   "Navbar": {
-    "title": "Navigation"
+    "title": "Nav"
   },
   "Common": {
     "createAt": "Créé le",
     "guide": "Guide",
     "privacyPolicy": "Politique de confidentialité",
-    "termsOfServices": "Conditions d'utilisation",
+    "termsOfServices": "Conditions de service",
     "text": "Contenu",
     "help": "Aide",
-    "friendlyLinks": "Liens amis",
-    "articleList": "Article List",
+    "friendlyLinks": "Liens utiles",
+    "articleList": "Liste des articles",
     "home": "Accueil",
     "next": "Suivant",
     "previous": "Précédent"
   },
   "HomeIframe": {
-    "title": "Jujutsu Infinite | Jujutsu infinity | Game Wiki",
-    "description": "Découvrez le gameplay dynamique de Jujutsu Infinite avec des missions et des défis dans un environnement riche en histoire.",
+    "title": "",
+    "description": "",
     "iframeTitle": "Aperçu du jeu",
     "fullscreenButton": "Plein écran",
     "shareButton": "Partager",
-    "urlCopied": "URL copiée dans le presse-papier !",
-    "downloadGame": "Échanger des codes",
-    "playGame": "JoueR"
+    "urlCopied": "URL copiée dans le presse-papiers !",
+    "downloadGame": "Télécharger le jeu",
+    "playGame": "Jouer au jeu"
   },
   "HomeFeatures": {
-    "gameTitle": "Fonctionnalités de Jujutsu Infinite | Jujutsu infinity | Game Wiki",
-    "whatIsTitle": "Qu'est-ce que Jujutsu Infinite ?",
-    "whatIsDescription": "Jujutsu Infinite est un MMORPG Roblox qui plonge les joueurs dans un monde inspiré de Jujutsu Kaisen, offrant la personnalisation des personnages, des combats contre des esprits maudits et plus encore.",
+    "gameTitle": "",
+    "whatIsTitle": "",
+    "whatIsDescription": "",
     "howToPlayTitle": "Comment jouer",
-    "howToPlayStep1": "Personnalisez votre sorcier Jujutsu avec des Techniques innées.",
-    "howToPlayStep2": "Remplissez les missions et combattez les esprits maudits pour gagner des niveaux.",
-    "howToPlayStep3": "Participez au PvP et aux raids de boss pour obtenir des récompenses rares.",
-    "keyFeaturesTitle": "Fonctionnalités principales",
-    "feature1Title": "Création de personnages",
-    "feature1Description": "Personnalisez votre sorcier avec des capacités et des compétences uniques.",
-    "feature2Title": "Mode histoire",
-    "feature2Description": "Plongez-vous dans de riches récits impliquant des personnages du manga.",
-    "feature3Title": "Raids de boss",
-    "feature3Description": "Unissez-vous pour vaincre de puissants boss et obtenir des objets rares.",
-    "feature4Title": "Combats PvP",
-    "feature4Description": "Défiez les autres joueurs pour tester vos compétences de combat."
+    "howToPlayStep1": "",
+    "howToPlayStep2": "",
+    "howToPlayStep3": "",
+    "keyFeaturesTitle": "Caractéristiques clés",
+    "feature1Title": "",
+    "feature1Description": "",
+    "feature2Title": "",
+    "feature2Description": "",
+    "feature3Title": "",
+    "feature3Description": "",
+    "feature4Title": "",
+    "feature4Description": ""
   },
   "HomeFAQs": {
-    "title": "FAQ"
+    "title": "FAQs"
   },
   "HomeRelatedVideo": {
-    "title": "Vidéo du jeu"
+    "title": "Vidéo de jeu"
   },
   "HomeRecommendation": {
     "title": "Recommandations"
   },
   "HomeComments": {
-    "title": "Commentaires du jeu"
-  },
-  "GamePage": {
-    "title": "Tous les jeux",
-    "description": "Tous les jeux",
-    "games": "Jeux"
+    "title": "Commentaires sur le jeu"
   },
   "CategoryPage": {
     "categories": "Catégories",

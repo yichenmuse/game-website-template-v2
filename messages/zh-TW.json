@@ -1,70 +1,70 @@
 {
-  "title": "咒術迴戰無限 | Jujutsu infinity | 遊戲維基",
-  "slogan": "探索咒術師的無限領域",
-  "description": "潛入咒術迴戰無限 (Jujutsu infinity) 世界，玩家化身咒術師，與咒靈戰鬥，並與動畫宇宙互動。",
+  "title": "",
+  "slogan": "",
+  "description": "",
   "Loading": {
-    "title": "正在載入咒術迴戰無限 (Jujutsu infinity)..."
+    "title": ""
   },
   "Navbar": {
-    "title": "導覽"
+    "title": "Nav"
   },
   "Common": {
     "createAt": "建立於",
     "guide": "指南",
-    "privacyPolicy": "隱私權政策",
+    "privacyPolicy": "隱私政策",
     "termsOfServices": "服務條款",
     "text": "內容",
     "help": "幫助",
     "friendlyLinks": "友情連結",
-    "articleList": "Article List",
+    "articleList": "文章列表",
     "home": "首頁",
     "next": "下一頁",
     "previous": "上一頁"
   },
   "HomeIframe": {
-    "title": "咒術迴戰無限 | Jujutsu infinity | 遊戲維基",
-    "description": "體驗咒術迴戰無限的動態遊戲玩法，在充滿故事的環境中完成任務和挑戰。",
+    "title": "",
+    "description": "",
     "iframeTitle": "遊戲預覽",
     "fullscreenButton": "全螢幕",
     "shareButton": "分享",
-    "urlCopied": "網址已複製到剪貼簿！",
-    "downloadGame": "兌換代碼",
+    "urlCopied": "網址已複製到剪貼板!",
+    "downloadGame": "下載遊戲",
     "playGame": "遊玩遊戲"
   },
   "HomeFeatures": {
-    "gameTitle": "咒術迴戰無限 | Jujutsu infinity | 遊戲維基 特色",
-    "whatIsTitle": "咒術迴戰無限是什麼？",
-    "whatIsDescription": "咒術迴戰無限是一款基於咒術迴戰的 Roblox MMORPG，讓玩家沉浸在充滿角色客製化、與咒靈戰鬥等元素的世界中。",
+    "gameTitle": "",
+    "whatIsTitle": "",
+    "whatIsDescription": "",
     "howToPlayTitle": "如何遊玩",
-    "howToPlayStep1": "用先天技客製你的咒術師。",
-    "howToPlayStep2": "完成任務並戰鬥咒靈以提升等級。",
-    "howToPlayStep3": "參與 PvP 和首領團戰以獲得稀有獎勵。",
-    "keyFeaturesTitle": "主要特色",
-    "feature1Title": "角色創建",
-    "feature1Description": "用獨特的技能和能力客製你的咒術師。",
-    "feature2Title": "故事模式",
-    "feature2Description": "沉浸在與漫畫角色相關的豐富敘事中。",
-    "feature3Title": "首領團戰",
-    "feature3Description": "組隊擊敗強大的首領以獲得稀有物品。",
-    "feature4Title": "PvP 戰鬥",
-    "feature4Description": "挑戰其他玩家，檢驗你的戰鬥技巧。"
+    "howToPlayStep1": "",
+    "howToPlayStep2": "",
+    "howToPlayStep3": "",
+    "keyFeaturesTitle": "Key Features",
+    "feature1Title": "",
+    "feature1Description": "",
+    "feature2Title": "",
+    "feature2Description": "",
+    "feature3Title": "",
+    "feature3Description": "",
+    "feature4Title": "",
+    "feature4Description": ""
   },
   "HomeFAQs": {
-    "title": "常見問題"
+    "title": "FAQs"
   },
   "HomeRelatedVideo": {
-    "title": "遊戲影片"
+    "title": "Game Video"
   },
   "HomeRecommendation": {
-    "title": "推薦"
+    "title": "Recommends"
   },
   "HomeComments": {
-    "title": "遊戲評論"
+    "title": "Play Comments"
   },
   "GamePage": {
-    "title": "所有遊戲",
-    "description": "所有遊戲",
-    "games": "遊戲"
+    "title": "All Games",
+    "description": "All Games",
+    "games": "Games"
   },
   "CategoryPage": {
     "categories": "類別",

@@ -1,65 +1,65 @@
 {
-  "title": "주술 슈퍼스트 | 주술 슈퍼스트 | 게임 위키",
-  "slogan": "주술사들의 무한한 영역을 탐험하세요",
-  "description": "플레이어가 주술사가 되어 저주받은 영혼과 싸우고 애니메이션 세계관과 상호 작용하는 주술 슈퍼스트(주술 슈퍼스트)의 세계로 뛰어드세요.",
+  "title": "",
+  "slogan": "",
+  "description": "",
   "Loading": {
-    "title": "주술 슈퍼스트(주술 슈퍼스트) 로딩..."
+    "title": ""
   },
   "Navbar": {
-    "title": "탐색"
+    "title": "내비게이션"
   },
   "Common": {
     "createAt": "생성일",
     "guide": "가이드",
-    "privacyPolicy": "개인 정보 보호 정책",
+    "privacyPolicy": "개인정보 처리방침",
     "termsOfServices": "서비스 약관",
-    "text": "콘텐츠",
-    "help": "도움말",
-    "friendlyLinks": "친구 링크",
-    "articleList": "Article List",
+    "text": "내용",
+    "help": "도움",
+    "friendlyLinks": "친절한 링크",
+    "articleList": "게시물 목록",
     "home": "홈",
     "next": "다음",
     "previous": "이전"
   },
   "HomeIframe": {
-    "title": "주술 슈퍼스트 | 주술 슈퍼스트 | 게임 위키",
-    "description": "스토리가 풍부한 환경에서 미션과 챌린지로 주술 슈퍼스트의 역동적인 게임 플레이를 경험하세요.",
+    "title": "",
+    "description": "",
     "iframeTitle": "게임 미리보기",
     "fullscreenButton": "전체 화면",
     "shareButton": "공유",
     "urlCopied": "URL이 클립보드에 복사되었습니다!",
-    "downloadGame": "코드 사용",
-    "playGame": "게임 시작"
+    "downloadGame": "게임 다운로드",
+    "playGame": "게임하기"
   },
   "HomeFeatures": {
-    "gameTitle": "주술 슈퍼스트 | 주술 슈퍼스트 | 게임 위키 특징",
-    "whatIsTitle": "주술 슈퍼스트는 무엇인가요?",
-    "whatIsDescription": "주술 슈퍼스트는 주술 능력자를 중심으로 하는 Roblox MMORPG로, 주술 능력자 설정, 저주받은 영혼과의 전투 등 주술 능력자 연대기를 제공합니다.",
+    "gameTitle": "",
+    "whatIsTitle": "",
+    "whatIsDescription": "",
     "howToPlayTitle": "게임 방법",
-    "howToPlayStep1": "타고난 기술로 주술 능력자를 설정하세요.",
-    "howToPlayStep2": "미션을 완료하고 저주받은 영혼과 싸워 레벨업하세요.",
-    "howToPlayStep3": "PVP 및 보스 레이드에 참여하여 희귀 보상을 얻으세요.",
-    "keyFeaturesTitle": "주요 특징",
-    "feature1Title": "캐릭터 생성",
-    "feature1Description": "고유한 능력과 기술로 주술 능력자를 맞춤 설정하세요.",
-    "feature2Title": "스토리 모드",
-    "feature2Description": "만화 캐릭터가 등장하는 풍부한 이야기에 몰입하세요.",
-    "feature3Title": "보스 레이드",
-    "feature3Description": "희귀 아이템을 위해 강력한 보스를 물리치기 위해 팀을 구성하세요.",
-    "feature4Title": "PVP 전투",
-    "feature4Description": "다른 플레이어와 전투 기술을 시험해보세요."
+    "howToPlayStep1": "",
+    "howToPlayStep2": "",
+    "howToPlayStep3": "",
+    "keyFeaturesTitle": "주요 기능",
+    "feature1Title": "",
+    "feature1Description": "",
+    "feature2Title": "",
+    "feature2Description": "",
+    "feature3Title": "",
+    "feature3Description": "",
+    "feature4Title": "",
+    "feature4Description": ""
   },
   "HomeFAQs": {
     "title": "자주 묻는 질문"
   },
   "HomeRelatedVideo": {
-    "title": "게임 영상"
+    "title": "게임 비디오"
   },
   "HomeRecommendation": {
     "title": "추천"
   },
   "HomeComments": {
-    "title": "게임 댓글"
+    "title": "플레이 댓글"
   },
   "GamePage": {
     "title": "모든 게임",

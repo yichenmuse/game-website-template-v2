@@ -1,9 +1,9 @@
 {
-  "title": "Jujutsu Infinite | Jujutsu infinity | Jogo Wiki",
-  "slogan": "Explore o Infinito Reino de Magos",
-  "description": "Mergulhe no mundo de Jujutsu Infinite (Jujutsu infinity), onde os jogadores se tornam magos, lutam contra espíritos amaldiçoados e interagem com o universo do anime.",
+  "title": "",
+  "slogan": "",
+  "description": "",
   "Loading": {
-    "title": "Carregando Jujutsu Infinite (Jujutsu infinity)..."
+    "title": ""
   },
   "Navbar": {
     "title": "Navegação"
@@ -16,38 +16,38 @@
     "text": "Conteúdo",
     "help": "Ajuda",
     "friendlyLinks": "Links Amigáveis",
-    "articleList": "Article List",
+    "articleList": "Lista de Artigos",
     "home": "Início",
     "next": "Próximo",
     "previous": "Anterior"
   },
   "HomeIframe": {
-    "title": "Jujutsu Infinite | Jujutsu infinity | Jogo Wiki",
-    "description": "Experimente o jogo dinâmico de Jujutsu Infinite com missões e desafios dentro de um ambiente rico em história.",
+    "title": "",
+    "description": "",
     "iframeTitle": "Prévia do Jogo",
     "fullscreenButton": "Tela Cheia",
     "shareButton": "Compartilhar",
     "urlCopied": "URL copiado para a área de transferência!",
-    "downloadGame": "Resgatar códigos",
+    "downloadGame": "Baixar Jogo",
     "playGame": "Jogar"
   },
   "HomeFeatures": {
-    "gameTitle": "Recursos de Jujutsu Infinite | Jujutsu infinity | Jogo Wiki",
-    "whatIsTitle": "O que é Jujutsu Infinite?",
-    "whatIsDescription": "Jujutsu Infinite é um MMORPG Roblox que mergulha os jogadores em um mundo inspirado em Jujutsu Kaisen, oferecendo personalização de personagens, combate contra espíritos amaldiçoados e muito mais.",
+    "gameTitle": "",
+    "whatIsTitle": "",
+    "whatIsDescription": "",
     "howToPlayTitle": "Como Jogar",
-    "howToPlayStep1": "Personalize seu mago Jujutsu com Técnicas Inatas.",
-    "howToPlayStep2": "Complete missões e lute contra espíritos amaldiçoados para subir de nível.",
-    "howToPlayStep3": "Participe de PvP e invasões de chefes para recompensas raras.",
+    "howToPlayStep1": "",
+    "howToPlayStep2": "",
+    "howToPlayStep3": "",
     "keyFeaturesTitle": "Principais Recursos",
-    "feature1Title": "Criação de Personagens",
-    "feature1Description": "Personalize seu mago com habilidades e talentos únicos.",
-    "feature2Title": "Modo História",
-    "feature2Description": "Mergulhe em narrativas ricas envolvendo personagens do mangá.",
-    "feature3Title": "Invasões de Chefes",
-    "feature3Description": "Junte-se a outros jogadores para derrotar chefes poderosos e obter itens raros.",
-    "feature4Title": "Combates PvP",
-    "feature4Description": "Desafie outros jogadores para testar suas habilidades de combate."
+    "feature1Title": "",
+    "feature1Description": "",
+    "feature2Title": "",
+    "feature2Description": "",
+    "feature3Title": "",
+    "feature3Description": "",
+    "feature4Title": "",
+    "feature4Description": ""
   },
   "HomeFAQs": {
     "title": "Perguntas Frequentes"
@@ -59,7 +59,7 @@
     "title": "Recomendações"
   },
   "HomeComments": {
-    "title": "Comentários do Jogo"
+    "title": "Comentários sobre o Jogo"
   },
   "GamePage": {
     "title": "Todos os Jogos",

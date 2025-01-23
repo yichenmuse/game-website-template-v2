@@ -1,70 +1,70 @@
 {
-  "title": "জুজুৎসু ইনফিনিটি | জুজুৎসু ইনফিনিটি | গেম উইকি",
-  "slogan": "মন্ত্রীদের অসীম রাজ্যে অন্বেষণ করুন",
-  "description": "জুজুৎসু ইনফিনিটি (জুজুৎসু ইনফিনিটি) এর জগতে ডুব দিন যেখানে খেলোয়াড়রা মন্ত্রী হিসাবে রূপান্তরিত হয়, অভিশপ্ত আত্মাদের সাথে লড়াই করে এবং অ্যানিমে বিশ্বের সাথে মিথস্ক্রিয়া করে। (Jujutsu Infinite | Jujutsu infinity | Game Wiki)",
+  "title": "",
+  "slogan": "",
+  "description": "",
   "Loading": {
-    "title": "জুজুৎসু ইনফিনিটি (জুজুৎসু ইনফিনিটি) লোড হচ্ছে..."
+    "title": ""
   },
   "Navbar": {
     "title": "নেভিগেশন"
   },
   "Common": {
-    "createAt": "সৃষ্টি",
-    "guide": "নির্দেশিকা",
+    "createAt": "তৈরি তারিখ",
+    "guide": "গাইড",
     "privacyPolicy": "গোপনীয়তা নীতি",
-    "termsOfServices": "সেবা শর্তাবলী",
+    "termsOfServices": "সেবার শর্তাবলী",
     "text": "বিষয়বস্তু",
     "help": "সাহায্য",
     "friendlyLinks": "বন্ধুত্বপূর্ণ লিঙ্ক",
-    "articleList": "Article List",
+    "articleList": "নিবন্ধ তালিকা",
     "home": "হোম",
     "next": "পরবর্তী",
     "previous": "পূর্ববর্তী"
   },
   "HomeIframe": {
-    "title": "জুজুৎসু ইনফিনিটি | জুজুৎসু ইনফিনিটি | গেম উইকি",
-    "description": "কাহিনীর সমৃদ্ধ পরিবেশে মিশন এবং চ্যালেঞ্জ সহ জুজুৎসু ইনফিনিটির গতিশীল গেমপ্লে অনুভব করুন। (Jujutsu Infinite | Jujutsu infinity | Game Wiki)",
+    "title": "",
+    "description": "",
     "iframeTitle": "গেম প্রিভিউ",
-    "fullscreenButton": "পূর্ণ পর্দা",
-    "shareButton": "শেয়ার",
-    "urlCopied": "ইউআরএল ক্লপবোর্ডে অনুলিপি করা হয়েছে!",
-    "downloadGame": "কোড উদ্ধার",
+    "fullscreenButton": "পূর্ণ স্ক্রীন",
+    "shareButton": "শেয়ার করুন",
+    "urlCopied": "URL ক্লিপবোর্ডে কপি করা হয়েছে!",
+    "downloadGame": "গেম ডাউনলোড করুন",
     "playGame": "গেম খেলুন"
   },
   "HomeFeatures": {
-    "gameTitle": "জুজুৎসু ইনফিনিটি | জুজুৎসু ইনফিনিটি | গেম উইকি বৈশিষ্ট্য",
-    "whatIsTitle": "জুজুৎসু ইনফিনিটি কি?",
-    "whatIsDescription": "জুজুৎসু ইনফিনিটি রোব্লক্সের একটি এমএমওআরপিজি যা জুজুৎসু কাইসেনের অনুপ্রেরণায় একটি বিশ্বে খেলোয়াড়দের নিমজ্জিত করে, চরিত্রের কাস্টমাইজেশন, অভিশপ্ত আত্মাদের সাথে লড়াই এবং আরও অনেক কিছু প্রদান করে। (Jujutsu Infinite | Jujutsu infinity | Game Wiki)",
+    "gameTitle": "",
+    "whatIsTitle": "",
+    "whatIsDescription": "",
     "howToPlayTitle": "কিভাবে খেলবেন",
-    "howToPlayStep1": "আপনার জুজুৎসু মন্ত্রীকে জন্মগত কৌশল দিয়ে কাস্টমাইজ করুন।",
-    "howToPlayStep2": "পর্যায় উন্নত করার জন্য মিশন সম্পন্ন করুন এবং অভিশপ্ত আত্মাদের সাথে লড়াই করুন।",
-    "howToPlayStep3": "দুর্লভ পুরস্কারের জন্য পিভিপি এবং বসের রেডে অংশগ্রহণ করুন।",
+    "howToPlayStep1": "",
+    "howToPlayStep2": "",
+    "howToPlayStep3": "",
     "keyFeaturesTitle": "মূল বৈশিষ্ট্য",
-    "feature1Title": "চরিত্র তৈরি",
-    "feature1Description": "আপনার মন্ত্রীকে অনন্য ক্ষমতা এবং দক্ষতা দিয়ে কাস্টমাইজ করুন।",
-    "feature2Title": "কাহিনির মোড",
-    "feature2Description": "ম্যাঙ্গা চরিত্রের সাথে জড়িত সমৃদ্ধ কাহিনীতে নিমজ্জিত হোন।",
-    "feature3Title": "বসের রেড",
-    "feature3Description": "দুর্লভ আইটেমের জন্য শক্তিশালী বসকে পরাজিত করার জন্য একসাথে কাজ করুন।",
-    "feature4Title": "পিভিপি যুদ্ধ",
-    "feature4Description": "আপনার লড়াইয়ের দক্ষতা পরীক্ষা করার জন্য অন্যান্য খেলোয়াড়দের চ্যালেঞ্জ করুন।"
+    "feature1Title": "",
+    "feature1Description": "",
+    "feature2Title": "",
+    "feature2Description": "",
+    "feature3Title": "",
+    "feature3Description": "",
+    "feature4Title": "",
+    "feature4Description": ""
   },
   "HomeFAQs": {
-    "title": "প্রায়শ জিজ্ঞাস্য প্রশ্ন"
+    "title": "প্রশ্নাবলী"
   },
   "HomeRelatedVideo": {
     "title": "গেম ভিডিও"
   },
   "HomeRecommendation": {
-    "title": "অনুশাসন"
+    "title": "সুপারিশ"
   },
   "HomeComments": {
     "title": "খেলার মন্তব্য"
   },
   "GamePage": {
-    "title": "সকল গেম",
-    "description": "সকল গেম",
-    "games": "গেমস"
+    "title": "সমস্ত গেম",
+    "description": "সমস্ত গেম",
+    "games": "গেম"
   },
   "CategoryPage": {
     "categories": "শ্রেণী",

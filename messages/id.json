@@ -1,9 +1,9 @@
 {
-  "title": "Tak Terbatas Jujutsu | Jujutsu infinity | Game Wiki",
-  "slogan": "Jelajahi Alam Penyihir yang Tak Terbatas",
-  "description": "Terjunlah ke dunia Jujutsu Infinite (Jujutsu infinity) di mana pemain menjadi penyihir, bertarung melawan roh terkutuk, dan berinteraksi dengan alam semesta anime.",
+  "title": "",
+  "slogan": "",
+  "description": "",
   "Loading": {
-    "title": "Memuat Tak Terbatas Jujutsu (Jujutsu infinity)..."
+    "title": ""
   },
   "Navbar": {
     "title": "Navigasi"
@@ -16,41 +16,41 @@
     "text": "Konten",
     "help": "Bantuan",
     "friendlyLinks": "Tautan Ramah",
-    "articleList": "Article List",
+    "articleList": "Daftar Artikel",
     "home": "Beranda",
     "next": "Selanjutnya",
     "previous": "Sebelumnya"
   },
   "HomeIframe": {
-    "title": "Tak Terbatas Jujutsu | Jujutsu infinity | Game Wiki",
-    "description": "Rasakan gameplay dinamis Jujutsu Infinite dengan misi dan tantangan dalam lingkungan yang kaya cerita.",
-    "iframeTitle": "Pratinjau Permainan",
+    "title": "",
+    "description": "",
+    "iframeTitle": "Prabaca Permainan",
     "fullscreenButton": "Layar Penuh",
     "shareButton": "Bagikan",
-    "urlCopied": "URL disalin ke papan klip!",
-    "downloadGame": "Tukarkan kode",
-    "playGame": "Mainkan Game"
+    "urlCopied": "URL telah disalin ke papan klip!",
+    "downloadGame": "Unduh Permainan",
+    "playGame": "Mainkan Permainan"
   },
   "HomeFeatures": {
-    "gameTitle": "Fitur Tak Terbatas Jujutsu | Jujutsu infinity | Game Wiki",
-    "whatIsTitle": "Apa itu Jujutsu Infinite?",
-    "whatIsDescription": "Jujutsu Infinite adalah MMORPG Roblox yang membenamkan pemain dalam dunia yang terinspirasi oleh Jujutsu Kaisen, menawarkan kustomisasi karakter, pertarungan dengan roh terkutuk, dan banyak lagi.",
+    "gameTitle": "",
+    "whatIsTitle": "",
+    "whatIsDescription": "",
     "howToPlayTitle": "Cara Bermain",
-    "howToPlayStep1": "Sesuaikan penyihir Jujutsu Anda dengan Teknik Bawaan.",
-    "howToPlayStep2": "Selesaikan misi dan lawan roh terkutuk untuk meningkatkan level.",
-    "howToPlayStep3": "Terlibat dalam PvP dan serangan bos untuk mendapatkan hadiah langka.",
+    "howToPlayStep1": "",
+    "howToPlayStep2": "",
+    "howToPlayStep3": "",
     "keyFeaturesTitle": "Fitur Utama",
-    "feature1Title": "Pembuatan Karakter",
-    "feature1Description": "Sesuaikan penyihir Anda dengan kemampuan dan keterampilan unik.",
-    "feature2Title": "Mode Cerita",
-    "feature2Description": "Terjun dalam narasi yang kaya melibatkan karakter manga.",
-    "feature3Title": "Serangan Bos",
-    "feature3Description": "Bekerja sama untuk mengalahkan bos kuat demi barang langka.",
-    "feature4Title": "Pertempuran PvP",
-    "feature4Description": "Tantang pemain lain untuk menguji keterampilan bertarung Anda."
+    "feature1Title": "",
+    "feature1Description": "",
+    "feature2Title": "",
+    "feature2Description": "",
+    "feature3Title": "",
+    "feature3Description": "",
+    "feature4Title": "",
+    "feature4Description": ""
   },
   "HomeFAQs": {
-    "title": "Tanya Jawab"
+    "title": "FAQ"
   },
   "HomeRelatedVideo": {
     "title": "Video Permainan"
