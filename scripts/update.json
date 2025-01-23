@@ -1,4 +1,15 @@
 {
+    "2025-01-23": {
+        "version": "2.0.1",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "更新站点配置文件和默认配置"
+        ],
+        "modify": [
+            "lib/config/site.json",
+            "lib/types/site.ts"
+        ]
+    },
     "2025-01-18": {
         "version": "2.0.0",
         "messagesKeyModify": true,

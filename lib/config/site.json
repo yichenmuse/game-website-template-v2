@@ -21,6 +21,7 @@
   "bgType": "iframe",
   "bgImage": "",
   "bgVideo": "",
+  "friendLinks":[],
   "gameDownload": {
     "showDownloadButton": true,
     "downloadUrls": {
