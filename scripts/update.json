@@ -1,4 +1,15 @@
-{
+{ 
+    "2025-01-26": {
+        "version": "2.0.2",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "解决游戏页面获取详情内容路径不正确的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "lib/components/games-template/page.tsx"
+        ]
+    },
 
     "2025-01-23": {
         "version": "2.0.1",
