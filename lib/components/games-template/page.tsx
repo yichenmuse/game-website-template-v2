@@ -52,12 +52,6 @@ export default async function Page({ params }: Props) {
     const { content } = getFeaturedContent(currentDir, locale);
     features2ContentResult = content;
   }
-  if(siteConfig2.customizeFeatures){
-    
-    const { content } = getFeaturedContent(process.cwd(),locale);
-    features2ContentResult = content;
-  }
-  
   return (
     <div className="bg-background pt-5 pb-5">
       <div className="container mx-auto">
