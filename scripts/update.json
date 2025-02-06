@@ -1,4 +1,25 @@
-{ 
+{
+    "2025-02=06": {
+        "version": "2.0.4",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "更新下载游戏组件",
+            "优化页脚和社交图标组件",
+            "更新多个主题配置文件"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/DownloadGame.tsx",
+            "lib/components/footer.tsx",
+            "lib/components/social-icons.tsx",
+            "lib/config/themes/cyberpunk-neon.json",
+            "lib/config/themes/dark.json",
+            "lib/config/themes/deep-red.json",
+            "lib/config/themes/deep-sea.json",
+            "lib/config/themes/default.json",
+            "lib/config/themes/forest-theme.json"
+        ]
+    },
+
     "2025-01-26 12": {
         "version": "2.0.3",
         "messagesKeyModify": false,
