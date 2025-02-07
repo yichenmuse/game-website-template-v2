@@ -1,4 +1,15 @@
 {
+    "2025-02-07 14": {
+        "version": "2.0.6",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "解决iframe加载时的文字提示不正确的问题（改为当前游戏名称而非网站名称）"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx"
+        ]
+    },
     "2025-02-07": {
         "version": "2.0.5",
         "messagesKeyModify": false,
