@@ -1,4 +1,14 @@
 {
+    "2025-02-07": {
+        "version": "2.0.5",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "兼容部分游戏国际化内容值为null导致编译报错的问题"
+        ],
+        "modify": [
+            "i18n.ts"
+        ]
+    },
     "2025-02-06": {
         "version": "2.0.4",
         "messagesKeyModify": false,
