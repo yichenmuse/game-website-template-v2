@@ -6,6 +6,7 @@
             "解决非游戏盒子模板下页脚显示不正确的问题"
         ],
         "modify": [
+            "app/[locale]/(public)/page.tsx",
             "lib/components/footer.tsx",
             "lib/components/layout/AppLayout.tsx",
             "lib/context/SidebarContext.tsx"
