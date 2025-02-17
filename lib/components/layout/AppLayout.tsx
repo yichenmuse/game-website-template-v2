@@ -10,7 +10,10 @@ interface AppLayoutProps {
 }
 
 export function AppLayout({ children, categories }: AppLayoutProps) {
-  const { isExpanded, setIsExpanded } = useSidebar();
+  const { isExpanded, setIsExpanded,setIsGameBox } = useSidebar();
+  // 有此Layout時，就設定isGameBox為true
+  setIsGameBox(true)
+  setIsExpanded(true)
   return (
     <div className="relative bg-background min-h-screen">
       {/* Sidebar */}
