@@ -1,4 +1,30 @@
 {
+    "2025-02-17": {
+        "version": "2.0.8",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "调整游戏盒子模板侧边栏样式",
+            "解决首页游戏加载不正确问题"
+        ],
+        "add": [
+            "lib/context/SidebarContext.tsx"
+        ],
+        "modify": [
+            "app/[locale]/(public)/layout.tsx",
+            "lib/components/footer.tsx",
+            "lib/components/games-template/c/[[...]]/page.tsx",
+            "lib/components/games-template/game-box.tsx",
+            "lib/components/games-template/page.tsx",
+            "lib/components/layout/AppLayout.tsx",
+            "lib/components/navbar.tsx",
+            "lib/components/sidebar/CategorySidebar.tsx",
+            "lib/types/site.ts",
+            "lib/utils/game-box-settings.ts"
+        ],
+        "delete": [
+            "lib/components/layout/MainLayout.tsx"
+        ]
+    },
     "2025-02-11": {
         "version": "2.0.7",
         "messagesKeyModify": false,
@@ -50,7 +76,6 @@
             "lib/config/themes/forest-theme.json"
         ]
     },
-
     "2025-01-26 12": {
         "version": "2.0.3",
         "messagesKeyModify": false,
@@ -72,7 +97,6 @@
             "lib/components/games-template/page.tsx"
         ]
     },
-
     "2025-01-23": {
         "version": "2.0.1",
         "messagesKeyModify": false,
@@ -174,9 +198,8 @@
             "resources/game-box/en.json",
             "tailwind.config.ts",
             "package.json"
-          ]
+        ]
     },
-
     "2025-01-22": {
         "version": "1.2.30",
         "messagesKeyModify": false,
@@ -187,7 +210,6 @@
             "i18n.ts"
         ]
     },
-
     "2025-01-14": {
         "version": "1.2.29",
         "messagesKeyModify": false,
