@@ -5,12 +5,15 @@ import { createContext, useContext, useState, ReactNode, useEffect } from 'react
 interface SidebarContextType {
   isExpanded: boolean;
   setIsExpanded: (value: boolean) => void;
+  isGameBox: boolean;
+  setIsGameBox: (value: boolean) => void;
 }
 
 const SidebarContext = createContext<SidebarContextType | undefined>(undefined);
 
 export function SidebarProvider({ children }: { children: ReactNode }) {
   const [isExpanded, setIsExpanded] = useState(true);
+  const [isGameBox,setIsGameBox] = useState(false);
 
   useEffect(() => {
     // 检查是否为移动设备（小于 768px）
@@ -32,7 +35,7 @@ export function SidebarProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <SidebarContext.Provider value={{ isExpanded, setIsExpanded }}>
+    <SidebarContext.Provider value={{ isExpanded, setIsExpanded,isGameBox,setIsGameBox }}>
       {children}
     </SidebarContext.Provider>
   );
