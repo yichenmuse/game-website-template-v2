@@ -18,7 +18,6 @@ import { getHomeSettings } from '@/lib/utils/game-box-settings';
 import { getFeaturedContent } from '@/lib/utils/blogs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-export const dynamic = 'force-static'
 type Props = {
   params: Promise<{ locale: string }>;
 };

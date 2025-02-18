@@ -1,5 +1,28 @@
 {
-    "2025-02-19": {
+"2025-02-18": {
+    "version": "2.0.10",
+    "messagesKeyModify": false,
+    "changeLog": [
+        "修复盒子模板下页脚显示有空白的问题、分类不显示左侧菜单问题",
+        "修复游戏详情页面游戏名称不加载国际化内容问题",
+        "修复盒子模板左侧按钮无法收缩、移动端下默认设置为折叠状态"
+    ],
+    "modify": [
+        "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
+        "app/[locale]/(public)/page.tsx",
+        "app/[locale]/(public)/t/page.tsx",
+        "i18n.ts",
+        "lib/components/game-category/GameCard.tsx",
+        "lib/components/game-category/GameGroup.tsx",
+        "lib/components/games-template/c/[[...]]/page.tsx",
+        "lib/components/games-template/game-box.tsx",
+        "lib/components/games-template/page.tsx",
+        "lib/components/t-file-page-template.tsx",
+        "lib/context/SidebarContext.tsx"
+    ]
+},
+
+    "2025-02-17 18": {
         "version": "2.0.9",
         "messagesKeyModify": false,
         "changeLog": [
