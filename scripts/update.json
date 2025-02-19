@@ -11,7 +11,6 @@
             "app/[locale]/(public)/t/page.tsx",
             "lib/components/layout/AppLayout.tsx",
             "lib/config/site.ts",
-            "resources/game-box/en.json",
             "app/[locale]/(public)/page.tsx",
             "lib/components/games-template/page.tsx"
         ]
