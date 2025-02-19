@@ -12,12 +12,10 @@ import DownloadGame from '@/app/[locale]/(public)/views/DownloadGame';
 import {siteConfig} from '@/lib/config/site';
 import { SiteConfig} from '@/lib/types';
 import GameRecommendationCard from '@/app/[locale]/(public)/views/GameRecommendationCard';
-import CustomizeFeatures from './views/CustomizeFeatures';
+import CustomizeFeatures from '@/app/[locale]/(public)/views/CustomizeFeatures';
 import { AppLayout } from '@/lib/components/layout/AppLayout';
 import { getHomeSettings } from '@/lib/utils/game-box-settings';
-import { getFeaturedContent } from '@/lib/utils/blogs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import matter from 'gray-matter';
 type Props = {
   params: Promise<{ locale: string }>;
 };
@@ -50,9 +48,13 @@ export default async function Page({ params }: Props) {
   const pageName = null;
   let features2ContentResult = null;
   if(siteConfig2.customizeFeatures){
-    const currentDir = path.dirname(fileURLToPath(import.meta.url));
-    const { content } = getFeaturedContent(currentDir, locale);
-    features2ContentResult = content;
+    try {
+      const Content = (await import(`!!raw-loader!./config/features/${locale}.mdx`)).default;
+      const { content } = matter(Content);
+      features2ContentResult = content;
+    } catch (error) {
+      console.error(`features2 section can not find ${locale}.mdx`, error);
+    }
   }
 
   const PageContent = () => (
