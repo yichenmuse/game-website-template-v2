@@ -12,27 +12,9 @@ interface SidebarContextType {
 const SidebarContext = createContext<SidebarContextType | undefined>(undefined);
 
 export function SidebarProvider({ children }: { children: ReactNode }) {
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
   const [isGameBox,setIsGameBox] = useState(false);
 
-  useEffect(() => {
-    // 检查是否为移动设备（小于 768px）
-    const isMobile = window.innerWidth < 768;
-    setIsExpanded(!isMobile);
-
-    // 添加窗口大小变化监听器
-    const handleResize = () => {
-      const isMobile = window.innerWidth < 768;
-      setIsExpanded(!isMobile);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    // 清理监听器
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <SidebarContext.Provider value={{ isExpanded, setIsExpanded,isGameBox,setIsGameBox }}>
