@@ -1,4 +1,27 @@
 {
+    "2025-02-20 10": {
+        "version": "2.0.14",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复子游戏页面截图获取不正确问题",
+            "更新站点类型定义，解决ts编译报错"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/views/Comments.tsx",
+            "app/[locale]/(public)/views/DownloadGame.tsx",
+            "app/[locale]/(public)/views/FAQs.tsx",
+            "app/[locale]/(public)/views/Features.tsx",
+            "app/[locale]/(public)/views/IframeActions.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx",
+            "app/[locale]/(public)/views/PopupWindows.tsx",
+            "app/[locale]/(public)/views/RelatedVideo.tsx",
+            "lib/components/games-template/page.tsx",
+            "lib/types/site.ts"
+        ]
+    },
+    
     "2025-02-20": {
         "version": "2.0.13",
         "messagesKeyModify": false,

@@ -45,7 +45,7 @@ export default async function Page({ params }: Props) {
   const { locale = defaultLocale } = await params;
   setRequestLocale(locale);
   const siteConfig2 = siteConfig as unknown as SiteConfig
-  const pageName = null;
+  const pageName = siteConfig2.pageName;
   let features2ContentResult = null;
   if(siteConfig2.customizeFeatures){
     try {
