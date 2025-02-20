@@ -1,4 +1,15 @@
 {
+    "2025-02-20": {
+        "version": "2.0.13",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复子游戏页面内容取值不正确的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "lib/components/games-template/page.tsx"
+        ]
+    },
     "2025-02-19": {
         "version": "2.0.12",
         "messagesKeyModify": false,

@@ -9,7 +9,8 @@ import Recommendation from '@/app/[locale]/(public)/views/Recommendation';
 import RelatedVideo from '@/app/[locale]/(public)/views/RelatedVideo';
 import SectionWrapper from '@/app/[locale]/(public)/views/SectionWrapper';
 import DownloadGame from '@/app/[locale]/(public)/views/DownloadGame';
-import {siteConfig} from '@/lib/config/site';
+import {siteConfig as mainConfig} from '@/lib/config/site';
+import siteConfig from './config/config.json';
 import { SiteConfig} from '@/lib/types';
 import GameRecommendationCard from '@/app/[locale]/(public)/views/GameRecommendationCard';
 import CustomizeFeatures from '@/app/[locale]/(public)/views/CustomizeFeatures';
@@ -28,6 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale = defaultLocale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale });
+  const siteConfig2 = siteConfig as unknown as SiteConfig
   return {
     title: `${t('title')}`,
     description: t('description'),
@@ -35,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: alternatesLanguage(''),
     },
     icons: {
-      icon: siteConfig.icon,
-      apple: siteConfig.appleIcon,
+      icon: siteConfig2.icon,
+      apple: siteConfig2.appleIcon,
     },
   };
 }
@@ -84,7 +86,7 @@ export default async function Page({ params }: Props) {
     </div>
   );
 
-  if (siteConfig.templateType === 'game-box') {
+  if (mainConfig.templateType === 'game-box') {
     const settings = await getHomeSettings(locale);
     return (
       <AppLayout categories={settings.categories}>
