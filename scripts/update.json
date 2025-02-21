@@ -1,4 +1,14 @@
 {
+    "2025-02-21": {
+        "version": "2.0.15",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复过低版本升级到最新模板时，某些文件不存在导致编译报错的问题"
+        ],
+        "modify": [
+            "lib/utils/game-box-settings.ts"
+        ]
+    },
     "2025-02-20 10": {
         "version": "2.0.14",
         "messagesKeyModify": false,

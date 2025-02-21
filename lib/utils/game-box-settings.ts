@@ -17,7 +17,12 @@ export const getHomeSettings = async (locale: string) => {
     try {
       settings = (await import(`@/resources/game-box/${locale}.json`)).default  as unknown as GameBoxSettings;
     } catch {
-      settings = (await import(`@/resources/game-box/en.json`)).default as unknown as GameBoxSettings;
+      try{
+        settings = (await import(`@/resources/game-box/en.json`)).default as unknown as GameBoxSettings;
+      }catch{
+        // 非盒子游戏模板，有可能不存在这个en.json文件，避免报错
+        return settings;
+      }
     }
 
     // 2. 读取games目录下的所有游戏配置
