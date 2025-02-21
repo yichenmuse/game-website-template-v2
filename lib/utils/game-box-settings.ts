@@ -11,6 +11,7 @@ export const getHomeSettings = async (locale: string) => {
     categories: [],
     allGames: []
   };
+  const defaultLoclae = 'en';
 
   try {
     // 1. 加载基础配置
@@ -18,7 +19,8 @@ export const getHomeSettings = async (locale: string) => {
       settings = (await import(`@/resources/game-box/${locale}.json`)).default  as unknown as GameBoxSettings;
     } catch {
       try{
-        settings = (await import(`@/resources/game-box/en.json`)).default as unknown as GameBoxSettings;
+        // 不可直接写死en,避免编译时，因为文件不存在导致报错。而是采用动态拼接参数
+        settings = (await import(`@/resources/game-box/${defaultLoclae}.json`)).default as unknown as GameBoxSettings;
       }catch{
         // 非盒子游戏模板，有可能不存在这个en.json文件，避免报错
         return settings;
