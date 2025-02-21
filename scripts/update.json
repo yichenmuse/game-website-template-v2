@@ -218,7 +218,6 @@
             "lib/components/games-template/game-box.tsx",
             "lib/components/games-template/c/[[...]]/page.tsx",
             "lib/components/layout/AppLayout.tsx",
-            "lib/components/layout/MainLayout.tsx",
             "lib/components/sidebar/CategorySidebar.tsx",
             "lib/config/themes/cyberpunk-neon.json",
             "lib/config/themes/dark.json",
