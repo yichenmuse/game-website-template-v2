@@ -1,4 +1,18 @@
 {
+    "2025-02-21 15": {
+        "version": "2.0.16",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复推荐游戏、分类侧边栏没有按语言跳转到对应语言的链接问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/games/page.tsx",
+            "app/[locale]/(public)/views/GameCard.tsx",
+            "app/[locale]/(public)/views/Recommendation.tsx",
+            "app/not-found.tsx",
+            "lib/components/sidebar/CategorySidebar.tsx"
+        ]
+    },
     "2025-02-21": {
         "version": "2.0.15",
         "messagesKeyModify": false,
