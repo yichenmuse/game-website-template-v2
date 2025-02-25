@@ -48,7 +48,7 @@ export default async function FAQs({ locale,pageName }: PropsWithLocale<{pageNam
     return null;
   }
   return (
-    <section className="w-full  mx-auto py-12 px-4">
+    <section className="w-full  mx-auto py-12">
       <h2 className="text-3xl font-bold text-center mb-8">{t('title')}</h2>
       <Accordion type="single" collapsible className="space-y-4">
         {faqItems.map((item, index) => (

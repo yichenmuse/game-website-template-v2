@@ -1,4 +1,30 @@
 {
+    "2025-02-25": {
+        "version": "2.0.17",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "优化多个页面组件和布局，解决盒子模板分类切换多语言后无法加载游戏问题",
+            "移动端下侧边栏默认隐藏，调整游戏页面布局",
+            "解决分类游戏列表没有侧边栏的问题",
+            "修改隐私政策和服务条款页面在深色模式下的背景颜色，解决文字显示空白问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/privacy-policy/page.tsx",
+            "app/[locale]/(public)/terms-of-services/page.tsx",
+            "app/[locale]/(public)/views/FAQs.tsx",
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx",
+            "app/[locale]/(public)/views/IframeActions.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx",
+            "lib/components/footer.tsx",
+            "lib/components/games-template/c/[[...]]/page.tsx",
+            "lib/components/games-template/page.tsx",
+            "lib/components/layout/AppLayout.tsx",
+            "lib/components/sidebar/CategorySidebar.tsx",
+            "lib/utils/game-box-settings.ts"
+        ]
+    },
     "2025-02-21 15": {
         "version": "2.0.16",
         "messagesKeyModify": false,
@@ -45,7 +71,6 @@
             "lib/types/site.ts"
         ]
     },
-    
     "2025-02-20": {
         "version": "2.0.13",
         "messagesKeyModify": false,

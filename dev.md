@@ -93,8 +93,8 @@ Error: MISSING_MESSAGE: Could not resolve `loadingTitle` in messages for locale 
 
 ## 如何修改
 
-- 删除messages目录，并将messages_demo目录修改为messages目录
-- 修改lib/config/site.json代码，如下：
+- 删除messages目录，并将messages_bak目录修改为messages目录
+- 修改lib/config/site.ts代码，如下：
 
 ``` typescript
 import { SiteConfig } from '../types';
