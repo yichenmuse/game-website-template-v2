@@ -22,7 +22,8 @@
             "lib/components/games-template/page.tsx",
             "lib/components/layout/AppLayout.tsx",
             "lib/components/sidebar/CategorySidebar.tsx",
-            "lib/utils/game-box-settings.ts"
+            "lib/utils/game-box-settings.ts",
+            "lib/i18n/locales.ts"
         ]
     },
     "2025-02-21 15": {
