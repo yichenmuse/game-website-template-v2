@@ -24,7 +24,7 @@ export default async function IframeSection({pageName}:{pageName:string|null|und
   const game_screenshot_path = siteConfig.screenshotUrl || `${screenshot_prefix}/game_screenshot.webp`;
 
   return (
-    <section className="text-iframe-foreground flex flex-col items-center justify-center p-6 pt-0 mb-4 relative min-h-[calc(40vh-6rem)] md:min-h-[400px] lg:min-h-[600px]">
+    <section className="text-iframe-foreground flex flex-col items-center justify-center  pt-0 mb-4 relative min-h-[calc(40vh-6rem)] ">
       {/* 背景容器 - 添加圆角 */}
       <div className="absolute inset-0 w-full h-full rounded-2xl overflow-hidden">
         {/* 背景图片处理 */}
@@ -74,7 +74,7 @@ export default async function IframeSection({pageName}:{pageName:string|null|und
       </div>
 
       {/* iframe 容器 - 调整高度和宽度，确保在背景中有均匀的边距 */}
-      <div className="relative z-10 w-full h-full pt-6 rounded-2xl">
+      <div className="relative z-10 w-full h-full rounded-2xl">
         {isIframe && (
           <div className="w-full h-full">
             <LazyIframe 

@@ -1,4 +1,19 @@
 {
+    "2025-02-26 11": {
+        "version": "2.0.19",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复了游戏详情页面标题没有显示的问题",
+            "优化在手机端下显示的样式（调整了游戏iframe大小、文字大小等细节）"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/Comments.tsx",
+            "app/[locale]/(public)/views/FAQs.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx",
+            "lib/components/navbar.tsx"
+        ]
+    },
     "2025-02-26": {
         "version": "2.0.18",
         "messagesKeyModify": false,

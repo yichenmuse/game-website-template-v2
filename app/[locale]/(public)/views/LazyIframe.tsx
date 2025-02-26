@@ -46,7 +46,6 @@ export default function LazyIframe({
     }
   }, [iframeLoaded]);
 
-  const containerClassName = "w-full h-[calc(100vh-35rem)] md:min-h-[600px] rounded-2xl relative overflow-hidden flex flex-col";
 
   const handlePlayClick = () => {
     if (type === 'download') {
@@ -69,8 +68,8 @@ export default function LazyIframe({
       
       {/* 内容层 */}
       <div className="relative z-10 w-full mx-auto px-4 md:px-8">
-        <div className="flex flex-col items-center gap-8">
-          <div className="relative group w-full max-w-[480px] cursor-pointer" onClick={handlePlayClick}>
+        <div className="flex flex-col items-center gap-2 md:gap-8">
+          <div className="relative group w-full max-w-[220px] md:max-w-[480px] cursor-pointer" onClick={handlePlayClick}>
             <div className="w-full aspect-video rounded-2xl overflow-hidden border border-lazy-iframe-glow-1 backdrop-blur-sm shadow-xl">
               {gameImage ? (
                 <img 
@@ -78,7 +77,7 @@ export default function LazyIframe({
                   alt={title}
                   width={480}
                   height={270}
-                  className="w-full h-full object-cover will-change-transform group-hover:scale-110 transition-transform duration-300 rounded-xl max-w-[320px] md:max-w-none mx-auto"
+                  className="w-full h-full object-cover will-change-transform group-hover:scale-110 transition-transform duration-300 rounded-xl mx-auto"
                 />
               ) : (
                 <div className="w-full h-full bg-lazy-iframe-glow-1 backdrop-blur-sm flex items-center justify-center">
@@ -94,7 +93,7 @@ export default function LazyIframe({
           </div>
 
           <div className="text-center">
-            <h1 className="text-xl md:text-5xl font-bold text-lazy-iframe-title mb-4 md:mb-8 leading-tight">
+            <h1 className="text-base md:text-5xl font-bold text-lazy-iframe-title mb-4 md:mb-8 leading-tight">
               {title}
             </h1>
             <div className="flex justify-center">
@@ -125,7 +124,7 @@ export default function LazyIframe({
   );
 
   return (
-    <div className={containerClassName}>
+    <div className={"w-full h-[300px] md:h-[600px] md:min-h-[600px] rounded-2xl relative overflow-hidden flex flex-col"}>
       <div className="relative flex-grow">
         {!showIframeOnly && renderInitialContent()}
         
