@@ -30,16 +30,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   setRequestLocale(locale);
   const t = await getTranslations({ locale });
   const siteConfig2 = siteConfig as unknown as SiteConfig
+  const pageName = siteConfig2.pageName;
+  const pagePath = siteConfig2.pagePath||"";
   return {
-    title: `${t('title')}`,
-    description: t('description'),
+    title: `${t(`${pageName}.title`)}`,
+    description: t(`${pageName}.description`),
     alternates: {
-      languages: alternatesLanguage(''),
-    },
-    icons: {
-      icon: siteConfig2.icon,
-      apple: siteConfig2.appleIcon,
-    },
+      languages: alternatesLanguage(pagePath),
+    }
   };
 }
 

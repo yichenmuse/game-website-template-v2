@@ -1,4 +1,14 @@
 {
+    "2025-02-26": {
+        "version": "2.0.18",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复游戏详情页面标题获取值得方式不正确问题"
+        ],
+        "modify": [
+            "lib/components/games-template/page.tsx"
+        ]
+    },
     "2025-02-25": {
         "version": "2.0.17",
         "messagesKeyModify": false,
