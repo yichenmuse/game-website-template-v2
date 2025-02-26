@@ -12,7 +12,7 @@ export default function LazyIframe({
   gameImage,
   playGameButtonText,
   loadingTitle,
-  type = 'iframe'
+  type = 'iframe',
 }: { 
   gameIframeUrl: string, 
   title: string,
@@ -45,7 +45,6 @@ export default function LazyIframe({
       // 可以在这里添加其他iframe加载后的逻辑
     }
   }, [iframeLoaded]);
-
 
   const handlePlayClick = () => {
     if (type === 'download') {
@@ -124,8 +123,8 @@ export default function LazyIframe({
   );
 
   return (
-    <div className={"w-full h-[300px] md:h-[600px] md:min-h-[600px] rounded-2xl relative overflow-hidden flex flex-col"}>
-      <div className="relative flex-grow">
+    <div className={"w-full flex flex-col"}>
+      <div className={"w-full h-[300px] md:h-[650px] md:min-h-[650px] rounded-2xl relative overflow-hidden"}>
         {!showIframeOnly && renderInitialContent()}
         
         {iframeLoaded && (
@@ -135,6 +134,7 @@ export default function LazyIframe({
                 ref={iframeRef}
                 title={title}
                 src={gameIframeUrl}
+                id="iframe-container"
                 allow="accelerometer; gyroscope; autoplay; payment; fullscreen; microphone; clipboard-read; clipboard-write"
                 sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-presentation allow-scripts allow-same-origin allow-downloads allow-popups-to-escape-sandbox"
                 className="w-full h-full bg-iframe border-0 rounded-2xl"
@@ -157,12 +157,6 @@ export default function LazyIframe({
         )}
       </div>
       
-      {/* 将IframeActions放在iframe下方，并且只在showIframeOnly为true时显示 */}
-      {showIframeOnly && iframeLoaded&& (
-        <div className="mt-4 z-20 relative">
-          <IframeActions pageName={pageName} iframeRef={iframeRef} />
-        </div>
-      )}
     </div>
   );
 }

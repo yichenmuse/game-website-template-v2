@@ -1,4 +1,17 @@
 {
+    "2025-02-26 17": {
+        "version": "2.0.20",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "调整iframe默认高度",
+            "调整全屏、分享按钮排放位置"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/IframeActions.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/LazyIframe.tsx"
+        ]
+    },
     "2025-02-26 11": {
         "version": "2.0.19",
         "messagesKeyModify": false,

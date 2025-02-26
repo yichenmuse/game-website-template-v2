@@ -1,4 +1,3 @@
-import { getPathnameWithLocale } from '@/lib/i18n/navigation';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { loadSiteConfig } from '@/lib/utils/resource';
 import PopupWindows from './PopupWindows';
@@ -24,7 +23,7 @@ export default async function IframeSection({pageName}:{pageName:string|null|und
   const game_screenshot_path = siteConfig.screenshotUrl || `${screenshot_prefix}/game_screenshot.webp`;
 
   return (
-    <section className="text-iframe-foreground flex flex-col items-center justify-center  pt-0 mb-4 relative min-h-[calc(40vh-6rem)] ">
+    <section className="text-iframe-foreground flex flex-col items-center justify-center  px-2 mb-4 relative min-h-[calc(43vh)] ">
       {/* 背景容器 - 添加圆角 */}
       <div className="absolute inset-0 w-full h-full rounded-2xl overflow-hidden">
         {/* 背景图片处理 */}
@@ -84,7 +83,7 @@ export default async function IframeSection({pageName}:{pageName:string|null|und
               description={t('description')} 
               playGameButtonText={t('playGame')} 
               loadingTitle={t2('title')}
-              pageName={pageName} 
+              pageName={pageName}
             />
           </div>
         )}
@@ -111,6 +110,10 @@ export default async function IframeSection({pageName}:{pageName:string|null|und
         )}
       </div>
       
+      {/* 将IframeActions放在整个section的最下面 */}
+      <div className="mt-4 z-20 relative">
+          <IframeActions pageName={pageName}/>
+        </div>
       <Ad/>
     </section>
   );

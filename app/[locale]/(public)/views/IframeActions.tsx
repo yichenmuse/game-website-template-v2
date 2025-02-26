@@ -5,29 +5,12 @@ import { useTranslations } from 'next-intl';
 import { useEffect, useState, RefObject } from 'react';
 
 export default function IframeButton({
-  pageName,
-  iframeRef
+  pageName
 }: {
   pageName: string | null | undefined;
-  iframeRef?: RefObject<HTMLIFrameElement>;
 }) {
   const prefix = pageName ? pageName + '.' : '';
   const t = useTranslations(`${prefix}HomeIframe`);
-  const [iframeElement, setIframeElement] = useState<HTMLIFrameElement | null>(null);
-
-  useEffect(() => {
-    // 如果提供了iframeRef，优先使用它
-    if (iframeRef?.current) {
-      setIframeElement(iframeRef.current);
-      return;
-    }
-
-    // 否则，尝试查找页面上的iframe
-    const iframe = document.querySelector('iframe');
-    if (iframe instanceof HTMLIFrameElement) {
-      setIframeElement(iframe);
-    }
-  }, [iframeRef]);
 
   const requestFullscreen = (element: Element) => {
     if (element.requestFullscreen) {
@@ -50,10 +33,11 @@ export default function IframeButton({
   };
 
   const handleFullscreen = () => {
+    const iframeElement = document.querySelector('#iframe-container');
     if (iframeElement) {
       // 尝试获取内部iframe
       try {
-        const innerIframe = iframeElement.contentWindow?.document.querySelector('iframe');
+        const innerIframe = (iframeElement as HTMLIFrameElement).contentWindow?.document.querySelector('iframe');
         if (innerIframe instanceof HTMLIFrameElement) {
           requestFullscreen(innerIframe);
         } else {
