@@ -1052,9 +1052,7 @@
         "add": [
             "app/[locale]/(public)/views/GameRecommendationCard.tsx",
             "lib/config/game-page-messages.json",
-            "lib/utils/resource.ts",
-            "messages/en/games/demo.json",
-            "resources/right-games/en.json"
+            "lib/utils/resource.ts"
         ],
         "modify": [
             "app/[locale]/(public)/page.tsx",
