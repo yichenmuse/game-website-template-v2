@@ -1,4 +1,15 @@
 {
+    "2025-03-26 18": {
+        "version": "2.0.22",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复游戏详情页面获取游戏截图的方式不正确的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/games/page.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx"
+        ]   
+    },
     "2025-03-25": {
         "version": "2.0.21",
         "messagesKeyModify": false,
