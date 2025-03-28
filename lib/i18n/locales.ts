@@ -68,7 +68,10 @@ export const locales: readonly string[] = Object.keys(localeNames);
 // console.log("当前语言列表",locales)
 // 完全依赖url的locale detection禁用cookie detection。避免用户在输入url时，因为cookie导致切换到cookie记录的语言
 export const localeDetection = false as const;
-export const pathnames: Pathnames<typeof locales> = {};
+export const pathnames: Pathnames<typeof locales> = {
+  '/': '/',
+  '/c/action': '/c/action',
+};
 // as-needed means that the locale prefix is only added to the pathname if it is not already present.
 export const localePrefix: LocalePrefix<typeof locales> = 'as-needed' as LocalePrefix;
 

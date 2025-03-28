@@ -4,9 +4,9 @@
   "domain": "",
   "icon": "/favicon.ico",
   "appleIcon": "/apple-touch-icon.png",
-  "templateType":"single-game",
+  "templateType":"game-box",
   "theme": {
-    "name":"dark",
+    "name":"forest-theme",
     "headFont": "Arial, sans-serif",
     "primaryColor": "#007bff",
     "fontColor": "#333333",

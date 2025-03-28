@@ -1,3 +1,16 @@
 [
-  
+    {
+        "title": "count-masters-stickman-games",
+        "url": "https://games.crazygames.com/en_US/count-masters-stickman-games/index.html",
+        "cover": "https://imgs.crazygames.com/count-masters-stickman-games_16x9/20250220041115/count-masters-stickman-games_16x9-cover?metadata=none&quality=70&width=483",
+        "category": "Featured Games",
+        "visible": true
+    },
+    {
+        "title": "ragdoll-break",
+        "url": "https://games.crazygames.com/en_US/ragdoll-break/index.html",
+        "cover": "https://imgs.crazygames.com/ragdoll-break_16x9/20250311102953/ragdoll-break_16x9-cover?metadata=none&quality=70&width=483",
+        "category": "Action Games",
+        "visible": true
+    }
 ]

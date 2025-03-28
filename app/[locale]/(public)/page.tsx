@@ -62,7 +62,7 @@ export default async function Page({ params }: Props) {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* 左侧主要内容区域 */}
-          <div className="flex-1 min-w-0">
+          {/* <div className="flex-1 min-w-0">
             <IframeSection pageName={pageName} />
            
             <div>
@@ -75,7 +75,7 @@ export default async function Page({ params }: Props) {
             </div>
             <Recommendation locale={locale} />
             <DownloadGame pageName={pageName} siteConfig={siteConfig2} />
-          </div>
+          </div> */}
           
           {/* 右侧推荐卡片 - 移动端隐藏 */}
           <GameRecommendationCard locale={locale} />
